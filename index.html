@@ -2,49 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adopt-a-Coral</title>
+  <title>Adopt-a-Coral · Crowd-science for Caribbean reefs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
-<body style="font-family: system-ui, sans-serif; margin:0;">
+<body>
 
-  <!-- NAV BAR -->
-  <nav style="padding: 1rem; background:#0c3b4a; color:white;">
-    <a href="index.html" style="color:white; margin-right:1rem; text-decoration:none;">Home</a>
-    <a href="rationale.html" style="color:white; margin-right:1rem; text-decoration:none;">Rationale</a>
-    <a href="how-to.html" style="color:white; margin-right:1rem; text-decoration:none;">How to Adopt a Coral</a>
-    <a href="repository.html" style="color:white; margin-right:1rem; text-decoration:none;">3D Repository</a>
-    <a href="map.html" style="color:white; margin-right:1rem; text-decoration:none;">Map</a>
-    <a href="blog.html" style="color:white; text-decoration:none;">Matan’s Travel Blog</a>
-  </nav>
+<header>
+  <h1>Adopt-a-Coral</h1>
+  <p>Giving Caribbean corals a voice by showing how individual colonies change in real time through crowd-science.</p>
+</header>
 
-  <!-- HERO / MISSION -->
-  <main style="padding: 2rem; max-width: 900px; margin: 0 auto;">
-    <h1>Adopt-a-Coral</h1>
-    <h2>Giving corals a voice in the Caribbean</h2>
-
-    <p><strong>Mission:</strong></p>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Adopt-a-Coral</a>
     <ul>
-      <li>Provide a voice for corals in the Caribbean and show how they change in real time through crowd-science.</li>
-      <li>Democratize 3D imaging technology for coral reef ecology.</li>
-      <li>Build a community-based dataset to power the next generation of AI tools for coral research and management.</li>
+      <li><a href="index.html">Mission</a></li>
+      <li><a href="adopt.html">How to adopt</a></li>
+      <li><a href="data-workflow.html">Data & workflow</a></li>
+      <li><a href="partners-map.html">Partners & map</a></li>
+      <li><a href="blog.html">Matan’s travel blog</a></li>
     </ul>
+  </div>
+</nav>
 
-    <p>
-      Caribbean reefs are the lifeline of coastal communities, providing food, coastal protection, and livelihoods.
-      At the same time, they are dying at some of the fastest rates on the planet as stony reef-building corals 
-      turn from living structures into algae-covered rock.
-    </p>
+<main>
 
-    <p>
-      <strong>Adopt-a-Coral</strong> is a crowd-science movement to capture corals over time, one coral at a time.
-    </p>
+  <section class="card">
+    <h2>Mission</h2>
+    <div class="grid-two">
+      <div>
+        <p><strong>Adopt-a-Coral</strong> is a crowd-science movement aiming to capture corals over time, one coral at a time.</p>
 
+        <p>Our mission is to:</p>
+        <ul>
+          <li>Provide a voice for corals in the Caribbean and show the world how they change in real time via <strong>crowd-science</strong>.</li>
+          <li>Democratize 3D imaging technology for coral reef ecology.</li>
+          <li>Develop a community-based dataset to enable the next generation of AI tools for coral research and management.</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <strong>Why the Caribbean?</strong>
+        <p>
+          Caribbean reefs are the lifeline of coastal communities, providing food, coastal protection, tourism income and cultural identity.
+          At the same time, they are among the fastest-declining reefs on the planet.
+        </p>
+        <p>
+          Reef-building stony corals are turning from living structures into rocks covered in algae. 
+          Losing them means losing biodiversity and the services reefs provide.
+        </p>
+        <p><strong>Caribbean reefs need us the most.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>The gaps we are trying to fill</h2>
+    <div class="grid-two">
+      <div>
+        <h3>1. Time gap in monitoring</h3>
+        <p>
+          Most marine scientists spend a few months per year in the field and the rest in the lab.
+          That is not enough to document changes as they are happening on the reef.
+        </p>
+        <p>
+          <strong>Our solution:</strong> work with local dive shops and NGOs that dive the reef every day to document changes in individual coral colonies.
+        </p>
+      </div>
+      <div>
+        <h3>2. AI not fully used for nature conservation</h3>
+        <p>
+          AI technologies have enormous potential for detecting, classifying and tracking changes in coral reefs,
+          but the training datasets for colony-scale change are extremely limited.
+        </p>
+        <p>
+          <strong>Our solution:</strong> build an open, long-term 3D dataset of corals that can be used to train AI models for reef management.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Get involved</h2>
     <p>
-      Ready to join? Start with the 
-      <a href="how-to.html">How to Adopt a Coral guide</a>.
+      You don’t need to be a scientist to help. If you dive or snorkel, you can adopt a coral and start contributing to this dataset.
     </p>
-  </main>
+    <p>
+      <a class="btn" href="adopt.html">How to adopt a coral →</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Adopt-a-Coral · Crowd-science for Caribbean reefs · Static site hosted on GitHub Pages
+</footer>
 
 </body>
 </html>
