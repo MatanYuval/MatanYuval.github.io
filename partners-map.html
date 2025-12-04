@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Partners & map · Adopt-a-Coral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Leaflet CSS for the map -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+<body>
+
+<header>
+  <h1>Partners & map</h1>
+  <p>Dive shops, NGOs and adopted corals across the wider Caribbean.</p>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Adopt-a-Coral</a>
+    <ul>
+      <li><a href="index.html">Mission</a></li>
+      <li><a href="adopt.html">How to adopt</a></li>
+      <li><a href="data-workflow.html">Data & workflow</a></li>
+      <li><a href="partners-map.html">Partners & map</a></li>
+      <li><a href="blog.html">Matan’s travel blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>Participating dive shops & NGOs</h2>
+    <ul>
+      <li>Taganga, Colombia – Louis</li>
+      <li>Bocas del Toro, Panama – Alex</li>
+      <li>Honduras – Ben & Mariam, ReefMatters</li>
+      <li>Costa Rica – Raising Corals</li>
+      <li>Belize – [partner]</li>
+      <li>Mexico – Diego</li>
+    </ul>
+    <p>
+      These partners are our front-line collaborators, diving the reef daily and helping to adopt and rescan corals through time.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Map of partners and adopted corals</h2>
+    <p>
+      On this map, partner locations are shown in one color and individual adopted corals in another.
+      In the future, this will be linked directly to a spreadsheet-driven dataset of coral coordinates.
+    </p>
+    <div id="map"></div>
+
+    <small class="muted">
+      Placeholder coordinates are used here. Replace them with real lat/lon values from your spreadsheet later.
+    </small>
+  </section>
+
+</main>
+
+<footer>
+  Adopt-a-Coral · Partners & map
+</footer>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin="">
+</script>
+
+<script>
+  // Rough Caribbean center; adjust as needed
+  const map = L.map('map').setView([13.5, -74], 4);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; contributors'
+  }).addTo(map);
+
+  // Partner locations (replace with real coordinates later)
+  const partners = [
+    { name: 'Taganga – Louis', lat: 11.264, lon: -74.184 },
+    { name: 'Bocas del Toro – Alex', lat: 9.340, lon: -82.240 },
+    { name: 'Honduras – ReefMatters', lat: 16.342, lon: -86.563 },
+    { name: 'Costa Rica – Raising Corals', lat: 9.624, lon: -84.621 },
+    { name: 'Belize – Partner', lat: 17.200, lon: -88.500 },
+    { name: 'Mexico – Diego', lat: 20.500, lon: -87.200 }
+  ];
+
+  const partnersLayer = L.layerGroup();
+  partners.forEach(p => {
+    L.marker([p.lat, p.lon])
+      .bindPopup('<strong>' + p.name + '</strong><br/>Partner dive shop / NGO')
+      .addTo(partnersLayer);
+  });
+  partnersLayer.addTo(map);
+
+  // Example adopted corals layer (replace with spreadsheet-driven data later)
+  const adoptedCorals = [
+    { name: 'Coral A1', site: 'Example site', lat: 16.35, lon: -86.57 },
+    { name: 'Coral B4', site: 'Example site', lat: 9.36, lon: -82.25 }
+  ];
+  const adoptedLayer = L.layerGroup();
+  adoptedCorals.forEach(c => {
+    L.circleMarker([c.lat, c.lon], {
+      radius: 6,
+      color: '#ff8a4a',
+      fillColor: '#ff8a4a',
+      fillOpacity: 0.9
+    })
+    .bindPopup('<strong>' + c.name + '</strong><br/>' + c.site)
+    .addTo(adoptedLayer);
+  });
+  adoptedLayer.addTo(map);
+
+  // Optional: layer control
+  L.control.layers(
+    { 'Base map': map },
+    { 'Partners': partnersLayer, 'Adopted corals': adoptedLayer },
+    { collapsed: true }
+  );
+</script>
+
+</body>
+</html>
