@@ -1,8 +1,28 @@
-<nav style="padding: 1rem; background:#0c3b4a; color:white;">
-  <a href="index.html" style="color:white; margin-right:1rem; text-decoration:none;">Home</a>
-  <a href="rationale.html" style="color:white; margin-right:1rem; text-decoration:none;">Rationale</a>
-  <a href="how-to.html" style="color:white; margin-right:1rem; text-decoration:none;">How to Adopt a Coral</a>
-  <a href="repository.html" style="color:white; margin-right:1rem; text-decoration:none;">3D Repository</a>
-  <a href="map.html" style="color:white; margin-right:1rem; text-decoration:none;">Map</a>
-  <a href="blog.html" style="color:white; text-decoration:none;">Matan’s Travel Blog</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rationale · Adopt-a-Coral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body style="font-family: system-ui, sans-serif; margin:0;">
+
+  <!-- NAV -->
+  <nav style="padding: 1rem; background:#0c3b4a; color:white;">
+    <a href="index.html" style="color:white; margin-right:1rem; text-decoration:none;">Home</a>
+    <a href="rationale.html" style="color:white; margin-right:1rem; text-decoration:none;">Rationale</a>
+    <a href="how-to.html" style="color:white; margin-right:1rem; text-decoration:none;">How to Adopt a Coral</a>
+    <a href="repository.html" style="color:white; margin-right:1rem; text-decoration:none;">3D Repository</a>
+    <a href="map.html" style="color:white; margin-right:1rem; text-decoration:none;">Map</a>
+    <a href="blog.html" style="color:white; text-decoration:none;">Matan’s Travel Blog</a>
+  </nav>
+
+  <main style="padding: 2rem; max-width: 900px; margin: 0 auto;">
+    <h1>Why Adopt-a-Coral?</h1>
+
+    <p>[Paste / refine your rationale text here about Caribbean reefs, biodiversity, collapse risk, etc.]</p>
+  </main>
+
+</body>
+</html>
