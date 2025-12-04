@@ -1,365 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Adopt a Coral</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Simple page styling -->
-  <style>
-    :root {
-      --bg: #f8f1e6;
-      --accent: #ff8a4a;
-      --accent-dark: #d46024;
-      --text: #233240;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #006f7a, #00a4b8);
-      color: #fff;
-      padding: 2.5rem 1rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 0.5rem;
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      letter-spacing: 0.03em;
-    }
-
-    header p {
-      margin: 0.25rem 0;
-      max-width: 700px;
-      margin-inline: auto;
-      font-size: 0.95rem;
-    }
-
-    nav {
-      background: #ffffffcc;
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid #e3d6c5;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav ul {
-      margin: 0;
-      padding: 0.5rem 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      list-style: none;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-    }
-
-    nav a:hover {
-      border-color: var(--accent);
-      background: #fff6f0;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem 1rem 3rem;
-    }
-
-    section {
-      background: #fff;
-      padding: 1.5rem 1.5rem 2rem;
-      margin-bottom: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-    }
-
-    section h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-      color: var(--accent-dark);
-    }
-
-    section h2 span.icon {
-      font-size: 1.3rem;
-    }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 800px) {
-      .two-column { grid-template-columns: 1fr; }
-    }
-
-    .callout {
-      background: #fff6ec;
-      border-radius: 0.8rem;
-      padding: 1rem 1.2rem;
-      border-left: 4px solid var(--accent);
-      font-size: 0.95rem;
-    }
-
-    ol.steps {
-      padding-left: 1.2rem;
-      margin: 0.75rem 0 0;
-    }
-
-    ol.steps li {
-      margin-bottom: 0.4rem;
-    }
-
-    /* Embedded 3D viewer */
-    .embed-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .embed-wrapper {
-      position: relative;
-      width: 100%;
-      padding-top: 65%; /* aspect ratio */
-      border-radius: 0.8rem;
-      overflow: hidden;
-      border: 1px solid #e0d4c6;
-      background: #000;
-    }
-
-    .embed-wrapper iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .embed-caption {
-      margin-top: 0.4rem;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #555;
-    }
-
-    /* Map */
-    #map {
-      width: 100%;
-      height: 420px;
-      border-radius: 0.8rem;
-      border: 1px solid #e0d4c6;
-      margin-top: 0.75rem;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      padding: 1.5rem 1rem 2rem;
-      color: #666;
-    }
-  </style>
-
-  <!-- Leaflet CSS for the map -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
-  />
+  <meta charset="UTF-8">
+  <title>Adopt-a-Coral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
+<body style="font-family: system-ui, sans-serif; margin:0;">
 
-<header>
-  <h1>Adopt a Coral</h1>
-  <p>Choose a coral colony, capture a short video every few months, and help build a long-term 3D record of reef change.</p>
-</header>
+  <!-- NAV BAR -->
+  <nav style="padding: 1rem; background:#0c3b4a; color:white;">
+    <a href="index.html" style="color:white; margin-right:1rem; text-decoration:none;">Home</a>
+    <a href="rationale.html" style="color:white; margin-right:1rem; text-decoration:none;">Rationale</a>
+    <a href="how-to.html" style="color:white; margin-right:1rem; text-decoration:none;">How to Adopt a Coral</a>
+    <a href="repository.html" style="color:white; margin-right:1rem; text-decoration:none;">3D Repository</a>
+    <a href="map.html" style="color:white; margin-right:1rem; text-decoration:none;">Map</a>
+    <a href="blog.html" style="color:white; text-decoration:none;">Matan’s Travel Blog</a>
+  </nav>
 
-<nav>
-  <ul>
-    <li><a href="#rationale">Rationale</a></li>
-    <li><a href="#how-to">What you can do</a></li>
-    <li><a href="#repository">3D coral repository</a></li>
-    <li><a href="#map">Coral map</a></li>
-  </ul>
-</nav>
+  <!-- HERO / MISSION -->
+  <main style="padding: 2rem; max-width: 900px; margin: 0 auto;">
+    <h1>Adopt-a-Coral</h1>
+    <h2>Giving corals a voice in the Caribbean</h2>
 
-<main>
+    <p><strong>Mission:</strong></p>
+    <ul>
+      <li>Provide a voice for corals in the Caribbean and show how they change in real time through crowd-science.</li>
+      <li>Democratize 3D imaging technology for coral reef ecology.</li>
+      <li>Build a community-based dataset to power the next generation of AI tools for coral research and management.</li>
+    </ul>
 
-  <!-- 1) RATIONALE -->
-  <section id="rationale">
-    <h2><span class="icon">🌊</span>Rationale</h2>
-    <div class="two-column">
-      <div>
-        <p>
-          Coral reefs are changing faster than most monitoring programs can keep up with.
-          Divers see this every day, but their observations rarely become structured long-term data.
-        </p>
-        <p>
-          <strong>Adopt a Coral</strong> turns everyday dives into a collaborative time-series:
-          short videos of the <em>same</em> colonies, converted into 3D models, tracked over years.
-        </p>
-      </div>
-      <div class="callout">
-        <strong>Goals</strong>
-        <ul>
-          <li>Build an open 3D dataset of Caribbean coral colonies.</li>
-          <li>Track growth, partial mortality, and bleaching at colony scale.</li>
-          <li>Provide training data for AI models to detect change automatically.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2) WHAT YOU CAN DO -->
-  <section id="how-to">
-    <h2><span class="icon">🤿</span>What you can do &amp; how it works</h2>
-    <div class="two-column">
-      <div>
-        <ol class="steps">
-          <li><strong>Choose a coral</strong> on your regular dive route.</li>
-          <li><strong>Capture a 20–30 second video</strong> circling the colony smoothly.</li>
-          <li><strong>Upload the video</strong> to the Adopt a Coral app / workflow.</li>
-          <li><strong>We generate a 3D model</strong> and add it to the public repository.</li>
-          <li><strong>Repeat every few months</strong> for the same colony (and new ones).</li>
-        </ol>
-      </div>
-      <div class="callout">
-        <strong>Practical tips for divers</strong>
-        <ul>
-          <li>Keep a constant distance and slow, stable movement.</li>
-          <li>Avoid heavy backscatter / night-torch hotspots if possible.</li>
-          <li>Note simple metadata: site, depth, date, colony nickname.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3) REPOSITORY OF 3D MODELS -->
-  <section id="repository">
-    <h2><span class="icon">🧱</span>3D coral repository</h2>
     <p>
-      Below are embedded 3D views generated from diver videos.
-      Each one represents a specific colony scanned repeatedly over time.
+      Caribbean reefs are the lifeline of coastal communities, providing food, coastal protection, and livelihoods.
+      At the same time, they are dying at some of the fastest rates on the planet as stony reef-building corals 
+      turn from living structures into algae-covered rock.
     </p>
 
-    <div class="embed-grid">
-
-      <!-- Example: use your provided iframe here -->
-      <div>
-        <div class="embed-wrapper">
-          <iframe
-            title="Project 11"
-            src="https://www.kiriengine.app/share/embed/026181c26a4942d797c7d18f72d43eed?userId=1592778&bg_theme=bright&btn=1"
-            frameborder="0"
-            allowfullscreen
-            mozallowfullscreen
-            webkitallowfullscreen
-            allow="autoplay; fullscreen;"
-          ></iframe>
-        </div>
-        <div class="embed-caption">Coral 11 · Elkhorn colony · Site XYZ</div>
-      </div>
-
-      <!-- Duplicate this block for more colonies, just change title/src/caption -->
-      <!--
-      <div>
-        <div class="embed-wrapper">
-          <iframe ...></iframe>
-        </div>
-        <div class="embed-caption">Coral N · notes</div>
-      </div>
-      -->
-
-    </div>
-  </section>
-
-  <!-- 4) MAP OF CORALS -->
-  <section>
-    <h2><span class="icon">🗺️</span>Map of adopted corals</h2>
     <p>
-      Each marker represents a colony (or cluster of colonies) adopted by divers.
-      Coordinates come from a shared spreadsheet that we periodically sync into this map.
+      <strong>Adopt-a-Coral</strong> is a crowd-science movement to capture corals over time, one coral at a time.
     </p>
-    <div id="map"></div>
-  </section>
 
-</main>
-
-<footer>
-  Adopt a Coral · collaborative reef monitoring · static site on GitHub Pages
-</footer>
-
-<!-- Leaflet JS for the map -->
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-
-<script>
-  // 1) Define your coral coordinates here.
-  // Replace these example entries with data from your spreadsheet.
-  // Columns you probably have: name, site, lat, lon, link
-  const coralSites = [
-    {
-      name: "Coral 11",
-      site: "Example Reef",
-      lat: 15.1234,
-      lon: -61.2345,
-      link: "https://www.kiriengine.app/share/026181c26a4942d797c7d18f72d43eed"
-    },
-    {
-      name: "Coral 22",
-      site: "Another Site",
-      lat: 15.2234,
-      lon: -61.1345,
-      link: "https://example.com/another-3d"
-    }
-    // Add one object per coral row
-  ];
-
-  // 2) Centre map roughly on Caribbean; adjust to your region.
-  const map = L.map('map').setView([15.0, -70.0], 4);
-
-  // 3) Basic basemap (OpenStreetMap-style tiles).
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '&copy; contributors'
-  }).addTo(map);
-
-  // 4) Add a marker for each coral.
-  coralSites.forEach(coral => {
-    const popupHtml = `
-      <strong>${coral.name}</strong><br/>
-      ${coral.site || ""}<br/>
-      ${coral.link ? `<a href="${coral.link}" target="_blank">View 3D model</a>` : ""}
-    `;
-    L.marker([coral.lat, coral.lon]).addTo(map).bindPopup(popupHtml);
-  });
-</script>
+    <p>
+      Ready to join? Start with the 
+      <a href="how-to.html">How to Adopt a Coral guide</a>.
+    </p>
+  </main>
 
 </body>
 </html>
