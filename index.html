@@ -2,102 +2,319 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adopt-a-Coral · Crowd-science for Caribbean reefs</title>
+  <title>Adopt-a-Coral · Give voice to Caribbean reefs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Leaflet CSS for the map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 70px; }
+    nav a.active { border-color: var(--accent); background: #fff6ee; }
+  </style>
 </head>
 <body>
 
 <header>
   <h1>Adopt-a-Coral</h1>
-  <p>Giving Caribbean corals a voice through community driven citizen science.</p>
+  <p>Give Caribbean corals a voice through 3D imaging and community science.</p>
 </header>
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="brand">Adopt-a-Coral</a>
+    <a href="#" class="brand">🪸 Adopt-a-Coral</a>
     <ul>
-      <li><a href="index.html">Mission</a></li>
-      <li><a href="adopt.html">How to adopt</a></li>
-      <li><a href="data-workflow.html">Data & workflow</a></li>
-      <li><a href="partners-map.html">Partners & map</a></li>
-      <li><a href="blog.html">Matan’s travel blog</a></li>
+      <li><a href="#why">Why</a></li>
+      <li><a href="#adopt">How to adopt</a></li>
+      <li><a href="#timeseries">Time-series</a></li>
+      <li><a href="#library">Library</a></li>
+      <li><a href="#workflow">Workflow</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#map">Map</a></li>
     </ul>
   </div>
 </nav>
 
 <main>
 
-  <section class="card">
-    <h2>Mission</h2>
-    <div class="grid-two">
-      <div>
-        <p><strong>Adopt-a-Coral</strong> is a crowd-science movement aiming to capture corals over time, one coral at a time.</p>
+  <!-- HERO / WHY SECTION -->
+  <section class="hero" id="why">
+    <div class="hero-content">
+      <h2>Caribbean corals are dying at unprecedented rates.</h2>
+      <p>
+        Reef-building stony corals are collapsing, triggering a cascade of biodiversity loss.
+        Their extinction would devastate coastal communities that depend on reefs for food, protection, and livelihoods.
+      </p>
+      <p style="margin-top: 1.5rem; font-size: 1.05rem; font-weight: 600; color: var(--accent);">
+        You can help provide a voice for corals.
+      </p>
+    </div>
+  </section>
 
-        <p>Our mission is to:</p>
-        <ul>
-          <li>Provide a voice for corals in the Caribbean and show the world how they change in real time via <strong>crowd-science</strong>.</li>
-          <li>Democratize 3D imaging technology for coral reef ecology.</li>
-          <li>Develop a community-based dataset to enable the next generation of AI tools for coral research and management.</li>
-        </ul>
+  <!-- ADOPT SECTION -->
+  <section class="card" id="adopt">
+    <h2>Adopt a coral in 3 steps</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Choose a coral</h3>
+        <p>Find a coral you care about near a distinctive reef feature (mooring, rock, sponge).</p>
       </div>
-      <div class="callout">
-        <strong>Why the Caribbean?</strong>
-        <p>
-          Caribbean reefs are the lifeline of coastal communities, providing food, coastal protection, tourism income and cultural identity.
-          At the same time, they are among the fastest-declining reefs on the planet.
-        </p>
-        <p>
-          Reef-building stony corals are turning from living structures into rocks covered in algae. 
-          Losing them means losing biodiversity and the services reefs provide.
-        </p>
-        <p><strong>Caribbean reefs need us the most.</strong></p>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Capture & scan</h3>
+        <p>Record a short video (30–60 sec) swimming around it. Use a free app (Luma, KIRI) to create a 3D model.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Upload & share</h3>
+        <p>Upload your 3D model to our community dataset. It becomes open data for research and conservation.</p>
       </div>
     </div>
   </section>
 
-  <section class="card">
-    <h2>The gaps we are trying to fill</h2>
-    <div class="grid-two">
-      <div>
-        <h3>1. Time gap in monitoring</h3>
-        <p>
-          Most marine scientists spend a few months per year in the field and the rest in the lab.
-          That is not enough to document changes as they are happening on the reef.
-        </p>
-        <p>
-          <strong>Our solution:</strong> work with local dive shops and NGOs that dive the reef every day to document changes in individual coral colonies.
-        </p>
+  <!-- TIME-SERIES SECTION -->
+  <section class="card" id="timeseries">
+    <h2>Track coral change over time</h2>
+    <p style="text-align: center; margin-bottom: 1.5rem;">
+      Scan the same coral every few months. Watch it recover, bleach, or grow. Each scan reveals a new chapter in its story.
+    </p>
+    <div class="embed-row-3">
+      <div class="embed-wrapper-vertical">
+        <iframe src="https://lumalabs.ai/embed/8a541cb7-1437-4744-95f2-d276674bdc7d?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" frameborder="0" title="luma embed month 1" style="border: none; width: 100%; height: 100%;"></iframe>
       </div>
-      <div>
-        <h3>2. AI not fully used for nature conservation</h3>
-        <p>
-          AI technologies have enormous potential for detecting, classifying and tracking changes in coral reefs,
-          but the training datasets for colony-scale change are extremely limited.
-        </p>
-        <p>
-          <strong>Our solution:</strong> build an open, long-term 3D dataset of corals that can be used to train AI models for reef management.
-        </p>
+      <div class="embed-wrapper-vertical">
+        <iframe src="https://lumalabs.ai/embed/8a541cb7-1437-4744-95f2-d276674bdc7d?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" frameborder="0" title="luma embed month 2" style="border: none; width: 100%; height: 100%;"></iframe>
+      </div>
+      <div class="embed-wrapper-vertical">
+        <iframe src="https://lumalabs.ai/embed/8a541cb7-1437-4744-95f2-d276674bdc7d?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" frameborder="0" title="luma embed month 3" style="border: none; width: 100%; height: 100%;"></iframe>
       </div>
     </div>
+    <p style="text-align: center; font-size: 0.9rem; color: #6b7280; margin-top: 1rem;">
+      <em>Same coral, three scans across time showing recovery from bleaching.</em>
+    </p>
   </section>
 
-  <section class="card">
-    <h2>Get involved</h2>
+  <!-- LIBRARY SECTION -->
+  <section class="card" id="library">
+    <h2>Community 3D coral library</h2>
+    <p style="text-align: center; margin-bottom: 1.5rem;">
+      If you can't scan the same coral over time, contribute a single scan to our growing open-source library.
+    </p>
+
+    <h3 style="margin-top: 2rem; text-align: center;">Scanned corals</h3>
+    <div class="embed-grid-2x2">
+      <div class="embed-wrapper">
+        <iframe title="Project 9" src="https://www.kiriengine.app/share/embed/35756035702b43f6873fe20c740fab8d?userId=1592778&bg_theme=bright&btn=1" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen allow="autoplay; fullscreen;" style="width: 100%; height: 100%; border: 0;"></iframe>
+      </div>
+      <div class="embed-wrapper">
+        <iframe title="Project 4" src="https://www.kiriengine.app/share/embed/51b1cced87d04d0db8d878b912581a59?userId=1592778&bg_theme=bright&btn=1" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen allow="autoplay; fullscreen;" style="width: 100%; height: 100%; border: 0;"></iframe>
+      </div>
+      <div class="embed-wrapper">
+        <iframe title="Project 11" src="https://www.kiriengine.app/share/embed/026181c26a4942d797c7d18f72d43eed?userId=1592778&bg_theme=bright&btn=1" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen allow="autoplay; fullscreen;" style="width: 100%; height: 100%; border: 0;"></iframe>
+      </div>
+      <div class="embed-wrapper">
+        <iframe src="https://lumalabs.ai/embed/2991fb47-9009-4046-b702-a3638be67a06?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" frameborder="0" title="luma embed" style="border: none; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-size: 0.9rem; color: #6b7280; margin-top: 1.5rem;">
+      All 3D models are analyzed by an open-source community of biologists and engineers for coral health, AI research, and conservation insights.
+    </p>
+  </section>
+
+  <!-- WORKFLOW SECTION -->
+  <section class="card" id="workflow">
+    <h2>Suggested workflow</h2>
+
+    <h3>Step 1: Capture video with scale reference</h3>
+    <p>Place a scale bar or ruler next to your coral. Record a short video (30–60 seconds) from multiple angles.</p>
+    <p style="font-size: 0.9rem; color: #6b7280; background: #f9f7f4; padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+      💡 <strong>Note:</strong> These are real underwater video samples (MOV format, ~40MB each). If videos don't play in your browser, you can download them by clicking the link in the video player or the button below.
+    </p>
+    <div class="video-row">
+      <div class="video-wrapper">
+        <video controls width="100%" style="border-radius: 0.6rem; background: #000;">
+          <source src="assets/video/SportDiver_20251201_101010.MOV" type="video/quicktime">
+          <source src="assets/video/SportDiver_20251201_101010.MOV" type="video/mp4">
+          <p style="padding: 1rem; color: #999; font-size: 0.9rem;">Video not supported. <a href="assets/video/SportDiver_20251201_101010.MOV" target="_blank">Download sample capture 1</a></p>
+        </video>
+        <p style="text-align: center; font-size: 0.85rem; margin-top: 0.5rem; color: #6b7280;">Sample capture 1</p>
+      </div>
+      <div class="video-wrapper">
+        <video controls width="100%" style="border-radius: 0.6rem; background: #000;">
+          <source src="assets/video/SportDiver_20251201_102239.MOV" type="video/quicktime">
+          <source src="assets/video/SportDiver_20251201_102239.MOV" type="video/mp4">
+          <p style="padding: 1rem; color: #999; font-size: 0.9rem;">Video not supported. <a href="assets/video/SportDiver_20251201_102239.MOV" target="_blank">Download sample capture 2</a></p>
+        </video>
+        <p style="text-align: center; font-size: 0.85rem; margin-top: 0.5rem; color: #6b7280;">Sample capture 2</p>
+      </div>
+      <div class="video-wrapper">
+        <video controls width="100%" style="border-radius: 0.6rem; background: #000;">
+          <source src="assets/video/SportDiver_20251201_101010.MOV" type="video/quicktime">
+          <source src="assets/video/SportDiver_20251201_101010.MOV" type="video/mp4">
+          <p style="padding: 1rem; color: #999; font-size: 0.9rem;">Video not supported. <a href="assets/video/SportDiver_20251201_101010.MOV" target="_blank">Download sample capture</a></p>
+        </video>
+        <p style="text-align: center; font-size: 0.85rem; margin-top: 0.5rem; color: #6b7280;">Sample capture 1 (repeat)</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 2rem;">Step 2: Process with 3D app</h3>
     <p>
-      You don’t need to be a scientist to help. If you dive or snorkel, you can adopt a coral and start contributing to this dataset.
+      Upload your video to a free 3D reconstruction tool:
+      <br><strong><a href="https://lumalabs.ai" target="_blank">Luma AI</a></strong> (cloud-based, fast) or 
+      <strong><a href="https://www.kiriengine.app" target="_blank">KIRI Engine</a></strong> (professional output)
+    </p>
+    <p>The app will generate a high-quality 3D model ready to download.</p>
+
+    <h3 style="margin-top: 1.5rem;">Step 3: Register and upload</h3>
+    <p>
+      <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMXDZVBDpHsyq6cGTHmQwdDPTdBaHiVKeQvNmmaW4_UM8Xtg/viewform?usp=dialog" target="_blank" class="btn" style="display: inline-block; margin-right: 0.5rem;">Fill participant form →</a></strong>
+      Then download your model from the 3D app and upload it to our dataset (details provided after form submission).
+    </p>
+  </section>
+
+  <!-- DATA POLICY -->
+  <section class="card" id="data-policy" style="background: #f0f9ff; border-left: 4px solid var(--accent);">
+    <h2>What happens with my data?</h2>
+    <p>
+      <strong>Your 3D model becomes freely available under a Creative Commons Attribution 4.0 International license.</strong>
     </p>
     <p>
-      <a class="btn" href="adopt.html">How to adopt a coral →</a>
+      <strong>Your 3D models are analyzed automatically by a community of researchers</strong> for coral health monitoring, AI development, and conservation insights.
+    </p>
+    <ul style="font-size: 0.95rem; line-height: 1.8;">
+      <li>✓ You are credited as a data contributor.</li>
+      <li>✓ Open-source researchers can use your model for coral biology, ecology, computer vision, and graphics.</li>
+      <li>✓ Your contribution directly enables conservation decision-making.</li>
+      <li>✓ You retain full control of your original video footage.</li>
+    </ul>
+  </section>
+
+  <!-- PARTNERS SECTION -->
+  <section class="card" id="partners">
+    <h2>Participating dive shops & organizations</h2>
+    <div class="partners-list">
+      <div class="partner">
+        <strong>Taganga, Colombia</strong>
+        <p>Louis</p>
+      </div>
+      <div class="partner">
+        <strong>Bocas del Toro, Panama</strong>
+        <p>Alex</p>
+      </div>
+      <div class="partner">
+        <strong>Honduras</strong>
+        <p>Ben & Mariam (ReefMatters)</p>
+      </div>
+      <div class="partner">
+        <strong>Costa Rica</strong>
+        <p>Raising Corals</p>
+      </div>
+      <div class="partner">
+        <strong>Belize</strong>
+        <p>Seeking partner</p>
+      </div>
+      <div class="partner">
+        <strong>Mexico (Caribbean)</strong>
+        <p>Diego</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="card" id="map">
+    <h2>Scanned corals from</h2>
+    <div id="leaflet-map" style="width: 100%; height: 450px; border-radius: 0.8rem; margin-top: 1rem;"></div>
+  </section>
+
+  <!-- CTA FOOTER -->
+  <section class="card" id="cta" style="background: linear-gradient(135deg, var(--accent), #ff6b2c); color: white; text-align: center; margin-top: 2rem; margin-bottom: 3rem;">
+    <h2 style="color: white; margin-top: 0;">Ready?</h2>
+    <p style="color: rgba(255,255,255,0.95); font-size: 1rem;">
+      Choose a coral, film it, and help us build the world's most important coral dataset.
+    </p>
+    <p style="margin-top: 1.5rem;">
+      <a href="#adopt" class="btn" style="background: white; color: var(--accent); font-weight: 700;">Start adopting →</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMXDZVBDpHsyq6cGTHmQwdDPTdBaHiVKeQvNmmaW4_UM8Xtg/viewform?usp=dialog" target="_blank" class="btn" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; margin-left: 0.8rem;">Join →</a>
     </p>
   </section>
 
 </main>
 
 <footer>
-  Adopt-a-Coral · Crowd-science for Caribbean reefs · Static site hosted on GitHub Pages
+  Adopt-a-Coral · Community-driven 3D coral monitoring
 </footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+  // Initialize map
+  const map = L.map('leaflet-map').setView([13.5, -74], 4);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Partner locations
+  const partners = [
+    { name: 'Taganga – Louis', lat: 11.264, lon: -74.184 },
+    { name: 'Bocas del Toro – Alex', lat: 9.340, lon: -82.240 },
+    { name: 'Honduras – ReefMatters', lat: 16.342, lon: -86.563 },
+    { name: 'Costa Rica – Raising Corals', lat: 9.624, lon: -84.621 },
+    { name: 'Belize – Partner', lat: 17.200, lon: -88.500 },
+    { name: 'Mexico – Diego', lat: 20.500, lon: -87.200 }
+  ];
+
+  const partnersLayer = L.layerGroup();
+  partners.forEach(p => {
+    L.marker([p.lat, p.lon])
+      .bindPopup('<strong>' + p.name + '</strong><br/>Partner dive shop')
+      .addTo(partnersLayer);
+  });
+  partnersLayer.addTo(map);
+
+  // Example adopted corals
+  const corals = [
+    { name: 'Coral A1', lat: 16.35, lon: -86.57 },
+    { name: 'Coral B4', lat: 9.36, lon: -82.25 },
+    { name: 'Coral C2', lat: 11.26, lon: -74.18 }
+  ];
+
+  const coralsLayer = L.layerGroup();
+  corals.forEach(c => {
+    L.circleMarker([c.lat, c.lon], {
+      radius: 6,
+      color: '#ff8a4a',
+      fillColor: '#ff8a4a',
+      fillOpacity: 0.8,
+      weight: 2
+    }).bindPopup('<strong>' + c.name + '</strong><br/>Scanned coral').addTo(coralsLayer);
+  });
+  coralsLayer.addTo(map);
+
+  // Nav highlighting on scroll
+  window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a:not(.brand)');
+    let current = '';
+    sections.forEach(section => {
+      if (pageYOffset >= section.offsetTop - 100) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt-a-Coral · Crowd-science for Caribbean reefs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Leaflet CSS for the map -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <style>
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Anchor link padding for sticky nav */
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+
+    /* Sticky nav highlight */
+    nav a.active {
+      border-color: var(--accent);
+      background: #fff6ee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Adopt-a-Coral</h1>
+  <p>Giving Caribbean corals a voice through community driven citizen science.</p>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#mission" class="brand">Adopt-a-Coral</a>
+    <ul>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#why-caribbean">Why the Caribbean?</a></li>
+      <li><a href="#gaps">The gaps</a></li>
+      <li><a href="#how-to">How to adopt</a></li>
+      <li><a href="#data">Data & workflow</a></li>
+      <li><a href="#partners">Partners & map</a></li>
+      <li><a href="#blog">Travel blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- MISSION SECTION -->
+  <section class="card" id="mission">
+    <h2>Mission</h2>
+    <div class="grid-two">
+      <div>
+        <p><strong>Adopt-a-Coral</strong> is a crowd-science movement aiming to capture corals over time, one coral at a time.</p>
+
+        <p>Our mission is to:</p>
+        <ul>
+          <li>Provide a voice for corals in the Caribbean and show the world how they change in real time via <strong>crowd-science</strong>.</li>
+          <li>Democratize 3D imaging technology for coral reef ecology.</li>
+          <li>Develop a community-based dataset to enable the next generation of AI tools for coral research and management.</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <strong>What is crowd-science?</strong>
+        <p>
+          Crowd-science (or citizen science) harnesses the collective power of volunteers to gather scientific data at scale. 
+          In our case, divers and snorkelers worldwide become the eyes and hands documenting coral health in real time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CARIBBEAN SECTION -->
+  <section class="card" id="why-caribbean">
+    <h2>Why the Caribbean?</h2>
+    <div class="grid-two">
+      <div>
+        <p>
+          <strong>Caribbean reefs are the lifeline of coastal communities,</strong> providing food, coastal protection, tourism income, and cultural identity.
+        </p>
+        <p>
+          At the same time, they are among the fastest-declining reefs on the planet.
+        </p>
+      </div>
+      <div class="callout">
+        <p>
+          Reef-building stony corals are turning from marvelous living structures into rocks covered in algae. 
+          Caribbean reefs are some of the most diverse and rich in the world, and their collapse could trigger unprecedented biodiversity loss.
+        </p>
+        <p><strong>Caribbean reefs need us the most.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE GAPS SECTION -->
+  <section class="card" id="gaps">
+    <h2>The gaps we are trying to fill</h2>
+    <div class="grid-two">
+      <div>
+        <h3>1. Time gap in monitoring</h3>
+        <p>
+          Most marine scientists spend only a few months per year in the field, and the rest in the lab.
+          That is not enough to document changes as they are happening on the reef.
+        </p>
+        <p>
+          <strong>Our solution:</strong> work with local dive shops and NGOs that dive the reef every day to document changes in individual coral colonies.
+        </p>
+      </div>
+      <div>
+        <h3>2. AI not fully used for nature conservation</h3>
+        <p>
+          AI technologies have enormous potential for detecting, classifying, and tracking changes in coral reefs,
+          but the training datasets for colony-scale change detection are extremely limited.
+        </p>
+        <p>
+          <strong>Our solution:</strong> build an open, long-term 3D dataset of corals that can be used to train AI models for reef management and conservation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO ADOPT SECTION -->
+  <section class="card" id="how-to">
+    <h2>How to adopt a coral</h2>
+    <p>
+      You don't need to be a scientist. If you dive or snorkel, you can adopt a coral and start contributing to this dataset.
+    </p>
+
+    <h3>Step-by-step</h3>
+    <ol>
+      <li>
+        <strong>Choose a coral</strong> that you like and will be able to find again.<br>
+        Ideally it should be close to a distinguishable feature such as a mooring line, a large sponge, a crack in the reef, or a characteristic rock.
+      </li>
+      <li>
+        <strong>Capture a video of the coral.</strong><br>
+        Swim slowly around the colony for ~30 seconds, keeping a steady distance and overlapping views.
+      </li>
+      <li>
+        <strong>Make a 3D model from the video</strong> using a free app, for example:
+        <ul>
+          <li><a href="https://lumalabs.ai" target="_blank">Luma</a></li>
+          <li><a href="https://www.kiriengine.app" target="_blank">KIRI Engine</a></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Fill in the participant sheet</strong> with basic information:
+        site, approximate coordinates, depth, date, name, and any notes on the coral.
+      </li>
+      <li>
+        <strong>Upload the 3D model</strong> to the open-source database (see <a href="#data">Data & workflow</a> for details).
+      </li>
+      <li>
+        <strong>Repeat every few months</strong> for the same coral to capture its story over time. You can also adopt new corals as you dive.
+      </li>
+    </ol>
+
+    <h3>Tips from the pros for underwater 3D modeling</h3>
+    <ul>
+      <li><strong>Move slowly and smoothly,</strong> like you're filming a movie, not chasing a fish.</li>
+      <li><strong>Keep the coral in the center of the frame</strong> and maintain similar distance as you go around.</li>
+      <li><strong>Avoid big lighting changes;</strong> mid-day natural light often works well.</li>
+      <li><strong>Try not to stir up sand or sediment</strong> around the coral.</li>
+      <li><strong>Don't touch or stand on the reef. Ever.</strong></li>
+    </ul>
+  </section>
+
+  <!-- DATA & WORKFLOW SECTION -->
+  <section class="card" id="data">
+    <h2>Data & workflow</h2>
+    <p>From your dive video to open 3D models for coral research and AI.</p>
+
+    <h3>What happens with your data?</h3>
+    <div class="grid-two">
+      <div>
+        <p>
+          You do <strong>not</strong> need to upload raw videos.
+          Instead, you upload the resulting 3D model (mesh / textured model) to a shared space.
+        </p>
+        <p>
+          Models are stored in an open repository (initially cloud storage, then long-term archiving on open platforms such as Zenodo)
+          under a Creative Commons license so they can be reused for research, conservation, and AI development.
+        </p>
+      </div>
+      <div class="callout">
+        <strong>In short:</strong>
+        <ul>
+          <li>You keep control of your original footage.</li>
+          <li>The shared 3D models are open for non-commercial research and conservation.</li>
+          <li>Metadata is kept as simple as possible but scientifically useful.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Suggested workflow for model capture and upload</h3>
+    <ol>
+      <li>Record a clean video loop around the coral.</li>
+      <li>Load the video into a 3D reconstruction app (e.g., KIRI Engine or Luma).</li>
+      <li>Let the app generate the 3D model.</li>
+      <li>Export the model in a standard format (e.g., GLB, OBJ, or similar).</li>
+      <li>Fill in the participant sheet with metadata.</li>
+      <li>Upload the model + metadata to the shared drive (link provided by the project).</li>
+    </ol>
+
+    <h3>Example 3D models</h3>
+    <p>Below are examples of embedded 3D models from the community dataset.</p>
+
+    <h4>New coral showcase</h4>
+    <div class="grid-two">
+      <div class="embed-wrapper">
+        <iframe title="Project 11"
+                src="https://www.kiriengine.app/share/embed/026181c26a4942d797c7d18f72d43eed?userId=1592778&bg_theme=bright&btn=1"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen
+                webkitallowfullscreen
+                allow="autoplay; fullscreen;">
+        </iframe>
+      </div>
+      <div class="embed-wrapper">
+        <iframe title="Coral Model"
+                src="https://www.kiriengine.app/share/shareModel/35756035702b43f6873fe20c740fab8d"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen
+                webkitallowfullscreen
+                allow="autoplay; fullscreen;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS & MAP SECTION -->
+  <section class="card" id="partners">
+    <h2>Partners & map</h2>
+
+    <h3>Participating dive shops & NGOs</h3>
+    <ul>
+      <li><strong>Taganga, Colombia</strong> – Louis</li>
+      <li><strong>Bocas del Toro, Panama</strong> – Alex</li>
+      <li><strong>Honduras</strong> – Ben & Mariam (ReefMatters)</li>
+      <li><strong>Costa Rica</strong> – Raising Corals</li>
+      <li><strong>Belize</strong> – [partner]</li>
+      <li><strong>Mexico</strong> – Diego Tenaglia</li>
+    </ul>
+    <p>
+      These partners are our front-line collaborators, diving the reef daily and helping to adopt and rescan corals through time.
+    </p>
+
+    <h3>Map of partners and adopted corals</h3>
+    <p>
+      On this map, partner locations are shown with standard markers and individual adopted corals with orange circle markers.
+      In the future, this will be linked directly to a spreadsheet-driven dataset of coral coordinates.
+    </p>
+    <div id="map"></div>
+
+    <small class="muted">
+      Map initialized with example coordinates. Replace with real lat/lon values from your spreadsheet as the project grows.
+    </small>
+  </section>
+
+  <!-- TRAVEL BLOG SECTION -->
+  <section class="card" id="blog">
+    <h2>Travel blog</h2>
+    <p>Field notes from the Caribbean: corals, people, and everything in between.</p>
+
+    <article>
+      <h3>Taganga: first adopters in the bay</h3>
+      <small class="muted">Colombia · Field dispatch</small>
+      <p>
+        Working with Louis in Taganga has been eye-opening. The bay here is a true nexus—tourists come to dive, 
+        local fishermen know every nook of the reef, and the reefs themselves are struggling under the weight of pressure. 
+        We identified our first five corals to adopt, and Louis has committed to revisiting them every three months. 
+        The excitement in his eyes when he saw the first 3D model rendered on his phone was everything. 
+        This is what crowd-science can be: partners who care, technology that empowers, and data that matters.
+      </p>
+    </article>
+
+    <hr style="margin:1.5rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+    <article>
+      <h3>Bocas del Toro: filming corals in the mangrove shadows</h3>
+      <small class="muted">Panama · Field dispatch</small>
+      <p>
+        The reefs around Bocas del Toro are phenomenal—dense, colorful, and fragile. Alex, our partner dive operator, 
+        took me to sites where the stony corals are still robust, but where bleaching has left visible scars. 
+        We filmed a massive Montastraea colony that looked strong on the outside but had suffered a bleaching event 
+        two years ago (visible as a band of lighter tissue). This is exactly the kind of change we want to capture over time. 
+        The 3D model will serve as a baseline; if we rescan it in 2026, we'll have a digital record of recovery (or further decline). 
+        That's the power of this dataset.
+      </p>
+    </article>
+
+    <hr style="margin:1.5rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+    <article>
+      <h3>Honduras and ReefMatters: scaling the science</h3>
+      <small class="muted">Honduras · Field dispatch</small>
+      <p>
+        Meeting Ben and Mariam at ReefMatters was a pivotal moment. They operate across several dive sites in Honduras 
+        and have been monitoring reef health for years through traditional underwater surveys. Now, with 3D imaging, 
+        they're excited to layer in colony-level resolution on top of their site-level data. 
+        They've already adopted 12 corals and are training other dive guides in their network to do the same. 
+        This is what scale looks like: not top-down, but organic, ground-up growth powered by people who live and work on these reefs.
+      </p>
+    </article>
+
+  </section>
+
+  <!-- GET INVOLVED CTA -->
+  <section class="card" style="background: linear-gradient(135deg, #f8f3ea, #fff6ec); border: 2px solid var(--accent);">
+    <h2 style="color: var(--accent);">Ready to adopt a coral?</h2>
+    <p>
+      Join the movement. Whether you're a recreational diver, a professional guide, or a conservation-minded snorkeler, 
+      you can help us build this dataset and give Caribbean corals a voice.
+    </p>
+    <p>
+      <strong>Start by choosing a coral you care about and diving back to film it every few months.</strong> 
+      That's the foundation of Adopt-a-Coral. Everything else follows.
+    </p>
+    <p style="margin-top: 1.5rem;">
+      <a class="btn" href="#how-to">How to adopt a coral →</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Adopt-a-Coral · Crowd-science for Caribbean reefs · Static site hosted on GitHub Pages
+</footer>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin="">
+</script>
+
+<script>
+  // Initialize map only when the map container is visible
+  document.addEventListener('DOMContentLoaded', function() {
+    if (document.getElementById('map')) {
+      // Rough Caribbean center; adjust as needed
+      const map = L.map('map').setView([13.5, -74], 4);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+      // Partner locations (replace with real coordinates later)
+      const partners = [
+        { name: 'Taganga – Louis', lat: 11.264, lon: -74.184 },
+        { name: 'Bocas del Toro – Alex', lat: 9.340, lon: -82.240 },
+        { name: 'Honduras – ReefMatters', lat: 16.342, lon: -86.563 },
+        { name: 'Costa Rica – Raising Corals', lat: 9.624, lon: -84.621 },
+        { name: 'Belize – Partner', lat: 17.200, lon: -88.500 },
+        { name: 'Mexico – Diego', lat: 20.500, lon: -87.200 }
+      ];
+
+      const partnersLayer = L.layerGroup();
+      partners.forEach(p => {
+        L.marker([p.lat, p.lon])
+          .bindPopup('<strong>' + p.name + '</strong><br/>Partner dive shop / NGO')
+          .addTo(partnersLayer);
+      });
+      partnersLayer.addTo(map);
+
+      // Example adopted corals layer (replace with spreadsheet-driven data later)
+      const adoptedCorals = [
+        { name: 'Coral A1', site: 'Example site', lat: 16.35, lon: -86.57 },
+        { name: 'Coral B4', site: 'Example site', lat: 9.36, lon: -82.25 },
+        { name: 'Coral C2', site: 'Taganga Bay', lat: 11.26, lon: -74.18 }
+      ];
+      const adoptedLayer = L.layerGroup();
+      adoptedCorals.forEach(c => {
+        L.circleMarker([c.lat, c.lon], {
+          radius: 6,
+          color: '#ff8a4a',
+          fillColor: '#ff8a4a',
+          fillOpacity: 0.9,
+          weight: 2
+        })
+        .bindPopup('<strong>' + c.name + '</strong><br/>' + c.site)
+        .addTo(adoptedLayer);
+      });
+      adoptedLayer.addTo(map);
+
+      // Optional: layer control
+      L.control.layers(
+        { 'Base map': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; OpenStreetMap contributors' }) },
+        { 'Partners': partnersLayer, 'Adopted corals': adoptedLayer },
+        { collapsed: true }
+      ).addTo(map);
+    }
+  });
+
+  // Smooth nav highlighting on scroll (optional)
+  window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+    
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 100) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
