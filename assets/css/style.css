@@ -27,6 +27,17 @@ header {
   text-align: center;
 }
 
+/* Header layout: center title/text, place icons in top-right corner */
+header { position: relative; }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+.header-inner > div:first-child { text-align: center; }
+.header-inner .contact-links { position: absolute; top: 1.25rem; right: 1.25rem; display: flex; flex-direction: row; gap: 0.6rem; align-items: center; }
+
+@media (max-width: 520px) {
+  /* On very small screens, move icons below the title and center them */
+  .header-inner .contact-links { position: static; margin-top: 0.6rem; }
+}
+
 header h1 {
   margin: 0 0 0.5rem;
   font-size: clamp(2rem, 5vw, 2.8rem);
