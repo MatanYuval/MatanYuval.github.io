@@ -105,7 +105,8 @@ header .contact-links a {
   align-items: center;
   gap: 0.5rem;
 }
-header .contact-links a span { display: inline-block; }
+/* Hide the textual label next to header icons (show icons only) */
+header .contact-links a span { display: none; }
 
 @media (max-width: 768px) {
   header .contact-links { align-items: flex-start; }
