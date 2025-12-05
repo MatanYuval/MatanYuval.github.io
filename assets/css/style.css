@@ -90,6 +90,27 @@ nav a:hover {
   background: #fff6ee;
 }
 
+/* Ensure header contact text (email) remains visible beside icon */
+header .contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-end;
+  font-size: 0.95rem;
+}
+header .contact-links a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .contact-links a span { display: inline-block; }
+
+@media (max-width: 768px) {
+  header .contact-links { align-items: flex-start; }
+}
+
 /* LAYOUT */
 main {
   max-width: 1200px;
