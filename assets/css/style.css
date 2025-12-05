@@ -93,9 +93,9 @@ nav a:hover {
 /* Ensure header contact text (email) remains visible beside icon */
 header .contact-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-items: flex-end;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
   font-size: 0.95rem;
 }
 header .contact-links a {
@@ -105,11 +105,16 @@ header .contact-links a {
   align-items: center;
   gap: 0.5rem;
 }
-/* Hide the textual label next to header icons (show icons only) */
-header .contact-links a span { display: none; }
+/* Hide the textual label next to header icons (show icons only). Use !important
+  so it takes effect even if older cached CSS was present. Reveal on keyboard
+  focus for accessibility. */
+header .contact-links a span { display: none !important; }
+header .contact-links a:focus span,
+header .contact-links a:focus-visible span { display: inline-block !important; }
 
 @media (max-width: 768px) {
-  header .contact-links { align-items: flex-start; }
+  /* Keep icons side-by-side on small screens, but reduce gap */
+  header .contact-links { gap: 0.4rem; align-items: center; }
 }
 
 /* LAYOUT */
