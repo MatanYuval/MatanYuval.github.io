@@ -1,357 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caribbean Coral 3D Model Classifier</title>
-  <style>
-    :root {
-      --bg-color: #0f172a;
-      --card-bg: #1e293b;
-      --accent-color: #0ea5e9;
-      --text-color: #f8fafc;
-      --text-muted: #94a3b8;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    header {
-      background: var(--card-bg);
-      padding: 1rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #334155;
-    }
-
-    header h1 { font-size: 1.25rem; color: var(--accent-color); }
-
-    .nav-tabs { display: flex; gap: 0.5rem; }
-    .tab-btn {
-      background: #334155;
-      color: var(--text-color);
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .tab-btn.active { background: var(--accent-color); font-weight: bold; }
-
-    main { flex: 1; display: flex; overflow: hidden; }
-
-    /* Single Model Classification View */
-    .classifier-container {
-      display: flex;
-      width: 100%;
-      height: 100%;
-    }
-    .viewport {
-      flex: 3;
-      background: #000;
-      position: relative;
-    }
-    .viewport iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .sidebar {
-      flex: 1;
-      min-width: 320px;
-      max-width: 400px;
-      background: var(--card-bg);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      border-left: 1px solid #334155;
-      overflow-y: auto;
-    }
-
-    .meta-box h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .meta-box p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.25rem; }
-
-    label { font-weight: 600; font-size: 0.9rem; color: var(--accent-color); display: block; margin-bottom: 0.5rem; }
-    select, input, button {
-      width: 100%;
-      padding: 0.75rem;
-      border-radius: 6px;
-      border: 1px solid #334155;
-      background: #0f172a;
-      color: var(--text-color);
-      font-size: 0.95rem;
-    }
-
-    .btn-group { display: flex; gap: 0.5rem; }
-    .btn {
-      background: var(--accent-color);
-      color: white;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      transition: opacity 0.2s;
-    }
-    .btn:hover { opacity: 0.9; }
-    .btn-secondary { background: #475569; }
-
-    /* Folder View */
-    .folder-container {
-      display: none;
-      width: 100%;
-      height: 100%;
-      padding: 1.5rem;
-      overflow-y: auto;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .folder-section {
-      background: var(--card-bg);
-      border-radius: 8px;
-      padding: 1rem;
-      border: 1px solid #334155;
-    }
-    .folder-header {
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #334155;
-      display: flex;
-      justify-content: space-between;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: #0f172a;
-      border-radius: 6px;
-      overflow: hidden;
-      border: 1px solid #334155;
-      text-align: center;
-      padding: 0.5rem;
-      cursor: pointer;
-    }
-    .card img { width: 100%; height: 120px; object-fit: cover; border-radius: 4px; }
-    .card p { font-size: 0.85rem; margin-top: 0.5rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Classification Gallery</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-btn {
+            background-color: #fff;
+            border: 2px solid #007BFF;
+            color: #007BFF;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .model-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .model-card:hover {
+            transform: translateY(-5px);
+        }
+        .model-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+        .model-info {
+            padding: 15px;
+        }
+        .model-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #eef2f5;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Caribbean Coral 3D Classifier</h1>
-    <div class="nav-tabs">
-      <button class="tab-btn active" id="tabClassify" onclick="switchTab('classify')">Classifier</button>
-      <button class="tab-btn" id="tabFolders" onclick="switchTab('folders')">Virtual Folders</button>
-      <button class="tab-btn btn" onclick="exportJSON()">Export JSON</button>
-    </div>
-  </header>
-
-  <main>
-    <!-- View 1: Sequential Model Classifier -->
-    <div id="classifierView" class="classifier-container">
-      <div class="viewport">
-        <iframe id="modelFrame" title="3D Model Viewer" allowfullscreen mozallowfullscreen webkitallowfullscreen allow="autoplay; fullscreen;"></iframe>
-      </div>
-      <div class="sidebar">
-        <div class="meta-box">
-          <h2 id="modelTitle">Loading...</h2>
-          <p id="modelIndex">Model 0 of 0</p>
-          <p id="modelId">ID: -</p>
+    <div class="header">
+        <h1>Benthic & Terrestrial 3D Models</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="massive">Massive Corals</button>
+            <button class="filter-btn" data-filter="brain">Brain Corals</button>
+            <button class="filter-btn" data-filter="terrestrial">Terrestrial</button>
+            <button class="filter-btn" data-filter="invertebrate">Invertebrates</button>
         </div>
-
-        <div>
-          <label for="coralClass">Caribbean Coral Classification</label>
-          <select id="coralClass">
-            <option value="">-- Select Species / Genus --</option>
-            <optgroup label="Acroporids (Branching)">
-              <option value="Acropora cervicornis (Staghorn Coral)">Acropora cervicornis (Staghorn)</option>
-              <option value="Acropora palmata (Elkhorn Coral)">Acropora palmata (Elkhorn)</option>
-              <option value="Acropora prolifera (Fused Staghorn)">Acropora prolifera (Fused Staghorn)</option>
-            </optgroup>
-            <optgroup label="Brain Corals">
-              <option value="Pseudodiploria strigosa (Symmetrical Brain)">Pseudodiploria strigosa</option>
-              <option value="Pseudodiploria clivosa (Knobby Brain)">Pseudodiploria clivosa</option>
-              <option value="Diploria labyrinthiformis (Grooved Brain)">Diploria labyrinthiformis</option>
-              <option value="Colpophyllia natans (Boulder Brain)">Colpophyllia natans</option>
-            </optgroup>
-            <optgroup label="Star & Boulder Corals">
-              <option value="Orbicella faveolata (Mountainous Star)">Orbicella faveolata</option>
-              <option value="Orbicella annularis (Boulder Star)">Orbicella annularis</option>
-              <option value="Orbicella franksi (Star Coral)">Orbicella franksi</option>
-              <option value="Montastraea cavernosa (Great Star Coral)">Montastraea cavernosa</option>
-              <option value="Siderastrea siderea (Massive Starlet)">Siderastrea siderea</option>
-            </optgroup>
-            <optgroup label="Plate, Leaf & Finger Corals">
-              <option value="Porites astreoides (Mustard Hill Coral)">Porites astreoides</option>
-              <option value="Porites porites (Clubtip Finger Coral)">Porites porites</option>
-              <option value="Agaricia agaricites (Lettuce Coral)">Agaricia agaricites</option>
-              <option value="Millepora alcicornis (Branching Fire Coral)">Millepora alcicornis</option>
-            </optgroup>
-            <optgroup label="Other Categories">
-              <option value="Unidentified Coral">Unidentified Coral</option>
-              <option value="Non-Coral / Substrate">Non-Coral / Substrate</option>
-            </optgroup>
-          </select>
-        </div>
-
-        <div class="btn-group">
-          <button class="btn btn-secondary" onclick="navigateModel(-1)">Previous</button>
-          <button class="btn" onclick="saveAndNext()">Save & Next</button>
-        </div>
-      </div>
     </div>
 
-    <!-- View 2: Virtual Folders -->
-    <div id="foldersView" class="folder-container"></div>
-  </main>
+    <div class="gallery" id="gallery">
+        <!-- Project 145 Example -->
+        <div class="model-card" data-category="massive">
+            <img src="placeholder-145.jpg" alt="Project 145 Thumbnail">
+            <div class="model-info">
+                <h3>Project 145</h3>
+                <span class="tag">Massive / Boulder Coral</span>
+                <p><strong>Genus:</strong> <em>Orbicella</em></p>
+            </div>
+        </div>
 
-  <script>
-    let models = [];
-    let currentIndex = 0;
+        <!-- Project 188 Example -->
+        <div class="model-card" data-category="brain">
+            <img src="placeholder-188.jpg" alt="Project 188 Thumbnail">
+            <div class="model-info">
+                <h3>Project 188</h3>
+                <span class="tag">Brain Coral</span>
+                <p><strong>Genus:</strong> <em>Pseudodiploria</em></p>
+            </div>
+        </div>
 
-    // Load data from JSON and LocalStorage cache
-    async function initApp() {
-      try {
-        const response = await fetch('kiri-models.json');
-        const data = await response.json();
-        models = data.models || [];
+        <!-- Project 522 Example -->
+        <div class="model-card" data-category="terrestrial">
+            <img src="placeholder-522.jpg" alt="Project 522 Thumbnail">
+            <div class="model-info">
+                <h3>Project 522</h3>
+                <span class="tag">Terrestrial Mammal</span>
+                <p><strong>Genus:</strong> <em>Bradypus</em></p>
+            </div>
+        </div>
 
-        // Load saved classifications from localStorage if available
-        const savedData = localStorage.getItem('coralClassifications');
-        if (savedData) {
-          const classifications = JSON.parse(savedData);
-          models.forEach(m => {
-            if (classifications[m.id]) m.genus = classifications[m.id];
-          });
-        }
+        <!-- Project 609 Example -->
+        <div class="model-card" data-category="invertebrate">
+            <img src="placeholder-609.jpg" alt="Project 609 Thumbnail">
+            <div class="model-info">
+                <h3>Project 609</h3>
+                <span class="tag">Horseshoe Crab</span>
+                <p><strong>Genus:</strong> <em>Limulus</em></p>
+            </div>
+        </div>
+    </div>
 
-        if (models.length > 0) loadModel(0);
-      } catch (err) {
-        alert('Error loading kiri-models.json. Ensure the JSON file is placed in the root directory.');
-      }
-    }
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.model-card');
 
-    function loadModel(index) {
-      if (index < 0 || index >= models.length) return;
-      currentIndex = index;
-      const m = models[currentIndex];
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
 
-      document.getElementById('modelFrame').src = m.embedUrl;
-      document.getElementById('modelTitle').innerText = m.name || `Project ${m.id}`;
-      document.getElementById('modelIndex').innerText = `Model ${currentIndex + 1} of ${models.length}`;
-      document.getElementById('modelId').innerText = `ID: ${m.id}`;
-      document.getElementById('coralClass').value = m.genus || '';
-    }
-
-    function saveAndNext() {
-      const selectedClass = document.getElementById('coralClass').value;
-      models[currentIndex].genus = selectedClass;
-      models[currentIndex].identificationStatus = selectedClass ? 'reviewed' : 'unreviewed';
-
-      // Persist locally
-      saveToLocalStorage();
-
-      if (currentIndex < models.length - 1) {
-        loadModel(currentIndex + 1);
-      } else {
-        alert('You have reached the last model!');
-      }
-    }
-
-    function navigateModel(direction) {
-      loadModel(currentIndex + direction);
-    }
-
-    function saveToLocalStorage() {
-      const map = {};
-      models.forEach(m => { if (m.genus) map[m.id] = m.genus; });
-      localStorage.setItem('coralClassifications', JSON.stringify(map));
-    }
-
-    function switchTab(tab) {
-      document.getElementById('tabClassify').classList.toggle('active', tab === 'classify');
-      document.getElementById('tabFolders').classList.toggle('active', tab === 'folders');
-      
-      document.getElementById('classifierView').style.display = (tab === 'classify') ? 'flex' : 'none';
-      document.getElementById('foldersView').style.display = (tab === 'folders') ? 'flex' : 'none';
-
-      if (tab === 'folders') renderFolderView();
-    }
-
-    function renderFolderView() {
-      const folderContainer = document.getElementById('foldersView');
-      folderContainer.innerHTML = '';
-
-      // Group models by classification/genus
-      const groups = {};
-      models.forEach(m => {
-        const folderName = m.genus ? `Folder: /${m.genus}` : 'Folder: /Unclassified';
-        if (!groups[folderName]) groups[folderName] = [];
-        groups[folderName].push(m);
-      });
-
-      for (const [folderName, items] of Object.entries(groups)) {
-        const section = document.createElement('div');
-        section.className = 'folder-section';
-
-        const header = document.createElement('div');
-        header.className = 'folder-header';
-        header.innerHTML = `<span>${folderName}</span> <span>(${items.length} items)</span>`;
-        section.appendChild(header);
-
-        const grid = document.createElement('div');
-        grid.className = 'grid';
-
-        items.forEach(m => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.onclick = () => {
-            switchTab('classify');
-            loadModel(models.findIndex(item => item.id === m.id));
-          };
-          card.innerHTML = `
-            <img src="${m.thumbnailUrl}" alt="${m.name}" loading="lazy" />
-            <p>${m.name}</p>
-          `;
-          grid.appendChild(card);
+                // Filter logic
+                const filterValue = btn.getAttribute('data-filter');
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
         });
-
-        section.appendChild(grid);
-        folderContainer.appendChild(section);
-      }
-    }
-
-    function exportJSON() {
-      const exportData = {
-        exportedAt: new Date().toISOString(),
-        complete: true,
-        expectedTotal: models.length,
-        exportedCount: models.length,
-        models: models
-      };
-
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData, null, 2));
-      const downloadAnchor = document.createElement('a');
-      downloadAnchor.setAttribute("href", dataStr);
-      downloadAnchor.setAttribute("download", "kiri-models-classified.json");
-      document.body.appendChild(downloadAnchor);
-      downloadAnchor.click();
-      downloadAnchor.remove();
-    }
-
-    window.onload = initApp;
-  </script>
+    </script>
 </body>
 </html>
