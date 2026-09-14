@@ -1,0 +1,4934 @@
+{
+ "version": 1,
+ "labels": {
+  "2249481": {
+   "class": "mussa_angulosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan; Trial1 and Project 1 are the same colony",
+   "needsReview": false,
+   "at": "2026-09-14T18:11:21Z"
+  },
+  "2249482": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "same colony as rows 4/5/7",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2249484": {
+   "class": "mussa_angulosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan; Trial1 and Project 1 are the same colony",
+   "needsReview": false,
+   "at": "2026-09-14T18:11:21Z"
+  },
+  "2249499": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "same colony as rows 2/5/7",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2249505": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "re-edit of row 2",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2249511": {
+   "class": "stony_unknown",
+   "confidence": 0.25,
+   "source": "ai",
+   "note": "pale smooth slab - could be a bleached massive or a sponge",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2249521": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "re-edit of row 4",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2251883": {
+   "class": "porites_astreoides",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "yellow mound on rock",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2252526": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "dark mound",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2255635": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "agrees with your project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2261729": {
+   "class": "unclear",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "colour card on sand - subject not in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2261924": {
+   "class": "stony_unknown",
+   "confidence": 0.25,
+   "source": "ai",
+   "note": "colony only half in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2262314": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2262318": {
+   "class": "siderastrea_siderea",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "fine even corallites over a smooth dome",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2262357": {
+   "class": "unclear",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "colour card - subject not in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2268959": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "large well-spaced corallites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2271863": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275364": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "staghorn branches - rows 18-20 same dive",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275373": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275376": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275379": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275437": {
+   "class": "pseudodiploria_clivosa",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "knobby surface",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275447": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "rounded head with even meanders",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2275448": {
+   "class": "madracis",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan as Madracis; species not specified",
+   "needsReview": false,
+   "at": "2026-09-14T18:11:30Z"
+  },
+  "2275452": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "large pale head",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2278451": {
+   "class": "millepora_spp",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "bright yellow bladed branches - could equally be Porites porites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2278492": {
+   "class": "orbicella",
+   "confidence": 0.6,
+   "source": "human",
+   "note": "Matan: possibly Orbicella, small polyps",
+   "needsReview": true,
+   "at": "2026-09-14T18:09:59Z"
+  },
+  "2280848": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2280852": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "broad meanders across a large surface",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2280861": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "large massive colony - genus not readable",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2280867": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2280868": {
+   "class": "stony_unknown",
+   "confidence": 0.25,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2280876": {
+   "class": "stony_unknown",
+   "confidence": 0.25,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282206": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "agrees with your project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282221": {
+   "class": "madracis_auretenra",
+   "confidence": 0.7,
+   "source": "ai",
+   "note": "yellow pencil coral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282233": {
+   "class": "madracis_auretenra",
+   "confidence": 0.7,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282236": {
+   "class": "madracis_auretenra",
+   "confidence": 0.7,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282238": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "staghorn fragments on substrate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282242": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282253": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "dark brown dome - reads as M. cavernosa not Orbicella",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282259": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "dark brown dome - reads as M. cavernosa not Orbicella",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282266": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282278": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282301": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "fragment among sea plumes",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282306": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2282604": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2285224": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "agrees with your project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2285604": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:33Z"
+  },
+  "2285606": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2285609": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "branching colony, staghorn habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286134": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286136": {
+   "class": "gorgonian_sea_fan",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "fan-shaped, reads as an octocoral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286138": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286140": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286144": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286146": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286150": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286153": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "branching colony, staghorn habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286154": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286157": {
+   "class": "gorgonian_sea_fan",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "fan-shaped, reads as an octocoral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286160": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286166": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286170": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2286180": {
+   "class": "unclear",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "indoor photo, not a reef subject",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2288705": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "broad meandering plate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2288730": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "radiating rosette valleys",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289490": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289635": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "broad meandering plate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289639": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "broad meandering plate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289643": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289645": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "scattered large corallites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289646": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "radiating rosette valleys",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289647": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289651": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289654": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289656": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "broad meandering plate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289659": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289661": {
+   "class": "sponge",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "tube sponges",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289663": {
+   "class": "artificial",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "wreck structure - from the project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289669": {
+   "class": "artificial",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "wreck structure - from the project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2289670": {
+   "class": "porites_astreoides",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2292390": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2292406": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2292936": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "radiating rosette valleys",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2292938": {
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:09:59Z"
+  },
+  "2292939": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2292941": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295588": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295590": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295594": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295600": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295608": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295615": {
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:09:59Z"
+  },
+  "2295622": {
+   "class": "agaricia_agaricites",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295627": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295635": {
+   "class": "unclear",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "too dark/distant to read",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295699": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295701": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295704": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295715": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295719": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295721": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295724": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2295728": {
+   "class": "acropora",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "project name says Acropora; encrusting/branching base",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2297829": {
+   "class": "antipatharia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "project name says black coral wall",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2297943": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "named 'black coral wall' but the thumbnail shows a massive stony coral - worth checking",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2297954": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "named 'black coral wall' but the thumbnail shows a massive stony coral - worth checking",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2297959": {
+   "class": "substrate",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298915": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298919": {
+   "class": "porites_porites",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "finger/knob habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298927": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298932": {
+   "class": "agaricia_agaricites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298943": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298948": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "staghorn; 117/118 look like a nursery",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298953": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "staghorn; 117/118 look like a nursery",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298955": {
+   "class": "artificial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor, equipment on a table",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298961": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "staghorn; 117/118 look like a nursery",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2298964": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "staghorn; 117/118 look like a nursery",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2301612": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302002": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302006": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302011": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302016": {
+   "class": "pseudodiploria_clivosa",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "knobby surface",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302021": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302023": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302033": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302035": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302044": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302049": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302052": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302057": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302059": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302063": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302066": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "agrees with your project name",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302071": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302074": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302076": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302078": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2302445": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305449": {
+   "class": "agaricia_agaricites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305480": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305517": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305538": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305860": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305864": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305872": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305880": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305893": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305904": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2305924": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2306130": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2306148": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2306162": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2306189": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2308569": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309551": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309573": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309594": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309607": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309616": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309626": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309637": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309748": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "fleshy ridges",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309764": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2309800": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2310772": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2310794": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2310822": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2310982": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2311027": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2311056": {
+   "class": "agaricia_agaricites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312132": {
+   "class": "stony_unknown",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "dark radiating disc - could be Scolymia",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312179": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312198": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312229": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312236": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312245": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312255": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312277": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312305": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312313": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312442": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312466": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "thick ridges with a groove along the crest",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312491": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312546": {
+   "class": "porites_porites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312564": {
+   "class": "porites_porites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312648": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "fleshy ridges",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312655": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312668": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312686": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312699": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312705": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312716": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312730": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312769": {
+   "class": "mussa_angulosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:12:20Z"
+  },
+  "2312785": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312796": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2312800": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2315950": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2315960": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2315993": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316058": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316075": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316088": {
+   "class": "unclear",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "thumbnail failed to render - check this scan",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316196": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316210": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316214": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316222": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316227": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2316250": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318369": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318376": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318388": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318406": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "confirmed by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:09:59Z"
+  },
+  "2318414": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "large well-spaced corallites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318420": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318454": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318459": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318462": {
+   "class": "porites_astreoides",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318468": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318490": {
+   "class": "siderastrea_siderea",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "fine even corallites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318500": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318504": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318507": {
+   "class": "siderastrea_siderea",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "fine even corallites",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318511": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318514": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318524": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318529": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318534": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318535": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318540": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318543": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318546": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318549": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318554": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318556": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318561": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318569": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318571": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318574": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318591": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2318758": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2324093": {
+   "class": "artificial",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "indoor photo, an insect on a floor",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331062": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2331065": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331069": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331075": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331078": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331080": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331087": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331089": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331209": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331212": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331213": {
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:12:20Z"
+  },
+  "2331216": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331223": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2331233": {
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:09:59Z"
+  },
+  "2331242": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2336817": {
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:12:11Z"
+  },
+  "2336845": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2336850": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337078": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2337079": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337084": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337085": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337086": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337089": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337094": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337097": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337102": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337106": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337108": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2337112": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340373": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340385": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340388": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340396": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340403": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340404": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340423": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340424": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340434": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340435": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340438": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340440": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340442": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340447": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340451": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340455": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340458": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340460": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340467": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2340471": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343564": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343728": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343730": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343732": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343735": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343737": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343739": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343740": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343743": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343744": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343750": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343753": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:10:50Z"
+  },
+  "2343755": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343757": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343760": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:10:50Z"
+  },
+  "2343763": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343766": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343773": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343775": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343780": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343781": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343784": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343794": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343795": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343798": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343801": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:10:50Z"
+  },
+  "2343803": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2343805": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347022": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347024": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347028": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347190": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347191": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347193": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347194": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347198": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347201": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347203": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan",
+   "needsReview": false,
+   "at": "2026-09-14T18:10:50Z"
+  },
+  "2347206": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347210": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347213": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347215": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2347217": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350300": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350303": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350310": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350313": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350318": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350323": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350325": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350330": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350334": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350336": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350339": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350341": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2350343": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367230": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367235": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367236": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367238": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367245": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367272": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367273": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367275": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367277": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367280": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367282": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367285": {
+   "class": "scene_multi",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "several colonies in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367288": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367290": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367292": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367293": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367296": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367302": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.45,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2367303": {
+   "class": "scene_multi",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "several colonies in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2370594": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372655": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372659": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372660": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372662": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372663": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372668": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372670": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372672": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372674": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372676": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372678": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372680": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372683": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372684": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372686": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372688": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372691": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372694": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372696": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372698": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2372699": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373876": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373890": {
+   "class": "porites_porites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373911": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373915": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373925": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373928": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373929": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373930": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373931": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373937": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373940": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373942": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373947": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373950": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "small solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373954": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373962": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373964": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373967": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373970": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373972": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373975": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373976": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373978": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373982": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373986": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373987": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2373988": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373990": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2373991": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373995": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2373997": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2374517": {
+   "class": "porites_porites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2377989": {
+   "class": "fish_other_fauna",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "sea star on the substrate",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378001": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378002": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378005": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378008": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378014": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378016": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2378018": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385227": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385229": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385230": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385233": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385234": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385237": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385238": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385239": {
+   "class": "montastraea_cavernosa",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385240": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385241": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385242": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2385243": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385246": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385247": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385249": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385250": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385253": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385254": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385255": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385258": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385259": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385260": {
+   "class": "eusmilia_fastigiata",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan; rare in this collection",
+   "needsReview": false,
+   "at": "2026-09-14T18:13:39Z"
+  },
+  "2385262": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385265": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385268": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385269": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385272": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385274": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385275": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2385278": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388150": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388154": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388159": {
+   "class": "sponge",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388161": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388167": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388169": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388182": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388200": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388202": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388204": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388207": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388210": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388214": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388221": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388224": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388227": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388230": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388233": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388234": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388235": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388238": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388243": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2388248": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2391651": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2391949": {
+   "class": "diploria_labyrinthiformis",
+   "confidence": 0.38,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2391955": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2391958": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2391967": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392101": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392102": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392104": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392105": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392107": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392108": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392109": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392111": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392112": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392115": {
+   "class": "meandrina_meandrites",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392118": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392121": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392123": {
+   "class": "siderastrea_siderea",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392124": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392125": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2392127": {
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2395555": {
+   "class": "gorgonian_sea_rod",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "branching octocoral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395897": {
+   "class": "acropora_cervicornis",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395898": {
+   "class": "substrate",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "bare rock and the colour card",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395903": {
+   "class": "substrate",
+   "confidence": 0.33,
+   "source": "ai",
+   "note": "bare rock and the colour card",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395907": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395909": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395911": {
+   "class": "gorgonian_sea_rod",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "branching octocoral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395914": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395916": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395918": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395920": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395921": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395922": {
+   "class": "artificial",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "object on a line in midwater",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395925": {
+   "class": "fish_other_fauna",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "sea star on seagrass",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395926": {
+   "class": "gorgonian_sea_rod",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "branching octocoral",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395928": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2395930": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "fleshy ridged cactus-coral habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2410934": {
+   "class": "fish_other_fauna",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "sloth in a tree - terrestrial",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440854": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440856": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440860": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440862": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440863": {
+   "class": "substrate",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440864": {
+   "class": "colpophyllia_natans",
+   "confidence": 0.37,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2440867": {
+   "class": "dichocoenia_stokesi",
+   "confidence": 1,
+   "source": "human",
+   "note": "identified by Matan from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:08:11Z"
+  },
+  "2442376": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442378": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442381": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442388": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442391": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442393": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442402": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442406": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442411": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442415": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442431": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442435": {
+   "class": "unclear",
+   "confidence": 0.35,
+   "source": "ai",
+   "note": "close-up of the colour card, subject not in frame",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442442": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442448": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.42,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442451": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442458": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442473": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442474": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442477": {
+   "class": "scolymia_isophyllia",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "solitary/near-solitary disc",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442489": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442496": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442498": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442591": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442595": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442608": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2442612": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2445828": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2445830": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2445832": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2446024": {
+   "class": "mycetophyllia_spp",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2446029": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2446045": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447701": {
+   "class": "algae",
+   "confidence": 0.3,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447702": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447705": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447707": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447708": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447710": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447711": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447713": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447715": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447719": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447720": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447722": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447726": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447728": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447729": {
+   "class": "agaricia_lamarcki",
+   "confidence": 0.32,
+   "source": "ai",
+   "note": "plate/lettuce habit",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447734": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447738": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447739": {
+   "class": "stony_unknown",
+   "confidence": 0.28,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2447743": {
+   "class": "pseudodiploria_strigosa",
+   "confidence": 0.4,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2536825": {
+   "class": "artificial",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "indoor, notebook and paperwork",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "3284864": {
+   "class": "artificial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "public statue",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2411515": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420407": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420576": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420597": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420606": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420609": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420614": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420619": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420622": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420625": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420630": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420634": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420638": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420643": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420662": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420673": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420691": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420720": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420789": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420814": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2425704": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2449766": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2449772": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2449819": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899190": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899193": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899208": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899219": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899239": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899255": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899257": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899286": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2899292": {
+   "class": "dry_specimen",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2904600": {
+   "class": "terrestrial",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "potted plant",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  }
+ },
+ "updatedAt": "2026-09-14T18:13:39Z"
+}
