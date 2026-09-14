@@ -582,3 +582,53 @@ footer {
   padding: 1.5rem 1rem 2rem;
   color: #6b7280;
 }
+
+
+/* One-model coral classification workflow. All rules scoped to this page. */
+body.coral-sorter { background:#fff; color:#172b32; font-family:Arial,Helvetica,sans-serif; line-height:1.45; }
+body.coral-sorter [hidden] { display:none !important; }
+body.coral-sorter .sorter-main { max-width:1500px; padding:22px; margin:0 auto; }
+body.coral-sorter h1 { margin:0 0 5px; font-size:1.6rem; }
+body.coral-sorter h2 { margin:0 0 10px; font-size:1.2rem; }
+body.coral-sorter p { margin:6px 0; }
+body.coral-sorter .sorter-top { display:flex; justify-content:space-between; gap:20px; align-items:center; padding-bottom:16px; border-bottom:1px solid #ddd; }
+body.coral-sorter .sorter-tools { display:flex; flex-wrap:wrap; gap:8px; }
+body.coral-sorter button,body.coral-sorter input { font:inherit; }
+body.coral-sorter button { cursor:pointer; border:1px solid #bdc9ce; border-radius:5px; background:#fff; color:#172b32; padding:9px 12px; }
+body.coral-sorter button:hover { background:#edf4f6; }
+body.coral-sorter button:disabled { opacity:.45; cursor:default; }
+body.coral-sorter :focus-visible { outline:3px solid #237ca0; outline-offset:3px; }
+body.coral-sorter button[aria-pressed=true] { background:#d5ebe1; border-color:#287256; }
+body.coral-sorter .progress-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; padding:14px 0; font-size:.9rem; }
+body.coral-sorter progress { width:180px; height:10px; accent-color:#287256; }
+body.coral-sorter .storage-note { font-size:.8rem; color:#56656b; }
+body.coral-sorter .workspace { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr); gap:24px; padding-top:12px; }
+body.coral-sorter .model-panel { min-width:0; }
+body.coral-sorter .model-viewer { width:100%; height:65vh; min-height:380px; background:#f5f5f5; border:1px solid #ddd; }
+body.coral-sorter iframe { display:block; width:100%; height:100%; border:0; }
+body.coral-sorter .model-tools { display:flex; flex-wrap:wrap; align-items:center; gap:15px; margin-top:12px; font-size:.9rem; }
+body.coral-sorter a { color:#185777; }
+body.coral-sorter .genus-choices { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; margin-top:15px; }
+body.coral-sorter .genus-choice { font-size:.84rem; font-style:italic; padding:10px 5px; overflow-wrap:anywhere; }
+body.coral-sorter .special-choices { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; margin-top:16px; }
+body.coral-sorter .special-choice { font-size:.83rem; background:#f4f4f4; padding:10px 5px; }
+body.coral-sorter .custom-form { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:15px; }
+body.coral-sorter .custom-form label { width:100%; font-size:.85rem; }
+body.coral-sorter input[type=text] { min-width:0; flex:1; padding:9px; border:1px solid #bdc9ce; border-radius:4px; }
+body.coral-sorter .feedback { min-height:1.3em; color:#245e47; font-size:.85rem; }
+body.coral-sorter #custom-error { color:#a12222; font-size:.85rem; }
+body.coral-sorter .groups-view,body.coral-sorter .complete-view { padding:30px 0; }
+body.coral-sorter #group-list details { border-bottom:1px solid #ddd; padding:12px 0; }
+body.coral-sorter summary { cursor:pointer; font-weight:600; }
+body.coral-sorter #group-list ul { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; list-style:none; padding:15px 0; margin:0; }
+@media(max-width:950px) {
+  body.coral-sorter .workspace { grid-template-columns:1fr; }
+  body.coral-sorter .model-viewer { height:48vh; min-height:300px; }
+  body.coral-sorter .genus-choices { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  body.coral-sorter .sorter-top { align-items:flex-start; flex-direction:column; }
+}
+@media(max-width:550px) {
+  body.coral-sorter .sorter-main { padding:14px; }
+  body.coral-sorter .genus-choices { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  body.coral-sorter .sorter-tools button { font-size:.8rem; }
+}
