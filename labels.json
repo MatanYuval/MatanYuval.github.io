@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:51:38.619Z",
+ "updatedAt": "2026-09-15T12:52:02.979Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 397,
-  "awaitingReview": 220
+  "confirmedByAuthor": 401,
+  "awaitingReview": 216
  },
  "labels": {
   "2249481": {
@@ -1971,12 +1971,12 @@
    "at": "2026-09-14T18:08:11Z"
   },
   "2331065": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:51:54.401Z"
   },
   "2331069": {
    "class": "diploria_labyrinthiformis",
@@ -2523,12 +2523,12 @@
    "at": "2026-09-15T12:17:49.059Z"
   },
   "2343781": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:51:54.401Z"
   },
   "2343784": {
    "class": "colpophyllia_natans",
@@ -2691,20 +2691,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2347215": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:51:54.401Z"
   },
   "2347217": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:51:54.401Z"
   },
   "2350300": {
    "class": "other_stony",
