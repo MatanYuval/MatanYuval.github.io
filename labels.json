@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:23:23.648Z",
+ "updatedAt": "2026-09-15T12:23:37.369Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 237,
-  "awaitingReview": 380
+  "confirmedByAuthor": 238,
+  "awaitingReview": 379
  },
  "labels": {
   "2249481": {
@@ -1403,12 +1403,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2312198": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "acropora_cervicornis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:23:28.705Z"
   },
   "2312229": {
    "class": "mycetophyllia_spp",
