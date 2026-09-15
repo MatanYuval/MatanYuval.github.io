@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T13:02:06.635Z",
+ "updatedAt": "2026-09-15T13:03:25.634Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 421,
-  "awaitingReview": 196
+  "confirmedByAuthor": 427,
+  "awaitingReview": 190
  },
  "labels": {
   "2249481": {
@@ -4403,12 +4403,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2440864": {
-   "class": "colpophyllia_natans",
-   "confidence": 0.37,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.040Z"
   },
   "2440867": {
    "class": "dichocoenia_stokesi",
@@ -4531,12 +4531,12 @@
    "at": "2026-09-15T12:11:37.960Z"
   },
   "2442451": {
-   "class": "scolymia_isophyllia",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "solitary/near-solitary disc",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.040Z"
   },
   "2442458": {
    "class": "mycetophyllia_spp",
@@ -4619,12 +4619,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2442612": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.040Z"
   },
   "2445828": {
    "class": "colpophyllia_natans",
@@ -4691,12 +4691,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2447705": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.040Z"
   },
   "2447707": {
    "class": "agaricia_lamarcki",
@@ -4723,12 +4723,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2447711": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.039Z"
   },
   "2447713": {
    "class": "dichocoenia_stokesi",
@@ -4795,12 +4795,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2447734": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:03:17.040Z"
   },
   "2447738": {
    "class": "mycetophyllia_spp",
