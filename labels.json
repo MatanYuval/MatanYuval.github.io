@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:42:12.794Z",
+ "updatedAt": "2026-09-15T12:42:23.001Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 355,
-  "awaitingReview": 262
+  "confirmedByAuthor": 357,
+  "awaitingReview": 260
  },
  "labels": {
   "2249481": {
@@ -3475,20 +3475,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2385230": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:42:14.436Z"
   },
   "2385233": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:42:14.436Z"
   },
   "2385234": {
    "class": "montastraea_cavernosa",
