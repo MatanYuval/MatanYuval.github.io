@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T13:04:06.914Z",
+ "updatedAt": "2026-09-15T13:04:23.474Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 429,
-  "awaitingReview": 188
+  "confirmedByAuthor": 431,
+  "awaitingReview": 186
  },
  "labels": {
   "2249481": {
@@ -4363,12 +4363,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2440854": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:04:08.439Z"
   },
   "2440856": {
    "class": "mycetophyllia_spp",
@@ -4419,12 +4419,12 @@
    "at": "2026-09-14T18:08:11Z"
   },
   "2442376": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "acropora_palmata",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:04:14.907Z"
   },
   "2442378": {
    "class": "colpophyllia_natans",
