@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:29:37.169Z",
+ "updatedAt": "2026-09-15T12:30:18.931Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 262,
-  "awaitingReview": 355
+  "confirmedByAuthor": 265,
+  "awaitingReview": 352
  },
  "labels": {
   "2249481": {
@@ -699,20 +699,20 @@
    "at": "2026-09-14T18:09:59Z"
   },
   "2292939": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:30:10.271Z"
   },
   "2292941": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:30:10.271Z"
   },
   "2295588": {
    "class": "agaricia_agaricites",
@@ -787,12 +787,12 @@
    "at": "2026-09-15T12:25:53.756Z"
   },
   "2295699": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:30:10.271Z"
   },
   "2295701": {
    "class": "montastraea_cavernosa",
