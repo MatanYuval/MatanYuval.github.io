@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:46:00.783Z",
+ "updatedAt": "2026-09-15T11:46:26.656Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 164,
-  "awaitingReview": 453
+  "confirmedByAuthor": 165,
+  "awaitingReview": 452
  },
  "labels": {
   "2249481": {
@@ -891,12 +891,12 @@
    "at": "2026-09-15T11:42:01.484Z"
   },
   "2298919": {
-   "class": "porites_porites",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "finger/knob habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "madracis_auretenra",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:46:18.084Z"
   },
   "2298927": {
    "class": "stony_unknown",
