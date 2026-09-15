@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:47:46.390Z",
+ "updatedAt": "2026-09-15T11:48:23.126Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 169,
-  "awaitingReview": 448
+  "confirmedByAuthor": 173,
+  "awaitingReview": 444
  },
  "labels": {
   "2249481": {
@@ -59,12 +59,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2249511": {
-   "class": "stony_unknown",
-   "confidence": 0.25,
-   "source": "ai",
-   "note": "pale smooth slab - could be a bleached massive or a sponge",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:48:14.166Z"
   },
   "2249521": {
    "class": "colpophyllia_natans",
@@ -251,12 +251,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2280861": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "large massive colony - genus not readable",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:48:14.166Z"
   },
   "2280867": {
    "class": "colpophyllia_natans",
@@ -771,12 +771,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2295627": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:48:14.166Z"
   },
   "2295635": {
    "class": "unclear",
@@ -1123,12 +1123,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302445": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:48:14.166Z"
   },
   "2305449": {
    "class": "mycetophyllia_spp",
