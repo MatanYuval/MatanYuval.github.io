@@ -66,6 +66,9 @@ label.field{display:block;font-size:12px;color:var(--muted);margin:8px 0 3px}
 .folder h3{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:15px;margin:0 0 9px}
 .folder h3 > span{min-width:0;overflow-wrap:anywhere}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px}
+#folders.fixedcols .tiles{grid-template-columns:repeat(var(--per,5),minmax(0,1fr))}
+@media (max-width:900px){#folders.fixedcols .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){#folders.fixedcols .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .tile{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);
   cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit}
 .tile:hover{border-color:var(--accent)}
@@ -381,6 +384,14 @@ input[type=range]{width:120px;padding:0}
         <select id="jump" style="width:auto"><option value="">Jump to class…</option></select>
         <select id="bsite" style="width:auto"><option value="">All sites</option></select>
         <input type="search" id="bsearch" placeholder="Search model name…" style="width:auto;flex:1;min-width:170px">
+        <select id="bper" style="width:auto" title="Thumbnails per row">
+          <option value="">Fit to width</option>
+          <option value="3">3 per row</option>
+          <option value="4">4 per row</option>
+          <option value="5">5 per row</option>
+          <option value="6">6 per row</option>
+          <option value="8">8 per row</option>
+        </select>
         <label class="row" style="gap:5px;font-size:13px">
           <input type="checkbox" id="showUn" style="width:auto"> show unlabelled
         </label>
@@ -1479,6 +1490,17 @@ $('#modelDlg').addEventListener('close', () => { $('#dViewer').innerHTML=''; });
 $('#moveTo').onchange = e => { const v = e.target.value; e.target.value = ''; moveSelected(v); };
 $('#selClear').onclick = () => { picked.clear(); lastPick = null; renderBrowse(); selBar(); };
 $('#selTo3d').onclick = () => { if (picked.size) show3d([...picked]); };
+const LSPER = 'kiri-coral-percol';
+function applyPerRow(){
+  const v = $('#bper').value, host = $('#folders');
+  if (v){ host.classList.add('fixedcols'); host.style.setProperty('--per', v); }
+  else  { host.classList.remove('fixedcols'); host.style.removeProperty('--per'); }
+  try { v ? localStorage.setItem(LSPER, v) : localStorage.removeItem(LSPER); } catch(e) {}
+}
+try { const v = localStorage.getItem(LSPER); if (v) $('#bper').value = v; } catch(e) {}
+applyPerRow();
+$('#bper').onchange = applyPerRow;
+
 $('#bsearch').oninput = () => { renderBrowse(); selBar(); };
 $('#bsite').onchange = () => { renderBrowse(); selBar(); };
 $('#showUn').onchange = () => { renderBrowse(); selBar(); };
