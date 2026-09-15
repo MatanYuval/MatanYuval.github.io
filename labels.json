@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:59:16.042Z",
+ "updatedAt": "2026-09-15T11:59:43.437Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 196,
-  "awaitingReview": 421
+  "confirmedByAuthor": 198,
+  "awaitingReview": 419
  },
  "labels": {
   "2249481": {
@@ -83,12 +83,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2252526": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "dark mound",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:59:34.803Z"
   },
   "2255635": {
    "class": "colpophyllia_natans",
@@ -115,12 +115,12 @@
    "at": "2026-09-15T11:59:06.844Z"
   },
   "2262314": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:59:34.803Z"
   },
   "2262318": {
    "class": "siderastrea_siderea",
