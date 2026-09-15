@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:32:19.927Z",
+ "updatedAt": "2026-09-15T12:32:40.313Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 274,
-  "awaitingReview": 343
+  "confirmedByAuthor": 277,
+  "awaitingReview": 340
  },
  "labels": {
   "2249481": {
@@ -3155,12 +3155,12 @@
    "at": "2026-09-15T12:32:09.354Z"
   },
   "2373911": {
-   "class": "agaricia_lamarcki",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:32:31.687Z"
   },
   "2373915": {
    "class": "colpophyllia_natans",
@@ -3251,12 +3251,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373954": {
-   "class": "agaricia_lamarcki",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:32:40.038Z"
   },
   "2373962": {
    "class": "mycetophyllia_spp",
@@ -3387,12 +3387,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2374517": {
-   "class": "porites_porites",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "eusmilia_fastigiata",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:32:24.721Z"
   },
   "2377989": {
    "class": "fish_other_fauna",
