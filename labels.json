@@ -10,7 +10,7 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:19:54.523Z",
+ "updatedAt": "2026-09-15T12:19:56.339Z",
  "counts": {
   "models": 616,
   "labelled": 616,
