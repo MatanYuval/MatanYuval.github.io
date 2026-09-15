@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:32:40.313Z",
+ "updatedAt": "2026-09-15T12:33:34.768Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 277,
-  "awaitingReview": 340
+  "confirmedByAuthor": 289,
+  "awaitingReview": 328
  },
  "labels": {
   "2249481": {
@@ -2819,20 +2819,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2367235": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.154Z"
   },
   "2367236": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2367238": {
    "class": "stony_unknown",
@@ -2939,12 +2939,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2367296": {
-   "class": "mycetophyllia_spp",
+   "class": "colpophyllia_natans",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T11:38:00.586Z"
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2367302": {
    "class": "colpophyllia_natans",
@@ -3123,12 +3123,12 @@
    "at": "2026-09-15T11:37:08.985Z"
   },
   "2372698": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2372699": {
    "class": "colpophyllia_natans",
@@ -3195,12 +3195,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373930": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2373931": {
    "class": "colpophyllia_natans",
@@ -3259,12 +3259,12 @@
    "at": "2026-09-15T12:32:40.038Z"
   },
   "2373962": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2373964": {
    "class": "mycetophyllia_spp",
@@ -3915,12 +3915,12 @@
    "at": "2026-09-15T11:35:50.903Z"
   },
   "2391967": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392101": {
    "class": "stony_unknown",
@@ -3939,12 +3939,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2392104": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392105": {
    "class": "mycetophyllia_spp",
@@ -3963,36 +3963,36 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2392108": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392109": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392111": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392112": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2392115": {
    "class": "meandrina_meandrites",
@@ -4179,12 +4179,12 @@
    "at": "2026-09-15T11:35:50.903Z"
   },
   "2395930": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.32,
-   "source": "ai",
-   "note": "fleshy ridged cactus-coral habit",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:26.155Z"
   },
   "2410934": {
    "class": "fish_other_fauna",
