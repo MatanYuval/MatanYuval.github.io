@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:46:17.783Z",
+ "updatedAt": "2026-09-15T12:47:43.187Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 370,
-  "awaitingReview": 247
+  "confirmedByAuthor": 376,
+  "awaitingReview": 241
  },
  "labels": {
   "2249481": {
@@ -2011,20 +2011,20 @@
    "at": "2026-09-15T11:40:27.717Z"
   },
   "2331087": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2331089": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2331209": {
    "class": "colpophyllia_natans",
@@ -2035,12 +2035,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2331212": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2331213": {
    "class": "agaricia",
@@ -2163,12 +2163,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337097": {
-   "class": "pseudodiploria_strigosa",
+   "class": "colpophyllia_natans",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T12:06:54.158Z"
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2337102": {
    "class": "pseudodiploria_strigosa",
@@ -2211,12 +2211,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2340385": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2340388": {
    "class": "pseudodiploria_strigosa",
@@ -2611,12 +2611,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2347190": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2347191": {
    "class": "stony_unknown",
@@ -2787,12 +2787,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2350339": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.38,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:47:34.417Z"
   },
   "2350341": {
    "class": "colpophyllia_natans",
