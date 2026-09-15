@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:30:29.117Z",
+ "updatedAt": "2026-09-15T12:30:39.734Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 266,
-  "awaitingReview": 351
+  "confirmedByAuthor": 267,
+  "awaitingReview": 350
  },
  "labels": {
   "2249481": {
@@ -1091,12 +1091,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302071": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:30:31.189Z"
   },
   "2302074": {
    "class": "agaricia",
