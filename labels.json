@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:35:01.848Z",
+ "updatedAt": "2026-09-15T12:35:11.690Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 304,
-  "awaitingReview": 313
+  "confirmedByAuthor": 305,
+  "awaitingReview": 312
  },
  "labels": {
   "2249481": {
@@ -2899,12 +2899,12 @@
    "at": "2026-09-15T11:37:08.985Z"
   },
   "2367285": {
-   "class": "scene_multi",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "several colonies in frame",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:03.055Z"
   },
   "2367288": {
    "class": "pseudodiploria_strigosa",
