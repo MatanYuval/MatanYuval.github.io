@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:24:15.035Z",
+ "updatedAt": "2026-09-15T12:24:45.892Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 241,
-  "awaitingReview": 376
+  "confirmedByAuthor": 245,
+  "awaitingReview": 372
  },
  "labels": {
   "2249481": {
@@ -403,12 +403,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2285606": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:37.055Z"
   },
   "2285609": {
    "class": "acropora_cervicornis",
@@ -467,12 +467,12 @@
    "at": "2026-09-15T11:40:27.717Z"
   },
   "2286150": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:37.055Z"
   },
   "2286153": {
    "class": "acropora_cervicornis",
@@ -499,12 +499,12 @@
    "at": "2026-09-15T11:48:36.752Z"
   },
   "2286160": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:37.055Z"
   },
   "2286166": {
    "class": "porites",
@@ -987,12 +987,12 @@
    "at": "2026-09-15T11:43:01.001Z"
   },
   "2302011": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:37.055Z"
   },
   "2302016": {
    "class": "mussa_angulosa",
