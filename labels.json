@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:33:47.269Z",
+ "updatedAt": "2026-09-15T12:34:06.755Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 290,
-  "awaitingReview": 327
+  "confirmedByAuthor": 293,
+  "awaitingReview": 324
  },
  "labels": {
   "2249481": {
@@ -3435,20 +3435,20 @@
    "at": "2026-09-15T11:35:50.903Z"
   },
   "2378014": {
-   "class": "meandrina_meandrites",
-   "confidence": 0.35,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "pseudodiploria",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:50.904Z"
   },
   "2378016": {
-   "class": "meandrina_meandrites",
-   "confidence": 0.35,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "pseudodiploria",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:50.904Z"
   },
   "2378018": {
    "class": "stony_unknown",
@@ -3995,12 +3995,12 @@
    "at": "2026-09-15T12:33:26.155Z"
   },
   "2392115": {
-   "class": "meandrina_meandrites",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:33:58.353Z"
   },
   "2392118": {
    "class": "mycetophyllia_spp",
