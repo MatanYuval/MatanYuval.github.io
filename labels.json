@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:36:22.972Z",
+ "updatedAt": "2026-09-15T11:36:45.380Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 91,
-  "awaitingReview": 526
+  "confirmedByAuthor": 93,
+  "awaitingReview": 524
  },
  "labels": {
   "2249481": {
@@ -1475,12 +1475,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2312466": {
-   "class": "diploria_labyrinthiformis",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "thick ridges with a groove along the crest",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:36:30.503Z"
   },
   "2312491": {
    "class": "stony_unknown",
@@ -2507,12 +2507,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2343775": {
-   "class": "diploria_labyrinthiformis",
-   "confidence": 0.37,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:36:36.986Z"
   },
   "2343780": {
    "class": "pseudodiploria_strigosa",
