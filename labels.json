@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:59:43.437Z",
+ "updatedAt": "2026-09-15T12:00:29.944Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 198,
-  "awaitingReview": 419
+  "confirmedByAuthor": 202,
+  "awaitingReview": 415
  },
  "labels": {
   "2249481": {
@@ -235,12 +235,12 @@
    "at": "2026-09-14T18:09:59Z"
   },
   "2280848": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:21.395Z"
   },
   "2280852": {
    "class": "colpophyllia_natans",
@@ -267,20 +267,20 @@
    "at": "2026-09-15T11:35:50.903Z"
   },
   "2280868": {
-   "class": "stony_unknown",
-   "confidence": 0.25,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:21.395Z"
   },
   "2280876": {
-   "class": "stony_unknown",
-   "confidence": 0.25,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:21.395Z"
   },
   "2282206": {
    "class": "diploria_labyrinthiformis",
@@ -507,12 +507,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2286166": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "porites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:29.577Z"
   },
   "2286170": {
    "class": "stony_unknown",
