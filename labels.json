@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:34:17.683Z",
+ "updatedAt": "2026-09-15T12:35:01.848Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 294,
-  "awaitingReview": 323
+  "confirmedByAuthor": 304,
+  "awaitingReview": 313
  },
  "labels": {
   "2249481": {
@@ -2811,12 +2811,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2367230": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2367235": {
    "class": "colpophyllia_natans",
@@ -3219,20 +3219,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373940": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2373942": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2373947": {
    "class": "agaricia_agaricites",
@@ -3291,12 +3291,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373972": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2373975": {
    "class": "montastraea_cavernosa",
@@ -3307,12 +3307,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373976": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2373978": {
    "class": "stony_unknown",
@@ -3451,12 +3451,12 @@
    "at": "2026-09-15T12:33:50.904Z"
   },
   "2378018": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2385227": {
    "class": "mycetophyllia_spp",
@@ -3499,20 +3499,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2385237": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2385238": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2385239": {
    "class": "montastraea_cavernosa",
@@ -3883,12 +3883,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2391651": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2391949": {
    "class": "colpophyllia_natans",
@@ -4035,12 +4035,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2392125": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:34:53.287Z"
   },
   "2392127": {
    "class": "montastraea_cavernosa",
