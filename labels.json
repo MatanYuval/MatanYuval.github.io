@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:38:25.389Z",
+ "updatedAt": "2026-09-15T11:40:36.258Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 114,
-  "awaitingReview": 503
+  "confirmedByAuthor": 142,
+  "awaitingReview": 475
  },
  "labels": {
   "2249481": {
@@ -147,12 +147,12 @@
    "at": "2026-09-14T19:04:39.339Z"
   },
   "2271863": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2275364": {
    "class": "acropora_cervicornis",
@@ -211,12 +211,12 @@
    "at": "2026-09-14T20:15:18.136Z"
   },
   "2275452": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "large pale head",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2278451": {
    "class": "millepora_spp",
@@ -284,11 +284,11 @@
   },
   "2282206": {
    "class": "diploria_labyrinthiformis",
-   "confidence": 0.5,
-   "source": "ai",
-   "note": "agrees with your project name",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2282221": {
    "class": "madracis_auretenra",
@@ -380,11 +380,11 @@
   },
   "2282604": {
    "class": "diploria_labyrinthiformis",
-   "confidence": 0.45,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2285224": {
    "class": "mycetophyllia_spp",
@@ -459,12 +459,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2286146": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2286150": {
    "class": "stony_unknown",
@@ -579,12 +579,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2289645": {
-   "class": "montastraea_cavernosa",
-   "confidence": 0.35,
-   "source": "ai",
-   "note": "scattered large corallites",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2289646": {
    "class": "meandrina_meandrites",
@@ -611,12 +611,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2289654": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2289656": {
    "class": "colpophyllia_natans",
@@ -819,12 +819,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2295719": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2295721": {
    "class": "pseudodiploria_strigosa",
@@ -1267,12 +1267,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2309573": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2309594": {
    "class": "agaricia_lamarcki",
@@ -1300,11 +1300,11 @@
   },
   "2309626": {
    "class": "diploria_labyrinthiformis",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "thick ridges with a groove along the crest",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2309637": {
    "class": "pseudodiploria_strigosa",
@@ -1323,12 +1323,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2309764": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2309800": {
    "class": "mycetophyllia_spp",
@@ -1435,12 +1435,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2312255": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2312277": {
    "class": "colpophyllia_natans",
@@ -1515,20 +1515,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2312655": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2312668": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2312686": {
    "class": "stony_unknown",
@@ -1936,7 +1936,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:36:25.108Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2318591": {
    "class": "diploria_labyrinthiformis",
@@ -1944,7 +1944,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:36:25.108Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2318758": {
    "class": "colpophyllia_natans",
@@ -1984,7 +1984,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:36:25.108Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2331075": {
    "class": "mycetophyllia_spp",
@@ -2008,7 +2008,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:36:25.108Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2331087": {
    "class": "pseudodiploria_strigosa",
@@ -2419,12 +2419,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2343740": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343743": {
    "class": "colpophyllia_natans",
@@ -2454,49 +2454,49 @@
    "class": "diploria_labyrinthiformis",
    "confidence": 1,
    "source": "human",
-   "note": "identified by Matan",
+   "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:10:50Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343755": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343757": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343760": {
    "class": "diploria_labyrinthiformis",
    "confidence": 1,
    "source": "human",
-   "note": "identified by Matan",
+   "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:10:50Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343763": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343766": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343773": {
    "class": "pseudodiploria_strigosa",
@@ -2547,60 +2547,60 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2343795": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343798": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343801": {
    "class": "diploria_labyrinthiformis",
    "confidence": 1,
    "source": "human",
-   "note": "identified by Matan",
+   "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:10:50Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343803": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2343805": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2347022": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2347024": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2347028": {
    "class": "pseudodiploria_strigosa",
@@ -2662,9 +2662,9 @@
    "class": "diploria_labyrinthiformis",
    "confidence": 1,
    "source": "human",
-   "note": "identified by Matan",
+   "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:10:50Z"
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2347206": {
    "class": "pseudodiploria_strigosa",
@@ -2971,20 +2971,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2372655": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.38,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2372659": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.38,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2372660": {
    "class": "stony_unknown",
@@ -2995,12 +2995,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2372662": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.38,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:40:27.717Z"
   },
   "2372663": {
    "class": "pseudodiploria_strigosa",
