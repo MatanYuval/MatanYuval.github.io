@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T13:07:37.343Z",
+ "updatedAt": "2026-09-15T13:08:08.330Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 444,
-  "awaitingReview": 173
+  "confirmedByAuthor": 445,
+  "awaitingReview": 172
  },
  "labels": {
   "2249481": {
@@ -224,7 +224,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T11:48:28.751Z"
+   "at": "2026-09-15T13:07:59.921Z"
   },
   "2278492": {
    "class": "orbicella",
@@ -675,12 +675,12 @@
    "at": "2026-09-15T12:00:49.795Z"
   },
   "2292406": {
-   "class": "acropora",
+   "class": "acropora_palmata",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T12:29:28.772Z"
+   "at": "2026-09-15T13:07:59.921Z"
   },
   "2292936": {
    "class": "colpophyllia_natans",
@@ -843,12 +843,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2295728": {
-   "class": "acropora",
-   "confidence": 0.45,
-   "source": "ai",
-   "note": "project name says Acropora; encrusting/branching base",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "acropora_palmata",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:07:59.921Z"
   },
   "2297829": {
    "class": "agaricia_agaricites",
@@ -4680,7 +4680,7 @@
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T13:04:58.794Z"
+   "at": "2026-09-15T13:07:59.921Z"
   },
   "2447702": {
    "class": "colpophyllia_natans",
