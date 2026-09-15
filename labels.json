@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:35:24.712Z",
+ "updatedAt": "2026-09-15T12:35:50.976Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 306,
-  "awaitingReview": 311
+  "confirmedByAuthor": 310,
+  "awaitingReview": 307
  },
  "labels": {
   "2249481": {
@@ -3395,12 +3395,12 @@
    "at": "2026-09-15T12:32:24.721Z"
   },
   "2377989": {
-   "class": "fish_other_fauna",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "sea star on the substrate",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "acropora",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:28.237Z"
   },
   "2378001": {
    "class": "colpophyllia_natans",
@@ -3715,12 +3715,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2388159": {
-   "class": "sponge",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:42.404Z"
   },
   "2388161": {
    "class": "diploria_labyrinthiformis",
@@ -4075,12 +4075,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2395903": {
-   "class": "substrate",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "bare rock and the colour card",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "meandrina_meandrites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:36.205Z"
   },
   "2395907": {
    "class": "stony_unknown",
@@ -4147,12 +4147,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2395922": {
-   "class": "artificial",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "object on a line in midwater",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "acropora",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:28.237Z"
   },
   "2395925": {
    "class": "fish_other_fauna",
