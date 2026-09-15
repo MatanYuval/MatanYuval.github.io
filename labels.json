@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:52:43.883Z",
+ "updatedAt": "2026-09-15T12:53:05.259Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 408,
-  "awaitingReview": 209
+  "confirmedByAuthor": 412,
+  "awaitingReview": 205
  },
  "labels": {
   "2249481": {
@@ -2155,12 +2155,12 @@
    "at": "2026-09-15T12:51:19.585Z"
   },
   "2337094": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:52:56.618Z"
   },
   "2337097": {
    "class": "colpophyllia_natans",
@@ -2179,12 +2179,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337106": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:52:49.816Z"
   },
   "2337108": {
    "class": "colpophyllia_natans",
@@ -2619,12 +2619,12 @@
    "at": "2026-09-15T12:47:34.417Z"
   },
   "2347191": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:52:49.816Z"
   },
   "2347193": {
    "class": "mycetophyllia_spp",
@@ -2683,12 +2683,12 @@
    "at": "2026-09-15T12:48:27.402Z"
   },
   "2347213": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "pseudodiploria",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:53:04.984Z"
   },
   "2347215": {
    "class": "diploria_labyrinthiformis",
