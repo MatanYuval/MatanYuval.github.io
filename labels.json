@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:19:26.435Z",
+ "updatedAt": "2026-09-15T12:19:38.584Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 215,
-  "awaitingReview": 402
+  "confirmedByAuthor": 216,
+  "awaitingReview": 401
  },
  "labels": {
   "2249481": {
@@ -75,12 +75,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2251883": {
-   "class": "porites_astreoides",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "yellow mound on rock",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "pseudodiploria",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:19:30.191Z"
   },
   "2252526": {
    "class": "montastraea_cavernosa",
