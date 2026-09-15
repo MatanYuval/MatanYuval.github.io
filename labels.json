@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:24:45.892Z",
+ "updatedAt": "2026-09-15T12:24:58.723Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 245,
-  "awaitingReview": 372
+  "confirmedByAuthor": 247,
+  "awaitingReview": 370
  },
  "labels": {
   "2249481": {
@@ -443,20 +443,20 @@
    "at": "2026-09-15T11:49:40.052Z"
   },
   "2286140": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:50.339Z"
   },
   "2286144": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:24:50.339Z"
   },
   "2286146": {
    "class": "diploria_labyrinthiformis",
