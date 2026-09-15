@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:45:22.323Z",
+ "updatedAt": "2026-09-15T11:45:42.503Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 162,
-  "awaitingReview": 455
+  "confirmedByAuthor": 164,
+  "awaitingReview": 453
  },
  "labels": {
   "2249481": {
@@ -1011,12 +1011,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302023": {
-   "class": "colpophyllia_natans",
-   "confidence": 0.38,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:45:33.850Z"
   },
   "2302033": {
    "class": "stony_unknown",
@@ -1715,12 +1715,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2318388": {
-   "class": "colpophyllia_natans",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:45:33.850Z"
   },
   "2318406": {
    "class": "montastraea_cavernosa",
