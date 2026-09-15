@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:26:30.113Z",
+ "updatedAt": "2026-09-15T12:27:07.520Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 254,
-  "awaitingReview": 363
+  "confirmedByAuthor": 255,
+  "awaitingReview": 362
  },
  "labels": {
   "2249481": {
@@ -651,12 +651,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2289669": {
-   "class": "artificial",
-   "confidence": 0.5,
-   "source": "ai",
-   "note": "wreck structure - from the project name",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "siderastrea",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:26:58.990Z"
   },
   "2289670": {
    "class": "porites_astreoides",
