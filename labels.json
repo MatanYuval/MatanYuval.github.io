@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T13:07:01.453Z",
+ "updatedAt": "2026-09-15T13:07:37.343Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 443,
-  "awaitingReview": 174
+  "confirmedByAuthor": 444,
+  "awaitingReview": 173
  },
  "labels": {
   "2249481": {
@@ -4507,12 +4507,12 @@
    "at": "2026-09-15T13:03:58.289Z"
   },
   "2442435": {
-   "class": "unclear",
-   "confidence": 0.35,
-   "source": "ai",
-   "note": "close-up of the colour card, subject not in frame",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:07:28.571Z"
   },
   "2442442": {
    "class": "mycetophyllia_spp",
