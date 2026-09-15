@@ -10,7 +10,7 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:01:17.714Z",
+ "updatedAt": "2026-09-15T12:02:48.389Z",
  "counts": {
   "models": 616,
   "labelled": 616,
@@ -579,12 +579,12 @@
    "at": "2026-09-15T12:00:49.795Z"
   },
   "2289645": {
-   "class": "diploria_labyrinthiformis",
+   "class": "montastraea_cavernosa",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T11:40:27.717Z"
+   "at": "2026-09-15T12:02:39.860Z"
   },
   "2289646": {
    "class": "meandrina_meandrites",
