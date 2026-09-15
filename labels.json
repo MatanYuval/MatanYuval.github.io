@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:17:57.708Z",
+ "updatedAt": "2026-09-15T12:19:26.435Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 212,
-  "awaitingReview": 405
+  "confirmedByAuthor": 215,
+  "awaitingReview": 402
  },
  "labels": {
   "2249481": {
@@ -123,12 +123,12 @@
    "at": "2026-09-15T11:59:34.803Z"
   },
   "2262318": {
-   "class": "siderastrea_siderea",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "fine even corallites over a smooth dome",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:19:17.924Z"
   },
   "2262357": {
    "class": "unclear",
@@ -1779,12 +1779,12 @@
    "at": "2026-09-15T11:43:48.451Z"
   },
   "2318490": {
-   "class": "siderastrea_siderea",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "fine even corallites",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:19:17.924Z"
   },
   "2318500": {
    "class": "mycetophyllia_spp",
@@ -1803,12 +1803,12 @@
    "at": "2026-09-15T11:49:40.052Z"
   },
   "2318507": {
-   "class": "siderastrea_siderea",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "fine even corallites",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:19:17.924Z"
   },
   "2318511": {
    "class": "mycetophyllia_spp",
