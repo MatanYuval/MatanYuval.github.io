@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:27:07.520Z",
+ "updatedAt": "2026-09-15T12:27:28.981Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 255,
-  "awaitingReview": 362
+  "confirmedByAuthor": 256,
+  "awaitingReview": 361
  },
  "labels": {
   "2249481": {
@@ -1419,12 +1419,12 @@
    "at": "2026-09-15T12:21:36.874Z"
   },
   "2312236": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:27:20.422Z"
   },
   "2312245": {
    "class": "agaricia_lamarcki",
