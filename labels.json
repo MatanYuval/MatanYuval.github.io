@@ -10,7 +10,7 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:51:28.065Z",
+ "updatedAt": "2026-09-15T12:51:38.619Z",
  "counts": {
   "models": 616,
   "labelled": 616,
@@ -2107,12 +2107,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337078": {
-   "class": "other_stony",
+   "class": "mycetophyllia_spp",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T19:04:39.339Z"
+   "at": "2026-09-15T12:51:30.035Z"
   },
   "2337079": {
    "class": "colpophyllia_natans",
