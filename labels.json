@@ -10,7 +10,7 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:45:42.503Z",
+ "updatedAt": "2026-09-15T11:46:00.783Z",
  "counts": {
   "models": 616,
   "labelled": 616,
@@ -1059,12 +1059,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302057": {
-   "class": "montastraea_cavernosa",
+   "class": "colpophyllia_natans",
    "confidence": 1,
    "source": "human",
    "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-15T11:43:48.451Z"
+   "at": "2026-09-15T11:45:51.917Z"
   },
   "2302059": {
    "class": "colpophyllia_natans",
