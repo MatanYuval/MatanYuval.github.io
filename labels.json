@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:00:29.944Z",
+ "updatedAt": "2026-09-15T12:01:06.378Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 202,
-  "awaitingReview": 415
+  "confirmedByAuthor": 206,
+  "awaitingReview": 411
  },
  "labels": {
   "2249481": {
@@ -571,12 +571,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2289643": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:49.795Z"
   },
   "2289645": {
    "class": "diploria_labyrinthiformis",
@@ -603,12 +603,12 @@
    "at": "2026-09-14T19:05:34.640Z"
   },
   "2289651": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:49.795Z"
   },
   "2289654": {
    "class": "diploria_labyrinthiformis",
@@ -667,12 +667,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2292390": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:49.795Z"
   },
   "2292406": {
    "class": "stony_unknown",
@@ -859,12 +859,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2297943": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "named 'black coral wall' but the thumbnail shows a massive stony coral - worth checking",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "siderastrea",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:00:57.711Z"
   },
   "2297954": {
    "class": "stony_unknown",
