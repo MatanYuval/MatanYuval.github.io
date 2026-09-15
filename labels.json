@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:47:15.107Z",
+ "updatedAt": "2026-09-15T11:47:26.868Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 168,
-  "awaitingReview": 449
+  "confirmedByAuthor": 169,
+  "awaitingReview": 448
  },
  "labels": {
   "2249481": {
@@ -683,12 +683,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2292936": {
-   "class": "meandrina_meandrites",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "radiating rosette valleys",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:47:18.367Z"
   },
   "2292938": {
    "class": "colpophyllia_natans",
