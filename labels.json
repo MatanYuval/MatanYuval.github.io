@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T13:00:47.376Z",
+ "updatedAt": "2026-09-15T13:02:06.635Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 419,
-  "awaitingReview": 198
+  "confirmedByAuthor": 421,
+  "awaitingReview": 196
  },
  "labels": {
   "2249481": {
@@ -4731,20 +4731,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2447713": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "dichocoenia_stokesi",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:01:50.641Z"
   },
   "2447715": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "madracis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T13:01:57.891Z"
   },
   "2447719": {
    "class": "agaricia_lamarcki",
