@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:22:02.276Z",
+ "updatedAt": "2026-09-15T12:23:09.091Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 224,
-  "awaitingReview": 393
+  "confirmedByAuthor": 233,
+  "awaitingReview": 384
  },
  "labels": {
   "2249481": {
@@ -1219,36 +1219,36 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2306130": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2306148": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2306162": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2306189": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2308569": {
    "class": "pseudodiploria",
@@ -1283,12 +1283,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2309607": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mussa_angulosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:53.673Z"
   },
   "2309616": {
    "class": "pseudodiploria_strigosa",
@@ -1451,12 +1451,12 @@
    "at": "2026-09-15T11:45:13.767Z"
   },
   "2312305": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2312313": {
    "class": "meandrina_meandrites",
@@ -1483,12 +1483,12 @@
    "at": "2026-09-15T11:36:30.503Z"
   },
   "2312491": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2312546": {
    "class": "porites_porites",
@@ -1603,12 +1603,12 @@
    "at": "2026-09-15T11:42:43.019Z"
   },
   "2315950": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "agaricia_agaricites",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:22:46.589Z"
   },
   "2315960": {
    "class": "agaricia_lamarcki",
@@ -1739,12 +1739,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2318420": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_isophyllia",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:23:00.539Z"
   },
   "2318454": {
    "class": "agaricia",
