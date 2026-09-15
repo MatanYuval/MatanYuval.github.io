@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:42:10.043Z",
+ "updatedAt": "2026-09-15T11:42:29.152Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 147,
-  "awaitingReview": 470
+  "confirmedByAuthor": 148,
+  "awaitingReview": 469
  },
  "labels": {
   "2249481": {
@@ -723,12 +723,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2295590": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "siderastrea",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:42:20.635Z"
   },
   "2295594": {
    "class": "stony_unknown",
