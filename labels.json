@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:36:04.252Z",
+ "updatedAt": "2026-09-15T12:36:33.147Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 314,
-  "awaitingReview": 303
+  "confirmedByAuthor": 317,
+  "awaitingReview": 300
  },
  "labels": {
   "2249481": {
@@ -3851,12 +3851,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2388235": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:36:24.637Z"
   },
   "2388238": {
    "class": "colpophyllia_natans",
@@ -3931,12 +3931,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2392102": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:36:24.637Z"
   },
   "2392104": {
    "class": "colpophyllia_natans",
@@ -4107,12 +4107,12 @@
    "at": "2026-09-15T12:35:55.853Z"
   },
   "2395914": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:36:24.637Z"
   },
   "2395916": {
    "class": "colpophyllia_natans",
