@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:35:11.690Z",
+ "updatedAt": "2026-09-15T12:35:24.712Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 305,
-  "awaitingReview": 312
+  "confirmedByAuthor": 306,
+  "awaitingReview": 311
  },
  "labels": {
   "2249481": {
@@ -2955,12 +2955,12 @@
    "at": "2026-09-15T12:31:49.171Z"
   },
   "2367303": {
-   "class": "scene_multi",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "several colonies in frame",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mycetophyllia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:35:16.305Z"
   },
   "2370594": {
    "class": "stony_unknown",
