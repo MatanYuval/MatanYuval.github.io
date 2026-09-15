@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T12:40:24.888Z",
+ "updatedAt": "2026-09-15T12:40:45.403Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 343,
-  "awaitingReview": 274
+  "confirmedByAuthor": 346,
+  "awaitingReview": 271
  },
  "labels": {
   "2249481": {
@@ -3187,12 +3187,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373929": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:40:37.019Z"
   },
   "2373930": {
    "class": "colpophyllia_natans",
@@ -3347,12 +3347,12 @@
    "at": "2026-09-14T18:08:11Z"
   },
   "2373988": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:40:37.019Z"
   },
   "2373990": {
    "class": "montastraea_cavernosa",
@@ -3371,12 +3371,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2373995": {
-   "class": "stony_unknown",
-   "confidence": 0.28,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "scolymia_spp",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T12:40:37.019Z"
   },
   "2373997": {
    "class": "pseudodiploria_strigosa",
