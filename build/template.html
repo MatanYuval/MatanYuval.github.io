@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coral 3D models</title>
+<style>
+:root{--bg:#f6f7f5;--panel:#fff;--ink:#15211f;--muted:#5d6b68;--line:#dde3e0;
+  --accent:#0f6d63;--soft:#e3f1ee;--shadow:0 1px 2px rgba(20,40,38,.06),0 8px 24px rgba(20,40,38,.06);
+  color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#101413;--panel:#171d1c;--ink:#e8efed;--muted:#9aa8a5;
+  --line:#28312f;--accent:#4fd6c3;--soft:#12312d;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:11px 18px;
+  border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:20}
+header h1{font-size:15px;margin:0;font-weight:650}
+nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.btn{font:inherit;font-size:13px;padding:6px 11px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.on{background:var(--soft);border-color:var(--accent);color:var(--accent)}
+.muted{color:var(--muted)}
+#syncBtn.ok{border-color:var(--accent);color:var(--accent);background:var(--soft)}
+#syncBtn.busy{opacity:.7}
+#syncBtn.bad{border-color:var(--warn,#b4531f);color:var(--warn,#b4531f)}
+.pill{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--soft);color:var(--accent);white-space:nowrap}
+.wrap{max-width:1500px;margin:0 auto;padding:14px 18px 60px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.pad{padding:14px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(430px,36%);gap:14px;align-items:start}
+@media (max-width:1100px){.grid{grid-template-columns:minmax(0,1fr)}}
+@media (min-width:1500px){.groups{display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:6px}}
+.viewer{position:relative;aspect-ratio:16/10;max-height:46vh;min-height:230px;overflow:hidden;border-radius:10px;background:var(--line)}
+.viewer iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.fallback{position:absolute;inset:0;display:grid;place-items:center;gap:8px;padding:18px;
+  text-align:center;color:var(--muted);font-size:13px}
+.fallback img{max-width:100%;max-height:70%;border-radius:8px}
+.meta{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding:10px 14px}
+.meta h2{font-size:17px;margin:0;font-weight:600}
+.bar{height:6px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:12px}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .2s}
+.groups{display:flex;flex-direction:column;gap:6px;max-height:calc(100vh - 235px);overflow:auto;padding-right:4px}
+aside.card{position:sticky;top:58px}
+.group{border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:0 0 auto}
+.ghead{width:100%;display:flex;gap:7px;align-items:center;text-align:left;font:inherit;
+  font-weight:600;font-size:13.5px;padding:6px 9px;background:transparent;color:var(--ink);border:0;cursor:pointer}
+.ghead:hover{background:var(--soft)}
+.group.sel .ghead{background:var(--accent);color:#fff}
+.kbd{font:11px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:4px;
+  padding:1px 5px;background:var(--bg);color:var(--muted)}
+.group.sel .kbd{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+.species{display:flex;flex-wrap:wrap;gap:5px;padding:6px 8px;border-top:1px solid var(--line)}
+.chip{font:inherit;font-size:12px;padding:4px 8px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip small{opacity:.7}
+.chip small.ct{opacity:.55;font-variant-numeric:tabular-nums}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+input,select,textarea{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--line);
+  border-radius:8px;background:var(--panel);color:var(--ink);width:100%}
+label.field{display:block;font-size:12px;color:var(--muted);margin:8px 0 3px}
+.folder{margin:20px 0 0}
+.folder h3{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:15px;margin:0 0 9px}
+.folder h3 > span{min-width:0;overflow-wrap:anywhere}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px}
+.tile{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);
+  cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit}
+.tile:hover{border-color:var(--accent)}
+.tile img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--line)}
+.tile .cap{padding:6px 8px;font-size:12px;line-height:1.35}
+.tilewrap{position:relative}
+.tilewrap .pick{position:absolute;top:6px;left:6px;z-index:2;display:grid;place-items:center;
+  width:24px;height:24px;border-radius:6px;background:rgba(255,255,255,.88);
+  border:1px solid var(--line);cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.tilewrap .pick input{width:15px;height:15px;margin:0;cursor:pointer;accent-color:var(--accent)}
+.tilewrap.picked .tile{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.selbar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:50;display:flex;
+  gap:10px;align-items:center;flex-wrap:wrap;padding:10px 14px;border-radius:12px;
+  background:var(--panel);border:1px solid var(--accent);box-shadow:0 6px 28px rgba(0,0,0,.25)}
+.selbar select{width:auto;min-width:210px}
+.folder h3 .selall{font:inherit;font-size:12px;padding:2px 8px;border-radius:6px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted)}
+.folder h3 .selall:hover{border-color:var(--accent);color:var(--accent)}
+dialog{border:0;border-radius:12px;padding:0;background:var(--panel);color:var(--ink);
+  box-shadow:var(--shadow);max-width:min(1050px,94vw);width:100%}
+dialog::backdrop{background:rgba(8,16,15,.6)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:99;background:var(--ink);
+  color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+.wallbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.wall{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+@media (max-width:1200px){.wall{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:780px){.wall{grid-template-columns:1fr}}
+.cell{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;
+  overflow:hidden;background:var(--panel);box-shadow:var(--shadow)}
+.cell .box{flex:1;position:relative;overflow:hidden;background:var(--line)}
+.cell .box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;
+  transform-origin:center center;transition:transform .15s}
+.cell .cap{display:flex;gap:8px;align-items:center;justify-content:space-between;
+  padding:7px 10px;font-size:13px;border-top:1px solid var(--line)}
+.cell .cap b{font-weight:600}
+.cell .cap .go{font:inherit;font-size:12px;padding:2px 8px;border-radius:6px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted)}
+.cell .cap .go:hover{border-color:var(--accent);color:var(--accent)}
+input[type=range]{width:120px;padding:0}
+
+/* ---- landing ---- */
+.hero{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+  min-height:min(430px,54vh);display:flex;align-items:flex-end;background:var(--line)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero .scrim{position:relative;width:100%;padding:34px 30px 28px;
+  background:linear-gradient(to top,rgba(6,22,20,.92) 12%,rgba(6,22,20,.62) 55%,rgba(6,22,20,.1))}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,3.4vw,42px);line-height:1.1;color:#fff;
+  letter-spacing:-.02em;font-weight:680;max-width:19ch}
+.hero p{margin:0;color:#dfeeea;font-size:clamp(14px,1.2vw,17px);max-width:62ch;line-height:1.55}
+.hero .cta{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.hero .cta .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35);color:#fff;
+  backdrop-filter:blur(4px);font-size:14px;padding:9px 15px}
+.hero .cta .btn:hover{background:#fff;color:#0b3b36;border-color:#fff}
+.hero .cta .btn.primary{background:var(--accent);border-color:var(--accent)}
+.highlight{margin:20px 0 22px;padding:0}
+.highlight img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line)}
+.highlight figcaption{font-size:13.5px;color:var(--muted);line-height:1.6;margin-top:10px;
+  max-width:80ch;padding-left:13px;border-left:2px solid var(--line)}
+.highlight figcaption b{color:var(--ink);font-weight:650}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.stat{border:1px solid var(--line);border-radius:10px;padding:13px 15px;background:var(--panel)}
+.stat b{display:block;font-size:26px;font-weight:660;letter-spacing:-.02em;line-height:1.1}
+.stat span{font-size:12.5px;color:var(--muted)}
+.homenote{margin:0 0 14px;font-size:13px;color:var(--muted);line-height:1.6;max-width:70ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px;margin-top:6px}
+.navcard{text-align:left;border:1px solid var(--line);border-radius:12px;padding:16px 17px;
+  background:var(--panel);cursor:pointer;font:inherit;color:inherit;transition:border-color .15s,transform .15s}
+.navcard:hover{border-color:var(--accent);transform:translateY(-2px)}
+.navcard b{display:block;font-size:15px;margin-bottom:5px}
+.navcard span{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* ---- guide typography ---- */
+.gdoc{max-width:760px;font-size:16.5px;line-height:1.7}
+.gdoc > p:first-of-type{font-size:18.5px;line-height:1.6;color:var(--ink)}
+.gdoc h2{font-size:25px;margin:46px 0 12px;letter-spacing:-.015em;scroll-margin-top:76px;
+  padding-bottom:7px;border-bottom:1px solid var(--line)}
+.gdoc h3{font-size:19px;margin:32px 0 8px;scroll-margin-top:76px}
+.gdoc figure{margin:30px 0}
+.gdoc figure img{border-radius:8px}
+.gdoc figcaption{font-size:13.5px;margin-top:10px;padding-left:13px;border-left:2px solid var(--line)}
+.gdoc figcaption b{color:var(--ink);font-weight:650}
+.gdoc .footnotes{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px}
+.gdoc .csl-entry{margin:0 0 9px}
+.gdoc .anchor{opacity:0;margin-left:8px;font-size:.72em;text-decoration:none;color:var(--muted)}
+.gdoc h2:hover .anchor,.gdoc h3:hover .anchor{opacity:1}
+/* ---- quick guide ---- */
+.quickwrap{max-width:900px}
+.quicklead{font-size:17px;line-height:1.6;color:var(--muted);margin:0 0 20px;max-width:70ch}
+.steps{list-style:none;counter-reset:step;margin:0;padding:0;display:grid;gap:11px;
+  grid-template-columns:minmax(0,1fr)}
+.steps > li{counter-increment:step;position:relative;border:1px solid var(--line);
+  border-radius:12px;background:var(--panel);padding:16px 18px 16px 62px;box-shadow:var(--shadow)}
+.steps > li::before{content:counter(step);position:absolute;left:16px;top:15px;
+  width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-size:14px;font-weight:650;font-variant-numeric:tabular-nums}
+.steps > li{min-width:0;overflow-wrap:anywhere}
+.steps > li > p{margin:0;font-size:15px;line-height:1.6}
+.steps > li > p + p{margin-top:9px}
+.steps strong{display:block;font-size:15.5px;margin-bottom:4px;letter-spacing:-.01em}
+.steps em{font-style:normal;background:var(--soft);color:var(--accent);
+  padding:1px 5px;border-radius:4px;font-size:.93em}
+.steps ol,.steps ul{margin:9px 0 0;padding-left:20px;font-size:14.5px}
+.quicknote{margin-top:18px;font-size:13px;color:var(--muted);max-width:70ch;line-height:1.6}
+@media print{
+  .steps > li{break-inside:avoid;box-shadow:none}
+}
+.totop{position:fixed;right:22px;bottom:22px;z-index:60;padding:8px 13px;border-radius:999px;
+  border:1px solid var(--line);background:var(--panel);box-shadow:var(--shadow);cursor:pointer;
+  font:inherit;font-size:13px;color:var(--muted)}
+.totop:hover{border-color:var(--accent);color:var(--accent)}
+#map{height:calc(100vh - 210px);min-height:420px;border-radius:10px;border:1px solid var(--line);
+  background:var(--line);overflow:hidden}
+.leaflet-popup-content{margin:10px 12px;font:13px/1.45 ui-sans-serif,system-ui,sans-serif;max-height:320px;overflow:auto}
+.leaflet-popup-content h4{margin:0 0 6px;font-size:13.5px}
+.leaflet-popup-content .mlist{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:8px 0}
+.leaflet-popup-content .mlist img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:5px;display:block}
+.leaflet-popup-content .row{gap:6px}
+.mapnote{padding:26px;text-align:center;color:var(--muted)}
+.guidewrap{display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:980px){.guidewrap{grid-template-columns:minmax(0,1fr)}.gtoc{position:static!important;max-height:none!important}}
+.gtoc{position:sticky;top:70px;max-height:calc(100vh - 100px);overflow:auto;
+  display:flex;flex-direction:column;gap:1px;font-size:13px}
+.gtoc a{display:block;padding:4px 9px;border-radius:6px;color:var(--muted);text-decoration:none;line-height:1.3}
+.gtoc a:hover{background:var(--soft);color:var(--accent)}
+.gtoc a.lv3{padding-left:20px;font-size:12.5px}
+.gtoc a.lv4{padding-left:32px;font-size:12px}
+.gtoc a.here{background:var(--soft);color:var(--accent);font-weight:600}
+.gdoc{max-width:820px;font-size:15.5px;line-height:1.65}
+.gdoc h2{font-size:23px;margin:34px 0 10px;padding-top:8px;letter-spacing:-.01em;scroll-margin-top:72px}
+.gdoc h2:first-child{margin-top:0}
+.gdoc h3{font-size:18px;margin:26px 0 8px;scroll-margin-top:72px}
+.gdoc h4{font-size:15.5px;margin:20px 0 6px;scroll-margin-top:72px}
+.gdoc p{margin:0 0 14px}
+.gdoc figure{margin:22px 0;padding:0}
+.gdoc figure img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;background:var(--panel)}
+.gdoc figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.5}
+.gdoc a{color:var(--accent);overflow-wrap:anywhere}
+.gdoc ul,.gdoc ol{margin:0 0 14px;padding-left:22px}
+.gdoc li{margin:0 0 6px}
+.gdoc blockquote{margin:18px 0;padding:12px 16px;border-left:3px solid var(--accent);
+  background:var(--soft);border-radius:0 8px 8px 0}
+.gdoc .references{font-size:13.5px;color:var(--muted)}
+.gdoc .references div{margin:0 0 8px;padding-left:18px;text-indent:-18px}
+.gdoc table{border-collapse:collapse;width:100%;font-size:14px;margin:0 0 16px}
+.gdoc th,.gdoc td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+.ackbox{margin-top:16px}
+#mapshell{position:relative}
+#credDlg{max-width:min(460px,94vw)}
+.credbox{font-size:14px;line-height:1.6}
+.credbox ul{margin:0;padding:0;list-style:none}
+.credbox li{margin:0 0 5px;padding-left:14px;position:relative}
+.credbox li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;
+  border-radius:50%;background:var(--accent);opacity:.6}
+.credbox p{margin:12px 0 0;color:var(--muted)}
+.credbox .fine{font-size:12.5px;margin-top:14px;padding-top:11px;border-top:1px solid var(--line);color:var(--muted)}
+.credbox a{color:var(--accent)}
+.mapcredits summary{cursor:pointer;font-weight:650;font-size:13px;list-style:none;
+  display:flex;align-items:center;gap:6px}
+.mapcredits summary::-webkit-details-marker{display:none}
+.mapcredits summary::before{content:'▾';font-size:10px;color:var(--muted);transition:transform .15s}
+.mapcredits:not([open]) summary::before{transform:rotate(-90deg)}
+.mapcredits ul{margin:8px 0 0;padding:0;list-style:none}
+.mapcredits li{margin:0 0 3px}
+.mapcredits li span{color:var(--muted)}
+.mapcredits li.cgroup{margin:7px 0 2px;font-size:11px;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--muted);font-weight:650}
+.mapcredits li.cgroup:first-child{margin-top:4px}
+.mapcredits p{margin:9px 0 0;color:var(--muted)}
+.mapcredits .fine{font-size:11.5px;opacity:.9;border-top:1px solid var(--line);padding-top:7px;margin-top:9px}
+.mapcredits a{color:var(--accent)}
+[hidden]{display:none!important}
+@media print{
+  header,.bar,.gtoc,.selbar,.toast,#gdPrint,#gdEn,#gdEs,#qkPrint,#qkEn,#qkEs,.wallbar .btn{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .guidewrap{display:block}
+  .gdoc{max-width:none;border:0;box-shadow:none;padding:0;font-size:11.5pt}
+  .gdoc h2{page-break-after:avoid} .gdoc figure{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Coral 3D models</h1>
+  <span class="pill" id="pill">—</span>
+  <span class="pill" id="dirty" hidden></span>
+  <span class="muted" id="build" style="font-size:12px"></span>
+  <nav>
+    <button class="btn on" id="tabHome">Home</button>
+    <button class="btn" id="tabClassify">Classify</button>
+    <button class="btn" id="tabBrowse">Sorting room</button>
+    <button class="btn" id="tab3d">3D models</button>
+    <button class="btn" id="tabMap">Map</button>
+    <button class="btn" id="tabQuick">Easy steps</button>
+    <button class="btn" id="tabGuide">Guide</button>
+    <button class="btn primary" id="expJson">Export labels.json</button>
+    <button class="btn" id="expCsv">CSV</button>
+    <button class="btn" id="impBtn">Import</button>
+    <button class="btn" id="syncBtn">Sync: off</button>
+    <button class="btn" id="resetBtn" title="Discard edits saved in this browser">Reset</button>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="bar"><i id="bar" style="width:0"></i></div>
+
+  <!-- HOME -->
+  <div id="viewHome" hidden>
+    <section class="hero">
+      <img src="guide/hero.jpg" alt="An elkhorn coral colony on a Caribbean reef">
+      <div class="scrim">
+        <h1>Adopt-a-Coral</h1>
+        <p id="heroText"></p>
+        <div class="cta">
+          <button class="btn primary" data-go="guide">Read the guide</button>
+          <button class="btn" data-go="3d">See the colonies in 3D</button>
+          <button class="btn" data-go="map">Where they were scanned</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats" id="homeStats"></div>
+
+    <figure class="highlight">
+      <img loading="lazy" src="guide/Fig7.jpg"
+           alt="Close-up 3D models of nine coral colonies showing individual polyps">
+      <figcaption id="highlightCap"></figcaption>
+    </figure>
+
+    <p class="homenote" id="homeNote">Identifications are a work in progress: most labels are
+      provisional. Site built with Claude (claude-opus-5).</p>
+
+    <div class="cards">
+      <button class="navcard" data-go="quick"><b>Easy steps</b>
+        <span>The eight steps, from checking the O-rings to sharing the model —
+        the page to read on the boat.</span></button>
+      <button class="navcard" data-go="guide"><b>Field guide</b>
+        <span>How to choose a colony, film it, and share the model. English and Español,
+        with the camera paths for each growth form.</span></button>
+      <button class="navcard" data-go="3d"><b>3D models</b>
+        <span>Browse the colonies themselves, six at a time, filtered by species.</span></button>
+      <button class="navcard" data-go="map"><b>Map</b>
+        <span>Every dive site on satellite imagery, with the colonies recorded at each.</span></button>
+      <button class="navcard" data-go="sort"><b>Sorting room</b>
+        <span>The whole collection as thumbnails, grouped by species.</span></button>
+      <button class="navcard" data-go="classify"><b>Classify</b>
+        <span>Work through the collection one colony at a time and confirm the identifications.</span></button>
+    </div>
+
+  </div>
+
+  <!-- CLASSIFY -->
+  <div id="viewClassify" class="grid">
+    <section>
+      <div class="card">
+        <div class="viewer" id="viewer"></div>
+        <div class="meta">
+          <h2 id="mName">—</h2>
+          <span class="muted" id="mSub"></span>
+          <span class="pill" id="mLabel" hidden></span>
+        </div>
+      </div>
+      <div class="card pad" style="margin-top:12px">
+        <div class="row">
+          <button class="btn" id="prev">← Previous</button>
+          <button class="btn" id="next">Next →</button>
+          <button class="btn primary" id="confirm" title="Space">Confirm ✓</button>
+          <button class="btn" id="nextUn">Next unlabelled</button>
+          <label class="row" style="gap:5px;font-size:13px;margin-left:auto">
+            <input type="checkbox" id="auto" checked style="width:auto"> auto-advance
+          </label>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <select id="filter" style="width:auto">
+            <option value="all">All models</option>
+            <option value="unlabelled">Unlabelled only</option>
+            <option value="labelled">Labelled only</option>
+            <option value="review">Needs review</option>
+          </select>
+          <input type="search" id="search" placeholder="Search name…" style="width:auto;flex:1;min-width:150px">
+          <span class="muted" id="pos"></span>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" id="openKiri" target="_blank" rel="noopener">Open in Kiri ↗</a>
+          <a class="btn" id="openGlb" target="_blank" rel="noopener">Download .glb</a>
+        </div>
+      </div>
+    </section>
+    <aside class="card pad">
+      <div class="row" style="justify-content:space-between">
+        <strong style="font-size:14px">Classification</strong>
+        <div class="row" style="gap:6px"><button class="btn" id="undoBtn" title="U">Undo</button><button class="btn" id="clearBtn">Clear</button></div>
+      </div>
+      <p class="muted" style="font-size:12.5px;margin:6px 0 10px">
+        Letter key picks a genus, <span class="kbd">1</span>–<span class="kbd">9</span> the species,
+        <span class="kbd">←</span><span class="kbd">→</span> move, <span class="kbd">space</span> confirms, <span class="kbd">u</span> undoes.
+      </p>
+      <div class="groups" id="groups"></div>
+      <button class="btn" id="addClassBtn" style="margin-top:8px;width:100%">+ Add class</button>
+      <label class="field" for="conf">Confidence</label>
+      <select id="conf" style="width:auto">
+        <option value="1">certain</option><option value="0.6">probable</option><option value="0.3">guess</option>
+      </select>
+      <label class="field" for="note">Note (optional)</label>
+      <textarea id="note" rows="2" placeholder="e.g. bleached, partial colony, repeat scan"></textarea>
+    </aside>
+  </div>
+
+  <!-- COLLECTION -->
+  <div id="viewBrowse" hidden>
+    <div class="card pad" style="margin-bottom:4px">
+      <div class="row">
+        <select id="jump" style="width:auto"><option value="">Jump to class…</option></select>
+        <select id="bsite" style="width:auto"><option value="">All sites</option></select>
+        <input type="search" id="bsearch" placeholder="Search model name…" style="width:auto;flex:1;min-width:170px">
+        <label class="row" style="gap:5px;font-size:13px">
+          <input type="checkbox" id="showUn" style="width:auto"> show unlabelled
+        </label>
+      </div>
+    </div>
+    <div id="folders"></div>
+  </div>
+</div>
+
+  <!-- 3D WALL -->
+  <div id="view3d" hidden>
+    <div class="card pad" style="margin-bottom:10px">
+      <div class="wallbar">
+        <select id="t3class" style="width:auto;min-width:230px"></select>
+        <select id="t3per" style="width:auto">
+          <option value="6">6 per page</option>
+          <option value="3">3 per page</option>
+        </select>
+        <label class="row" style="gap:6px;font-size:13px">zoom
+          <input type="range" id="t3zoom" min="1" max="1.8" step="0.05" value="1.2">
+          <span class="muted" id="t3zoomv" style="font-variant-numeric:tabular-nums">1.20×</span>
+        </label>
+        <span style="margin-left:auto"></span>
+        <button class="btn" id="t3prev">← Prev</button>
+        <span class="muted" id="t3page">—</span>
+        <button class="btn" id="t3next">Next →</button>
+      </div>
+      <div class="row" style="margin-top:8px" id="t3selrow" hidden>
+        <span class="pill" id="t3selinfo"></span>
+        <button class="btn" id="t3selclear">Show a whole class instead</button>
+      </div>
+    </div>
+    <div class="wall" id="wall"></div>
+  </div>
+
+  <!-- MAP -->
+  <div id="viewMap" hidden>
+    <div class="card pad" style="margin-bottom:10px">
+      <div class="wallbar">
+        <select id="mpClass" style="width:auto;min-width:230px"></select>
+        <select id="mpSite" style="width:auto"><option value="">All sites</option></select>
+        <span class="pill" id="mpInfo">—</span>
+        <span style="margin-left:auto"></span>
+        <button class="btn" id="credBtn">Credits &amp; thanks</button>
+        <button class="btn" id="mpFit">Fit to markers</button>
+      </div>
+    </div>
+    <div id="mapshell">
+      <div id="map"><div class="mapnote">Loading map…</div></div>
+    </div>
+
+  </div>
+
+  <!-- QUICK GUIDE -->
+  <div id="viewQuick" hidden>
+    <div class="card pad" style="margin-bottom:14px">
+      <div class="wallbar">
+        <strong style="font-size:14px" id="qkTitle">Easy steps</strong>
+        <span class="muted" style="font-size:12.5px">step by step, on the boat and in the water</span>
+        <span style="margin-left:auto"></span>
+        <button class="btn on" id="qkEn">English</button>
+        <button class="btn" id="qkEs">Español</button>
+        <button class="btn" id="qkPrint">Print</button>
+        <button class="btn" data-go="guide">Full guide →</button>
+      </div>
+    </div>
+    <div class="quickwrap" id="quickBox"></div>
+  </div>
+
+  <!-- GUIDE -->
+  <div id="viewGuide" hidden>
+    <div class="card pad" style="margin-bottom:14px">
+      <div class="wallbar">
+        <strong style="font-size:14px" id="gdTitle">Practical guide to 3D imaging of corals using underwater videos</strong>
+        <span class="muted" style="font-size:12.5px">Matan Yuval</span>
+        <span style="margin-left:auto"></span>
+        <button class="btn on" id="gdEn">English</button>
+        <button class="btn" id="gdEs">Español</button>
+        <button class="btn" id="gdPrint">Print / PDF</button>
+      </div>
+    </div>
+    <button class="totop" id="toTop" hidden>↑ Top</button>
+    <div class="guidewrap">
+      <nav class="gtoc" id="gdToc"></nav>
+      <article class="gdoc card pad" id="guideBox"></article>
+    </div>
+  </div>
+
+<input type="file" id="impFile" accept="application/json" hidden>
+
+<dialog id="modelDlg"><div class="pad">
+  <div class="row" style="justify-content:space-between;margin-bottom:10px">
+    <strong id="dName">—</strong><span class="pill" id="dClass"></span>
+    <button class="btn" id="dClose" style="margin-left:auto">Close</button>
+  </div>
+  <div class="viewer" id="dViewer" style="aspect-ratio:16/10"></div>
+  <div class="row" style="margin-top:10px">
+    <a class="btn" id="dKiri" target="_blank" rel="noopener">Open in Kiri ↗</a>
+    <a class="btn" id="dGlb" target="_blank" rel="noopener">Download .glb</a>
+    <span class="muted" id="dMeta" style="font-size:12.5px"></span>
+  </div>
+</div></dialog>
+
+
+
+<dialog id="addDlg"><form method="dialog" class="pad">
+  <h3 style="margin:0 0 6px">Add a class</h3>
+  <p class="muted" style="font-size:13px;margin:0 0 12px">
+    Your own classes sit alongside the built-in ones and travel with
+    <code>labels.json</code>, so committing that file carries them to the live site.
+  </p>
+  <label class="field" for="acName">Name</label>
+  <input type="text" id="acName" placeholder="e.g. Orbicella cf. annularis, or Disease scar" required>
+  <label class="field" for="acNote">Short note (optional)</label>
+  <input type="text" id="acNote" placeholder="shown in small grey text next to the name">
+  <label class="field" for="acGroup">Put it under</label>
+  <select id="acGroup"></select>
+  <div id="acNewGroup" hidden>
+    <label class="field" for="acGroupName">New group name</label>
+    <input type="text" id="acGroupName" placeholder="e.g. Condition">
+    <label class="field" for="acKey">Keyboard shortcut (one letter, optional)</label>
+    <input type="text" id="acKey" maxlength="1" placeholder="j">
+  </div>
+  <p class="muted" id="acWarn" style="font-size:12.5px;margin:10px 0 0" hidden></p>
+  <div class="row" style="margin-top:14px;justify-content:flex-end">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn primary" value="add">Add class</button>
+  </div>
+</form></dialog>
+
+<div class="selbar" id="selbar" hidden>
+  <strong id="selcount">0 selected</strong>
+  <select id="moveTo"><option value="">Move to…</option></select>
+  <button class="btn" id="selTo3d">View in 3D</button>
+  <button class="btn" id="selClear">Clear selection</button>
+</div>
+
+<dialog id="syncDlg"><form method="dialog" class="pad">
+  <h3 style="margin:0 0 6px">Save classifications back to the site</h3>
+  <p class="muted" style="font-size:13px;margin:0 0 6px">
+    The page can commit <code>labels.json</code> to your repository each time you classify,
+    so the published site stays current without you exporting anything.
+  </p>
+  <p class="muted" style="font-size:13px;margin:0 0 12px">
+    This needs a GitHub token, which is stored only in this browser. Use a
+    <strong>fine-grained</strong> token limited to this one repository with
+    <em>Contents: read and write</em>, and only on a machine that is yours. Anyone with access
+    to this browser profile could read it and write to that repo until it expires.
+  </p>
+  <label class="field" for="syRepo">Repository (owner/name)</label>
+  <input type="text" id="syRepo" placeholder="yourname/yourname.github.io" autocomplete="off">
+  <label class="field" for="syBranch">Branch</label>
+  <input type="text" id="syBranch" placeholder="main" autocomplete="off">
+  <label class="field" for="syPath">File path</label>
+  <input type="text" id="syPath" placeholder="labels.json" autocomplete="off">
+  <label class="field" for="syToken">Token</label>
+  <input type="password" id="syToken" placeholder="github_pat_…" autocomplete="off">
+  <p class="muted" id="syInfo" style="font-size:12.5px;margin:10px 0 0"></p>
+  <div class="row" style="margin-top:14px;justify-content:flex-end">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn" value="off" id="syOff">Disconnect</button>
+    <button class="btn primary" value="on">Connect and save now</button>
+  </div>
+</form></dialog>
+
+<dialog id="credDlg"><div class="pad credbox">
+  <div class="row" style="justify-content:space-between;margin-bottom:10px">
+    <strong style="font-size:15px">Credits &amp; thanks</strong>
+    <button class="btn" id="credClose" style="margin-left:auto">Close</button>
+  </div>
+  
+        <ul>
+          <li>Louis Escobar and Taganga Dive Station</li>
+          <li>Bocas Pirates Dive Center</li>
+          <li>Mother of Corals, Bocas del Toro</li>
+          <li>Diego Vallardes and SCUBA Portobelo</li>
+          <li>Utila Dive Center</li>
+          <li>Underwater Vision Dive Center</li>
+          <li>Suita Narváez, Bay Island Conservation Agency (BICA)</li>
+          <li>Raising Corals</li>
+          <li>FreeWay SCUBA</li>
+        </ul>
+        <p>Thank you to my friends, family, and colleagues.</p>
+        <div class="fine">Models and field guide by Matan Yuval · reconstructed in KIRI Engine ·
+          coordinates from the surface clips, locating the dive rather than the colony ·
+          tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank"
+          rel="noopener">OpenStreetMap</a> / Esri ·
+          site built with Claude (claude-opus-5)</div>
+      
+</div></dialog>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- data (inlined so the file works from disk and online) ---------- */
+const BUILD = __BUILD__;
+const MODELS = __MODELS__;
+const COORDS = __COORDS__;
+const TAXA = __TAXA__;
+let BASE = __LABELS__;   // published labels; overwritten by labels.json when served over http
+const LS = 'kiri-coral-labels-v1';
+
+const $ = s => document.querySelector(s);
+const esc = v => String(v == null ? '' : v)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+  .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const SPEC = new Map();
+function rebuildSpec(){
+  SPEC.clear();
+  TAXA.groups.forEach(g => { SPEC.set(g.id, {group:g, species:null});
+    g.species.forEach(s => SPEC.set(s.id, {group:g, species:s})); });
+}
+rebuildSpec();
+
+/* ---------- user-added classes ---------- */
+const LSX = 'kiri-coral-classes-v1';
+let custom = {groups:[], species:[]};
+try { custom = Object.assign({groups:[],species:[]}, JSON.parse(localStorage.getItem(LSX) || '{}')); } catch(e) {}
+
+function applyCustom(){
+  (custom.groups || []).forEach(g => {
+    if (!TAXA.groups.some(x => x.id === g.id))
+      TAXA.groups.push({id:g.id, label:g.label, key:g.key || '', kind:'custom', species:[]});
+  });
+  (custom.species || []).forEach(s => {
+    const g = TAXA.groups.find(x => x.id === s.group);
+    if (g && !g.species.some(x => x.id === s.id))
+      g.species.push({id:s.id, label:s.label, common:s.common || '', custom:true});
+  });
+  rebuildSpec();
+}
+function saveCustom(){ try { localStorage.setItem(LSX, JSON.stringify(custom)); } catch(e) {} }
+function slug(v){
+  return String(v).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,60) || 'class';
+}
+function uniqueId(base){
+  let id = base, n = 2;
+  while (SPEC.has(id)) id = base + '_' + n++;
+  return id;
+}
+applyCustom();
+
+let local = {};
+try { local = JSON.parse(localStorage.getItem(LS) || '{}'); } catch(e) {}
+const save = () => { try { localStorage.setItem(LS, JSON.stringify(local)); } catch(e) {}
+  if (typeof scheduleSync === 'function') scheduleSync(); };
+
+const undoStack = [];
+const coordOf = id => COORDS[String(id)] || null;
+const mapLink = c => `https://www.google.com/maps?q=${c.lat},${c.lon}`;
+const labelOf = id => local[String(id)] || BASE[String(id)] || null;
+const className = c => { const h = SPEC.get(c); return h ? (h.species ? h.species.label : h.group.label) : (c || 'Unlabelled'); };
+
+function merged(){
+  const out = {};
+  for (const k in BASE) if (BASE[k] && BASE[k].class) out[k] = BASE[k];
+  for (const k in local) { const v = local[k]; if (!v || !v.class) delete out[k]; else out[k] = v; }
+  return out;
+}
+const labelsDoc = () => ({version:1, updatedAt:new Date().toISOString(),
+  customClasses: (custom.groups.length || custom.species.length) ? custom : undefined,
+  labels:merged()});
+
+function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('show');
+  clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),1700); }
+
+/* ---------- classify ---------- */
+let view = [], idx = 0, cur = null;
+
+function buildView(){
+  const f = $('#filter').value, q = $('#search').value.trim().toLowerCase();
+  view = MODELS.filter(m => {
+    const l = labelOf(m.id);
+    if (f==='unlabelled' && l && l.class) return false;
+    if (f==='labelled' && !(l && l.class)) return false;
+    if (f==='review' && !(l && l.class && (l.needsReview || (l.confidence ?? 1) < 1))) return false;
+    if (q && !m.name.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  idx = Math.min(idx, Math.max(0, view.length-1));
+}
+
+function renderGroups(){
+  const host = $('#groups'); host.innerHTML = '';
+  TAXA.groups.forEach(g => {
+    const el = document.createElement('div'); el.className='group'; el.dataset.group=g.id;
+    const head = document.createElement('button'); head.className='ghead';
+    head.innerHTML = `<span class="kbd">${esc(g.key.toUpperCase())}</span><span>${esc(g.label)}</span>`;
+    head.onclick = () => pickGroup(g); el.appendChild(head);
+    const sp = document.createElement('div'); sp.className='species';
+    g.species.forEach((s,i) => {
+      const c = document.createElement('button'); c.type='button'; c.className='chip'; c.dataset.cls=s.id;
+      c.innerHTML = `<span class="kbd">${i+1}</span> ${esc(s.label)}` + (s.common ? ` <small>${esc(s.common)}</small>` : '')
+        + ` <small class="ct" data-ct="${esc(s.id)}"></small>`;
+      c.onclick = e => { e.stopPropagation(); assign(s.id); }; sp.appendChild(c);
+    });
+    el.appendChild(sp); host.appendChild(el);
+  });
+}
+function pickGroup(g){
+  if (g.species.length === 1) assign(g.species[0].id);
+  else { assign(g.id, true); highlight(g.id); }
+}
+function highlight(id){
+  document.querySelectorAll('.group').forEach(e => e.classList.toggle('sel', e.dataset.group===id));
+  const el = document.querySelector(`.group[data-group="${id}"]`); if (el) el.scrollIntoView({block:'nearest'});
+}
+function assign(cls, keep){
+  if (!cur) return;
+  undoStack.push({id:String(cur.id), prev:local[String(cur.id)], idx});
+  local[String(cur.id)] = { class:cls, confidence:Number($('#conf').value), source:'human',
+    note:$('#note').value.trim(), needsReview:false, at:new Date().toISOString() };
+  save(); chrome(); toast(cur.name + ' → ' + className(cls));
+  if ($('#auto').checked && !keep) setTimeout(() => step(1, true), 110); else paint();
+}
+function confirmLabel(){
+  if (!cur) return;
+  const l = labelOf(cur.id);
+  if (!l || !l.class){ toast('Nothing to confirm - pick a class.'); return; }
+  undoStack.push({id:String(cur.id), prev:local[String(cur.id)], idx});
+  local[String(cur.id)] = { class:l.class, confidence:1, source:'human',
+    note:$('#note').value.trim(), needsReview:false, at:new Date().toISOString() };
+  save(); chrome(); toast('Confirmed ' + className(l.class));
+  if ($('#auto').checked) setTimeout(() => step(1, true), 110); else paint();
+}
+function undo(){
+  const u = undoStack.pop();
+  if (!u){ toast('Nothing to undo.'); return; }
+  if (u.batch){
+    u.batch.forEach(e => { if (e.prev === undefined) delete local[e.id]; else local[e.id] = e.prev; });
+    save(); buildView(); renderBrowse(); chrome();
+    toast(`Undone - ${u.batch.length} model${u.batch.length>1?'s':''} put back`); return;
+  }
+  if (u.prev === undefined) delete local[u.id]; else local[u.id] = u.prev;
+  save(); buildView();
+  const at = view.findIndex(m => String(m.id) === u.id);
+  idx = at >= 0 ? at : Math.min(u.idx, view.length - 1);
+  render(); chrome(); toast('Undone');
+}
+function counts(){
+  const n = {};
+  MODELS.forEach(m => { const l = labelOf(m.id); if (l && l.class) n[l.class] = (n[l.class]||0)+1; });
+  document.querySelectorAll('.ct').forEach(e => {
+    const v = n[e.dataset.ct]; e.textContent = v ? '· ' + v : '';
+  });
+}
+function paint(){
+  const l = cur ? labelOf(cur.id) : null;
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', !!l && c.dataset.cls===l.class));
+  document.querySelectorAll('.group').forEach(e => e.classList.remove('sel'));
+  if (l && l.class){
+    const h = SPEC.get(l.class); if (h) highlight(h.group.id);
+    $('#mLabel').hidden = false;
+    const c = l.confidence ?? 1;
+    $('#mLabel').textContent = className(l.class)
+      + (c < 1 ? ' · ' + Math.round(c * 100) + '% sure' : '')
+      + (l.needsReview ? ' · check' : '');
+  } else $('#mLabel').hidden = true;
+  $('#note').value = (l && l.note) || '';
+  $('#conf').value = '1';
+}
+function render(){
+  cur = view[idx] || null;
+  const v = $('#viewer'); v.innerHTML = '';
+  if (!cur){ v.innerHTML = '<div class="fallback">Nothing matches this filter.</div>';
+    $('#mName').textContent='—'; $('#mSub').textContent=''; $('#pos').textContent=''; return; }
+  const fb = document.createElement('div'); fb.className='fallback';
+  fb.innerHTML = `<img src="${esc(cur.thumb)}" alt=""><span>Loading the Kiri viewer…</span>`;
+  v.appendChild(fb);
+  const f = document.createElement('iframe');
+  f.title = cur.name; f.src = cur.embed; f.allowFullscreen = true;
+  f.allow = 'autoplay; fullscreen; xr-spatial-tracking';
+  f.onload = () => fb.remove();
+  v.appendChild(f);
+  setTimeout(() => { if (v.contains(fb)) fb.querySelector('span').textContent =
+    'Viewer slow to load — the thumbnail is above, or use "Open in Kiri".'; }, 9000);
+  $('#mName').textContent = cur.name;
+  const cc = coordOf(cur.id);
+  $('#mSub').innerHTML = esc(new Date(cur.created).toISOString().slice(0,10))
+    + (cur.ok ? '' : ' · incomplete scan')
+    + (cc ? ` · <a href="${esc(mapLink(cc))}" target="_blank" rel="noopener">${esc(cc.site)}</a>`
+          + ` <span class="muted">±${cc.precision_km} km</span>` : ' · no location');
+  $('#openKiri').href = cur.embed; $('#openGlb').href = cur.glb;
+  $('#pos').textContent = (idx+1) + ' / ' + view.length;
+  paint();
+}
+function chrome(){
+  counts();
+  if (typeof syncUI === 'function') syncUI();
+  const n = MODELS.filter(m => { const l = labelOf(m.id); return l && l.class; }).length;
+  const rev = MODELS.filter(m => { const l = labelOf(m.id);
+    return l && l.class && (l.needsReview || (l.confidence ?? 1) < 1); }).length;
+  $('#pill').textContent = n + ' of ' + MODELS.length + ' classified'
+    + (rev ? ' · ' + rev + ' to check' : ' · all confirmed');
+  $('#bar').style.width = (MODELS.length ? n/MODELS.length*100 : 0).toFixed(1) + '%';
+  const d = Object.keys(local).length;
+  $('#dirty').hidden = !d; $('#dirty').textContent = d + ' unpublished';
+}
+function step(n, afterLabel){
+  if (!view.length) return;
+  const f = $('#filter').value;
+  if (afterLabel && (f === 'unlabelled' || f === 'review')){
+    buildView(); if (idx >= view.length) idx = Math.max(0, view.length-1);
+  } else idx = Math.min(view.length-1, Math.max(0, idx+n));
+  render();
+}
+function nextUn(){
+  for (let i=1;i<=view.length;i++){ const j=(idx+i)%view.length;
+    const l = labelOf(view[j].id); if (!(l && l.class)){ idx=j; render(); return; } }
+  toast('No unlabelled models left in this filter.');
+}
+
+/* ---------- collection ---------- */
+const picked = new Set();
+let lastPick = null;
+
+function togglePick(m, folder, i, shift, on, list){
+  if (shift && lastPick && lastPick.folder === folder){
+    const [a, b] = [lastPick.i, i].sort((x,y) => x-y);
+    for (let k = a; k <= b; k++) picked.add(String(list[k].id));
+  } else {
+    on ? picked.add(String(m.id)) : picked.delete(String(m.id));
+  }
+  lastPick = {folder, i};
+  renderBrowse(); selBar();
+}
+
+function selBar(){
+  const bar = $('#selbar');
+  bar.hidden = !picked.size || currentView !== 'sort';
+  $('#selcount').textContent = picked.size + ' selected';
+  const sel = $('#moveTo');
+  if (sel.options.length <= 1){
+    TAXA.groups.forEach(g => {
+      const og = document.createElement('optgroup'); og.label = g.label;
+      g.species.forEach(s => og.appendChild(new Option(s.label, s.id)));
+      if (g.species.length !== 1) og.appendChild(new Option(g.label + ' (genus only)', g.id));
+      sel.appendChild(og);
+    });
+  }
+}
+
+function moveSelected(cls){
+  if (!picked.size || !cls) return;
+  const batch = [];
+  picked.forEach(id => {
+    batch.push({id, prev: local[id]});
+    local[id] = {class:cls, confidence:1, source:'human',
+      note:'bulk move from the collection view', needsReview:false, at:new Date().toISOString()};
+  });
+  undoStack.push({batch});
+  save();
+  const n = picked.size;
+  picked.clear(); lastPick = null;
+  buildView(); renderBrowse(); chrome(); selBar();
+  toast(`Moved ${n} model${n>1?'s':''} to ${className(cls)} · press u to undo`);
+}
+
+function folders(){
+  const map = new Map();
+  MODELS.forEach(m => { const l = labelOf(m.id); const k = (l && l.class) || '__un';
+    if (!map.has(k)) map.set(k, []); map.get(k).push(m); });
+  const order = [];
+  TAXA.groups.forEach(g => { if (map.has(g.id)) order.push(g.id);
+    g.species.forEach(s => { if (map.has(s.id)) order.push(s.id); }); });
+  map.forEach((_,k) => { if (!order.includes(k) && k!=='__un') order.push(k); });
+  if (map.has('__un')) order.push('__un');
+  return order.map(k => [k, map.get(k)]);
+}
+function renderBrowse(){
+  const q = $('#bsearch').value.trim().toLowerCase(), showUn = $('#showUn').checked;
+  const site = $('#bsite').value;
+  if ($('#bsite').options.length <= 1){
+    const n = {};
+    MODELS.forEach(m => { const c = coordOf(m.id); if (c) n[c.site] = (n[c.site]||0)+1; });
+    Object.entries(n).sort((a,b) => b[1]-a[1])
+      .forEach(([s,k]) => $('#bsite').add(new Option(`${s} (${k})`, s)));
+  }
+  const host = $('#folders'); host.innerHTML = '';
+  const jump = $('#jump'); jump.length = 1; let shown = 0;
+  folders().forEach(([cls, items]) => {
+    if (cls==='__un' && !showUn) return;
+    let list = q ? items.filter(m => m.name.toLowerCase().includes(q)) : items;
+    if (site) list = list.filter(m => (coordOf(m.id)||{}).site === site);
+    if (!list.length) return;
+    shown += list.length;
+    const title = cls==='__un' ? 'Unlabelled' : className(cls);
+    const id = 'f-' + cls;
+    jump.add(new Option(title + ' (' + items.length + ')', id));
+    const sec = document.createElement('section'); sec.className='folder'; sec.id=id;
+    sec.innerHTML = `<h3><span>${esc(title)}</span><span class="pill">${list.length}</span>
+      <button class="selall" type="button">select all</button>
+      <span class="muted" style="font-size:12px">${cls==='__un'?'':esc(cls)}</span></h3>`;
+    sec.querySelector('.selall').onclick = () => {
+      const all = list.every(m => picked.has(String(m.id)));
+      list.forEach(m => all ? picked.delete(String(m.id)) : picked.add(String(m.id)));
+      renderBrowse(); selBar();
+    };
+    const tiles = document.createElement('div'); tiles.className='tiles';
+    list.forEach((m, i) => {
+      const wrap = document.createElement('div');
+      wrap.className = 'tilewrap' + (picked.has(String(m.id)) ? ' picked' : '');
+      wrap.dataset.folder = id; wrap.dataset.i = i;
+      const pick = document.createElement('label');
+      pick.className = 'pick'; pick.title = 'Select (shift-click for a range)';
+      pick.innerHTML = `<input type="checkbox" ${picked.has(String(m.id)) ? 'checked' : ''}>`;
+      pick.querySelector('input').onclick = e => {
+        e.stopPropagation();
+        togglePick(m, id, i, e.shiftKey, e.target.checked, list);
+      };
+      const t = document.createElement('button'); t.className='tile';
+      const c = coordOf(m.id);
+      t.innerHTML = `<img loading="lazy" src="${esc(m.thumb)}" alt=""><div class="cap">${esc(m.name)}<br>
+        <span class="muted">${new Date(m.created).toISOString().slice(0,10)}${
+          c ? ' · ' + esc(c.site.split(',')[0]) : ''}</span></div>`;
+      t.onclick = e => { if (e.shiftKey || picked.size) { 
+          togglePick(m, id, i, e.shiftKey, !picked.has(String(m.id)), list);
+        } else openModel(m); };
+      wrap.appendChild(pick); wrap.appendChild(t); tiles.appendChild(wrap);
+    });
+    sec.appendChild(tiles); host.appendChild(sec);
+  });
+  if (!shown) host.innerHTML = '<p class="muted">Nothing classified yet — tick “show unlabelled” or start classifying.</p>';
+}
+function openModel(m){
+  $('#dName').textContent = m.name;
+  const l = labelOf(m.id);
+  $('#dClass').textContent = l ? className(l.class) : 'unlabelled';
+  $('#dKiri').href = m.embed; $('#dGlb').href = m.glb;
+  const cd = coordOf(m.id);
+  $('#dMeta').innerHTML = esc(new Date(m.created).toISOString().slice(0,10))
+    + (cd ? ` · <a href="${esc(mapLink(cd))}" target="_blank" rel="noopener">${esc(cd.site)}</a> `
+          + `${cd.lat.toFixed(5)}, ${cd.lon.toFixed(5)} · ±${cd.precision_km} km · nearest clip ${esc(cd.nearest_clip)}` : '');
+  $('#dViewer').innerHTML = `<iframe title="${esc(m.name)}" src="${esc(m.embed)}" allowfullscreen
+    allow="autoplay; fullscreen; xr-spatial-tracking"></iframe>`;
+  $('#modelDlg').showModal();
+}
+
+/* ---------- 3D wall ---------- */
+let t3 = {cls:'', page:0, per:6, zoom:1.2, set:null};
+
+function t3list(){
+  if (t3.set) return MODELS.filter(m => t3.set.has(String(m.id)));
+  if (!t3.cls) return MODELS;
+  return MODELS.filter(m => (labelOf(m.id) || {}).class === t3.cls);
+}
+
+function fillClassPicker(){
+  const sel = $('#t3class'); const keep = sel.value;
+  const n = {};
+  MODELS.forEach(m => { const l = labelOf(m.id); const k = (l && l.class) || '__un';
+    n[k] = (n[k] || 0) + 1; });
+  sel.innerHTML = '';
+  sel.add(new Option(`All models (${MODELS.length})`, ''));
+  TAXA.groups.forEach(g => {
+    const og = document.createElement('optgroup'); og.label = g.label;
+    if (n[g.id]) og.appendChild(new Option(`${g.label} — genus only (${n[g.id]})`, g.id));
+    g.species.forEach(s => { if (n[s.id]) og.appendChild(new Option(`${s.label} (${n[s.id]})`, s.id)); });
+    if (og.children.length) sel.appendChild(og);
+  });
+  if (n['__un']) sel.add(new Option(`Unlabelled (${n['__un']})`, '__un'));
+  sel.value = keep;
+  if (sel.selectedIndex < 0) sel.value = '';
+}
+
+function render3d(){
+  fillClassPicker();
+  const list = t3list();
+  const pages = Math.max(1, Math.ceil(list.length / t3.per));
+  t3.page = Math.min(t3.page, pages - 1);
+  const slice = list.slice(t3.page * t3.per, (t3.page + 1) * t3.per);
+
+  const wall = $('#wall');
+  sizeWall();
+  wall.innerHTML = '';
+  slice.forEach(m => {
+    const l = labelOf(m.id);
+    const cell = document.createElement('div'); cell.className = 'cell';
+    const box = document.createElement('div'); box.className = 'box';
+    const f = document.createElement('iframe');
+    f.title = m.name; f.src = m.embed; f.allowFullscreen = true; f.loading = 'lazy';
+    f.allow = 'autoplay; fullscreen; xr-spatial-tracking';
+    f.style.transform = `scale(${t3.zoom})`;
+    box.appendChild(f);
+    const cap = document.createElement('div'); cap.className = 'cap';
+    const cw = coordOf(m.id);
+    cap.innerHTML = `<span><b>${esc(m.name)}</b> <span class="muted">${
+      l && l.class ? esc(className(l.class)) : 'unlabelled'}${
+      cw ? ' · ' + esc(cw.site.split(',')[0]) : ''}</span></span>`;
+    const go = document.createElement('button');
+    go.className = 'go'; go.textContent = 'classify →';
+    go.onclick = () => {
+      $('#filter').value = 'all'; $('#search').value = '';
+      buildView();
+      const at = view.findIndex(x => x.id === m.id);
+      if (at >= 0) idx = at;
+      tab('classify'); render();
+    };
+    cap.appendChild(go);
+    cell.appendChild(box); cell.appendChild(cap);
+    wall.appendChild(cell);
+  });
+  if (!slice.length) wall.innerHTML = '<p class="muted">Nothing in this class yet.</p>';
+
+  $('#t3page').textContent = `${list.length ? t3.page + 1 : 0} / ${pages}  ·  ${list.length} model${list.length===1?'':'s'}`;
+  $('#t3prev').disabled = t3.page === 0;
+  $('#t3next').disabled = t3.page >= pages - 1;
+  $('#t3selrow').hidden = !t3.set;
+  if (t3.set) $('#t3selinfo').textContent = `showing ${t3.set.size} models you picked in the sorting room`;
+  requestAnimationFrame(sizeWall);   // re-measure once the pane has actually laid out
+}
+
+function sizeWall(){
+  const rows = t3.per === 3 ? 1 : 2;
+  const avail = window.innerHeight - $('#wall').getBoundingClientRect().top - 28;
+  const h = Math.max(260, Math.floor((avail - (rows - 1) * 12) / rows));
+  $('#wall').style.gridAutoRows = h + 'px';
+}
+addEventListener('resize', () => { if (currentView === '3d') sizeWall(); });
+
+function show3d(ids){
+  t3.set = new Set(ids); t3.page = 0;
+  tab('3d');
+}
+
+$('#t3class').onchange = e => { t3.cls = e.target.value; t3.set = null; t3.page = 0; render3d(); };
+$('#t3per').onchange = e => { t3.per = Number(e.target.value); t3.page = 0; render3d(); };
+$('#t3zoom').oninput = e => {
+  t3.zoom = Number(e.target.value);
+  $('#t3zoomv').textContent = t3.zoom.toFixed(2) + '×';
+  document.querySelectorAll('#wall iframe').forEach(f => f.style.transform = `scale(${t3.zoom})`);
+};
+$('#t3prev').onclick = () => { if (t3.page > 0){ t3.page--; render3d(); } };
+$('#t3next').onclick = () => { t3.page++; render3d(); };
+$('#t3selclear').onclick = () => { t3.set = null; t3.page = 0; render3d(); };
+
+/* ---------- map ---------- */
+const GUIDE = __GUIDE__;
+const HERO = __HERO__;
+const META = __META__;
+const LEAFLET = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/';
+let map = null, layer = null, mapReady = false;
+
+function loadLeaflet(){
+  if (window.L) return Promise.resolve(true);
+  return new Promise(res => {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet'; css.href = LEAFLET + 'leaflet.min.css';
+    document.head.appendChild(css);
+    const js = document.createElement('script');
+    js.src = LEAFLET + 'leaflet.min.js';
+    js.onload = () => res(true);
+    js.onerror = () => res(false);
+    document.head.appendChild(js);
+    setTimeout(() => res(!!window.L), 8000);
+  });
+}
+
+async function openMap(){
+  if (mapReady){ renderMap(); return; }
+  const ok = await loadLeaflet();
+  if (!ok){
+    $('#map').innerHTML = '<div class="mapnote">The map needs an internet connection ' +
+      '(it loads Leaflet and the tiles from the web).<br>Everything else in this page works offline.</div>';
+    return;
+  }
+  $('#map').innerHTML = '';
+  map = L.map('map', {scrollWheelZoom:true}).setView([12, -80], 4);
+
+  const ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+  const satOpts = {maxZoom: 19, maxNativeZoom: 18,
+    attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics'};
+  // each base layer needs its own tile-layer instance: sharing one between two
+  // entries makes Leaflet remove it while switching, leaving a blank map
+  const sat  = L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', satOpts);
+  const sat2 = L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', satOpts);
+  const places = L.tileLayer(
+    ESRI + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+    {maxZoom: 19, maxNativeZoom: 18});
+  const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {maxZoom: 19, attribution: '&copy; OpenStreetMap'});
+
+  let base = 'Satellite';
+  try { base = localStorage.getItem('kiri-coral-basemap') || 'Satellite'; } catch(e) {}
+  const bases = {'Satellite': sat, 'Satellite + labels': L.layerGroup([sat2, places]),
+                 'Streets': streets};
+  (bases[base] || sat).addTo(map);
+  L.control.layers(bases, null, {position:'topright', collapsed:false}).addTo(map);
+  map.on('baselayerchange', e => {
+    try { localStorage.setItem('kiri-coral-basemap', e.name); } catch(err) {}
+    layer.eachLayer(l => l.setStyle && l.setStyle(markerStyle(e.name)));
+  });
+
+  // if the imagery host is unreachable, say so and fall back rather than showing grey
+  let satErrors = 0, fellBack = false;
+  [sat, sat2].forEach(l => l.on('tileerror', () => {
+    if (fellBack || ++satErrors < 4) return;
+    fellBack = true;
+    map.removeLayer(map.hasLayer(sat) ? sat : bases['Satellite + labels']);
+    streets.addTo(map);
+    layer.eachLayer(x => x.setStyle && x.setStyle(markerStyle('Streets')));
+    toast('Satellite tiles could not be loaded here - switched to the street map.');
+  }));
+  layer = L.layerGroup().addTo(map);
+
+  mapReady = true;
+  renderMap(true);
+}
+
+function markerStyle(name){
+  let b = name;
+  if (!b) { try { b = localStorage.getItem('kiri-coral-basemap') || 'Satellite'; } catch(e) { b = 'Satellite'; } }
+  // over imagery a dark fill disappears, so switch to a bright ring
+  return b === 'Streets'
+    ? {color:'#0f6d63', weight:2, fillColor:'#0f6d63', fillOpacity:.45}
+    : {color:'#ffffff', weight:2.5, fillColor:'#19e0c4', fillOpacity:.55};
+}
+
+function mapModels(){
+  const cls = $('#mpClass').value, site = $('#mpSite').value;
+  return MODELS.filter(m => {
+    const c = coordOf(m.id); if (!c) return false;
+    if (site && c.site !== site) return false;
+    if (cls === '__un'){ const l = labelOf(m.id); if (l && l.class) return false; }
+    else if (cls){ const l = labelOf(m.id); if (!l || l.class !== cls) return false; }
+    return true;
+  });
+}
+
+function fillMapPickers(){
+  const cs = $('#mpClass'), keep = cs.value;
+  const n = {};
+  MODELS.forEach(m => { const l = labelOf(m.id); n[(l && l.class) || '__un'] = (n[(l && l.class) || '__un'] || 0) + 1; });
+  cs.innerHTML = ''; cs.add(new Option('All classes', ''));
+  TAXA.groups.forEach(g => {
+    const og = document.createElement('optgroup'); og.label = g.label;
+    if (n[g.id]) og.appendChild(new Option(`${g.label} — genus only (${n[g.id]})`, g.id));
+    g.species.forEach(s => { if (n[s.id]) og.appendChild(new Option(`${s.label} (${n[s.id]})`, s.id)); });
+    if (og.children.length) cs.appendChild(og);
+  });
+  if (n['__un']) cs.add(new Option(`Unlabelled (${n['__un']})`, '__un'));
+  cs.value = keep; if (cs.selectedIndex < 0) cs.value = '';
+
+  const ss = $('#mpSite');
+  if (ss.options.length <= 1){
+    const k = {};
+    MODELS.forEach(m => { const c = coordOf(m.id); if (c) k[c.site] = (k[c.site]||0)+1; });
+    Object.entries(k).sort((a,b) => b[1]-a[1]).forEach(([s,v]) => ss.add(new Option(`${s} (${v})`, s)));
+  }
+}
+
+function renderMap(fit){
+  if (!mapReady) return;
+  fillMapPickers();
+  layer.clearLayers();
+  const list = mapModels();
+  const spots = new Map();
+  list.forEach(m => {
+    const c = coordOf(m.id);
+    const key = c.lat.toFixed(4) + ',' + c.lon.toFixed(4);
+    if (!spots.has(key)) spots.set(key, {lat:c.lat, lon:c.lon, site:c.site, prec:c.precision_km, ms:[]});
+    spots.get(key).ms.push(m);
+  });
+  const bounds = [];
+  spots.forEach(s => {
+    bounds.push([s.lat, s.lon]);
+    const r = Math.min(26, 8 + Math.sqrt(s.ms.length) * 3);
+    const mk = L.circleMarker([s.lat, s.lon], Object.assign({radius:r}, markerStyle()));
+    mk.bindTooltip(`${s.ms.length} model${s.ms.length>1?'s':''} · ${s.site}`, {direction:'top'});
+    mk.on('click', () => {
+      const byClass = {};
+      s.ms.forEach(m => { const l = labelOf(m.id);
+        const k = l && l.class ? className(l.class) : 'unlabelled';
+        byClass[k] = (byClass[k]||0)+1; });
+      const top = Object.entries(byClass).sort((a,b)=>b[1]-a[1]).slice(0,6)
+        .map(([k,v]) => `${esc(k)} <b>${v}</b>`).join(' · ');
+      const thumbs = s.ms.slice(0,8).map(m =>
+        `<img src="${esc(m.thumb)}" title="${esc(m.name)}" alt="">`).join('');
+      const div = document.createElement('div');
+      div.innerHTML = `<h4>${esc(s.site)}</h4>
+        <div class="muted">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)} · ±${s.prec} km · ${s.ms.length} models</div>
+        <div class="mlist">${thumbs}</div>
+        <div class="muted" style="font-size:12px">${top}</div>
+        <div class="row" style="margin-top:8px">
+          <button class="btn" data-a="3d">View in 3D</button>
+          <button class="btn" data-a="sort">Select in sorting room</button>
+        </div>`;
+      div.querySelector('[data-a="3d"]').onclick = () => show3d(s.ms.map(m => String(m.id)));
+      div.querySelector('[data-a="sort"]').onclick = () => {
+        picked.clear(); s.ms.forEach(m => picked.add(String(m.id)));
+        tab('sort'); renderBrowse(); selBar();
+      };
+      mk.bindPopup(div, {maxWidth:340}).openPopup();
+    });
+    layer.addLayer(mk);
+  });
+  $('#mpInfo').textContent = `${list.length} models · ${spots.size} dive site${spots.size===1?'':'s'}`;
+  if ((fit || !map._loaded) && bounds.length) map.fitBounds(bounds, {padding:[40,40], maxZoom:14});
+}
+
+$('#mpClass').onchange = () => renderMap(true);
+$('#mpSite').onchange = () => renderMap(true);
+$('#mpFit').onclick = () => renderMap(true);
+$('#credBtn').onclick = () => $('#credDlg').showModal();
+$('#credClose').onclick = () => $('#credDlg').close();
+
+/* ---------- home ---------- */
+function renderHome(){
+  // both of these are the author's own words, lifted verbatim from the guide
+  $('#heroText').innerHTML = HERO.hero;
+  $('#highlightCap').innerHTML = '<b>Figure 8. </b>' + HERO.cap;
+  const lab = id => labelOf(id);
+  const stony = new Set();
+  TAXA.groups.forEach(g => { if (g.kind === 'stony'){ stony.add(g.id);
+    g.species.forEach(s => stony.add(s.id)); } });
+  const coral = MODELS.filter(m => stony.has((lab(m.id)||{}).class)).length;
+  const used = new Set(MODELS.map(m => (lab(m.id)||{}).class).filter(Boolean)).size;
+  const spots = new Set(), regions = new Set();
+  MODELS.forEach(m => { const c = coordOf(m.id); if (!c) return;
+    spots.add(c.lat.toFixed(4) + ',' + c.lon.toFixed(4));
+    if (!/Europe/.test(c.site)) regions.add(c.site); });
+  const stats = [
+    [MODELS.length, 'models scanned'],
+    [coral, 'coral colonies'],
+    [used, 'classes in use'],
+    [spots.size, 'dive sites'],
+    [regions.size, 'reef regions'],
+  ];
+  $('#homeStats').innerHTML = stats.map(([n, l]) =>
+    `<div class="stat"><b>${n}</b><span>${esc(l)}</span></div>`).join('');
+}
+document.addEventListener('click', e => {
+  const go = e.target.closest('[data-go]');
+  if (go) tab(go.dataset.go);
+});
+
+/* ---------- guide ----------
+   Point this at the guide. Two ways, either or both:
+     pdf      a PDF sitting next to this page in the repo (best - works offline too)
+     overleaf the read-only Overleaf link, offered as a "source" button
+   Overleaf itself refuses to be embedded, so the PDF is what actually shows. */
+let gdLang = 'en', gdDrawn = false;
+
+function renderQuick(){
+  const g = GUIDE[gdLang] || GUIDE.en;
+  const box = $('#quickBox');
+  if (!g.quick){ box.innerHTML = '<div class="card pad mapnote">No quick guide in this language yet.</div>'; return; }
+  box.innerHTML = g.quick;
+  $('#qkTitle').textContent = gdLang === 'es' ? 'Pasos fáciles' : 'Easy steps';
+  // the intro paragraph reads as a lead; the list becomes numbered step cards
+  const first = box.querySelector('p');
+  if (first && !first.closest('li')) first.className = 'quicklead';
+  box.querySelectorAll('ol').forEach(ol => { if (!ol.closest('li')) ol.className = 'steps'; });
+  const note = document.createElement('p');
+  note.className = 'quicknote';
+  note.innerHTML = gdLang === 'es'
+    ? 'Extraído del Apéndice C de la guía completa.'
+    : 'Taken from Appendix C of the full guide.';
+  box.appendChild(note);
+  $('#qkEn').classList.toggle('on', gdLang === 'en');
+  $('#qkEs').classList.toggle('on', gdLang === 'es');
+}
+$('#qkEn').onclick = () => { gdLang = 'en'; renderQuick(); };
+$('#qkEs').onclick = () => { gdLang = 'es'; renderQuick(); };
+$('#qkPrint').onclick = () => window.print();
+
+function renderGuide(){
+  const g = GUIDE[gdLang] || GUIDE.en;
+  $('#guideBox').innerHTML = g.html;
+  $('#gdToc').innerHTML = g.toc;
+  // number the captions to match the figure numbers already used in the text
+  $('#guideBox').querySelectorAll('figure').forEach((f, i) => {
+    const cap = f.querySelector('figcaption');
+    if (cap && !cap.querySelector('b')) {
+      const lead = document.createElement('b');
+      lead.textContent = (gdLang === 'es' ? 'Figura ' : 'Figure ') + (i + 1) + '. ';
+      cap.insertBefore(lead, cap.firstChild);
+    }
+  });
+  // a quiet link on each heading, for sharing a section
+  $('#guideBox').querySelectorAll('h2[id],h3[id]').forEach(h => {
+    if (h.querySelector('.anchor')) return;
+    const a = document.createElement('a');
+    a.className = 'anchor'; a.href = '#' + h.id; a.textContent = '#';
+    a.onclick = e => { e.preventDefault(); h.scrollIntoView({behavior:'smooth', block:'start'}); };
+    h.appendChild(a);
+  });
+  $('#gdEn').classList.toggle('on', gdLang === 'en');
+  $('#gdEs').classList.toggle('on', gdLang === 'es');
+  $('#gdToc').querySelectorAll('a').forEach(a => {
+    a.onclick = e => {
+      e.preventDefault();
+      const el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    };
+  });
+  if (!gdDrawn){
+    gdDrawn = true;
+    // highlight the section you are reading
+    $('#toTop').onclick = () => scrollTo({top:0, behavior:'smooth'});
+    addEventListener('scroll', () => {
+      if (currentView !== 'guide') return;
+      $('#toTop').hidden = scrollY < 500;
+      const hs = [...$('#guideBox').querySelectorAll('h2,h3,h4')];
+      let cur = hs[0];
+      for (const h of hs) if (h.getBoundingClientRect().top < 120) cur = h;
+      $('#gdToc').querySelectorAll('a').forEach(a =>
+        a.classList.toggle('here', cur && a.getAttribute('href') === '#' + cur.id));
+    }, {passive:true});
+  }
+}
+$('#gdEn').onclick = () => { gdLang = 'en'; renderGuide(); };
+$('#gdEs').onclick = () => { gdLang = 'es'; renderGuide(); };
+$('#gdPrint').onclick = () => window.print();
+
+/* ---------- saving back to the repository ---------- */
+const LSSYNC = 'kiri-coral-sync-v1';
+let syncState = 'off', syncTimer = null, lastSha = null, lastSavedAt = null;
+
+const syncCfg = () => { try { return JSON.parse(localStorage.getItem(LSSYNC) || 'null'); } catch(e){ return null; } };
+const setSyncCfg = c => { try { c ? localStorage.setItem(LSSYNC, JSON.stringify(c))
+                                  : localStorage.removeItem(LSSYNC); } catch(e){} };
+
+function syncUI(){
+  const btn = $('#syncBtn'), c = syncCfg(), n = Object.keys(local).length;
+  btn.classList.remove('ok','busy','bad');
+  if (!c){ btn.textContent = 'Sync: off'; return; }
+  if (syncState === 'saving'){ btn.textContent = 'Saving…'; btn.classList.add('busy'); return; }
+  if (syncState === 'error'){ btn.textContent = 'Sync failed'; btn.classList.add('bad'); return; }
+  if (n){ btn.textContent = n + ' to save'; btn.classList.add('ok'); return; }
+  btn.textContent = lastSavedAt
+    ? 'Saved ' + new Date(lastSavedAt).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})
+    : 'Sync: on';
+  btn.classList.add('ok');
+}
+
+function ghHeaders(c){
+  return {Authorization: 'Bearer ' + c.token, Accept: 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28'};
+}
+const ghUrl = c => `https://api.github.com/repos/${c.repo}/contents/${c.path}`;
+
+async function ghRead(c){
+  const r = await fetch(`${ghUrl(c)}?ref=${encodeURIComponent(c.branch)}&t=${Date.now()}`,
+                        {headers: ghHeaders(c), cache: 'no-store'});
+  if (r.status === 404) return {sha: null, labels: {}};
+  if (!r.ok) throw new Error('read failed (' + r.status + ')');
+  const j = await r.json();
+  let labels = {};
+  try { labels = JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,''))))).labels || {}; }
+  catch(e) { labels = {}; }
+  return {sha: j.sha, labels};
+}
+
+async function ghWrite(c, body, sha, message){
+  const r = await fetch(ghUrl(c), {method:'PUT', headers: ghHeaders(c), body: JSON.stringify({
+    message, content: btoa(unescape(encodeURIComponent(body))), sha: sha || undefined, branch: c.branch})});
+  if (r.status === 409 || r.status === 422) return null;      // someone else wrote first
+  if (!r.ok) throw new Error('write failed (' + r.status + ')');
+  return (await r.json()).content.sha;
+}
+
+async function doSync(manual){
+  const c = syncCfg();
+  if (!c) return;
+  if (!Object.keys(local).length && !manual){ syncUI(); return; }
+  syncState = 'saving'; syncUI();
+  try {
+    for (let attempt = 0; attempt < 2; attempt++){
+      // whatever is in the repo is the baseline; this browser's edits win over it
+      const remote = await ghRead(c);
+      const merged = Object.assign({}, remote.labels, BASE, local);
+      Object.keys(local).forEach(k => { if (!local[k] || !local[k].class) delete merged[k]; });
+      // keep the descriptive header that ships with the file rather than flattening it
+      const human = Object.values(merged).filter(v => v.source === 'human').length;
+      const body = JSON.stringify(Object.assign({}, META, {
+        updatedAt: new Date().toISOString(),
+        counts: {models: MODELS.length, labelled: Object.keys(merged).length,
+                 confirmedByAuthor: human,
+                 awaitingReview: Object.values(merged).filter(v => v.needsReview).length},
+        customClasses: (custom.groups.length || custom.species.length) ? custom : undefined,
+        labels: merged}), null, 1);
+      const sha = await ghWrite(c, body, remote.sha,
+        `Update coral labels (${Object.keys(local).length} change${Object.keys(local).length===1?'':'s'})`);
+      if (sha){
+        BASE = merged; local = {}; save(); lastSha = sha; lastSavedAt = Date.now();
+        syncState = 'idle'; chrome(); syncUI();
+        if (manual) toast('Saved to the repository.');
+        return;
+      }
+      // 409: the file moved under us, loop once more against the new version
+    }
+    throw new Error('the file kept changing under us - try again');
+  } catch (err) {
+    syncState = 'error'; syncUI();
+    toast('Could not save: ' + err.message);
+  }
+}
+
+function scheduleSync(){
+  if (!syncCfg()) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(() => doSync(false), 8000);   // settle, then push
+  syncUI();
+}
+
+// a last push when the tab goes away, so nothing is stranded
+addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden' && syncCfg() && Object.keys(local).length) doSync(false);
+});
+
+const syDlg = $('#syncDlg');
+$('#syncBtn').onclick = () => {
+  const c = syncCfg() || {};
+  $('#syRepo').value = c.repo || ''; $('#syBranch').value = c.branch || 'main';
+  $('#syPath').value = c.path || 'labels.json'; $('#syToken').value = c.token || '';
+  const n = Object.keys(local).length;
+  $('#syInfo').textContent = syncCfg()
+    ? (n ? n + ' change(s) waiting to be saved.' : 'Everything is saved.')
+    : (n ? n + ' change(s) are held in this browser and will be saved as soon as you connect.' : '');
+  syDlg.showModal();
+};
+syDlg.addEventListener('close', () => {
+  const rv = syDlg.returnValue;
+  if (rv === 'cancel' || !rv) return;
+  if (rv === 'off'){
+    setSyncCfg(null); syncState = 'off'; lastSavedAt = null; syncUI();
+    toast('Disconnected. The token has been removed from this browser.');
+    return;
+  }
+  const repo = $('#syRepo').value.trim();
+  if (!/^[^/]+\/[^/]+$/.test(repo)){ toast('Repository should look like owner/name.'); return; }
+  setSyncCfg({repo, branch: $('#syBranch').value.trim() || 'main',
+              path: $('#syPath').value.trim() || 'labels.json', token: $('#syToken').value.trim()});
+  syncState = 'idle'; syncUI();
+  doSync(true);
+});
+
+/* ---------- export / import / publish ---------- */
+function download(name, text, type){
+  const b = new Blob([text], {type:type||'application/json'}), u = URL.createObjectURL(b);
+  const a = document.createElement('a'); a.href=u; a.download=name;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(u), 2000);
+}
+function csv(){
+  const rows = [['id','name','class','class_label','confidence','source','note','folder',
+    'site','latitude','longitude','precision_km','location_quality','nearest_clip',
+    'kiri_id','embed_url','thumbnail_url','glb_url']];
+  const L = merged();
+  MODELS.forEach(m => { const l = L[String(m.id)];
+    const c = coordOf(m.id) || {};
+    rows.push([m.id, m.name, (l&&l.class)||'', l?className(l.class):'', l?l.confidence:'',
+      (l&&l.source)||'', ((l&&l.note)||'').replace(/\s+/g,' '), (l&&l.class)||'unlabelled',
+      c.site||'', c.lat??'', c.lon??'', c.precision_km??'', c.quality||'', c.nearest_clip||'',
+      m.sid, m.embed, m.thumb, m.glb]); });
+  return rows.map(r => r.map(c => { const s = String(c ?? '');
+    return /[",\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s; }).join(',')).join('\n');
+}
+/* ---------- wiring ---------- */
+$('#prev').onclick = () => step(-1);
+$('#next').onclick = () => step(1);
+$('#nextUn').onclick = nextUn;
+$('#confirm').onclick = confirmLabel;
+$('#filter').onchange = () => { idx=0; buildView(); render(); };
+$('#search').oninput = () => { idx=0; buildView(); render(); };
+$('#undoBtn').onclick = undo;
+$('#clearBtn').onclick = () => { if (!cur) return; const k=String(cur.id); delete local[k];
+  if (BASE[k]) local[k] = {class:null, source:'human', at:new Date().toISOString()};
+  save(); chrome(); paint(); };
+$('#expJson').onclick = () => download('labels.json', JSON.stringify(labelsDoc(), null, 1));
+$('#expCsv').onclick = () => download('coral-labels.csv', csv(), 'text/csv');
+$('#impBtn').onclick = () => $('#impFile').click();
+$('#resetBtn').onclick = () => {
+  const n = Object.keys(local).length;
+  if (!n){ toast('No local edits - you are seeing the file as published.'); return; }
+  if (!confirm(`Discard ${n} label change(s) saved in this browser and fall back to the published labels?`)) return;
+  local = {}; save(); buildView(); render(); renderBrowse(); chrome(); toast('Local edits discarded.');
+};
+$('#impFile').onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try { const j = JSON.parse(await f.text()); const inc = j.labels || j;
+    if (j.customClasses){
+      const c = j.customClasses;
+      (c.groups||[]).forEach(g => { if(!custom.groups.some(x=>x.id===g.id)) custom.groups.push(g); });
+      (c.species||[]).forEach(s => { if(!custom.species.some(x=>x.id===s.id)) custom.species.push(s); });
+      saveCustom(); applyCustom(); renderGroups();
+    }
+    for (const k in inc) local[k] = inc[k];
+    save(); buildView(); render(); renderBrowse(); chrome(); toast('Labels imported.');
+  } catch(err){ toast('Could not read that file.'); }
+  e.target.value = '';
+};
+$('#dClose').onclick = () => $('#modelDlg').close();
+$('#modelDlg').addEventListener('close', () => { $('#dViewer').innerHTML=''; });
+$('#moveTo').onchange = e => { const v = e.target.value; e.target.value = ''; moveSelected(v); };
+$('#selClear').onclick = () => { picked.clear(); lastPick = null; renderBrowse(); selBar(); };
+$('#selTo3d').onclick = () => { if (picked.size) show3d([...picked]); };
+$('#bsearch').oninput = () => { renderBrowse(); selBar(); };
+$('#bsite').onchange = () => { renderBrowse(); selBar(); };
+$('#showUn').onchange = () => { renderBrowse(); selBar(); };
+$('#jump').onchange = e => { const el = document.getElementById(e.target.value);
+  if (el) el.scrollIntoView({behavior:'smooth', block:'start'}); };
+
+let currentView = 'classify';
+function tab(v){
+  currentView = v;
+  $('#viewHome').hidden     = v !== 'home';
+  $('#viewClassify').hidden = v !== 'classify';
+  $('#viewBrowse').hidden   = v !== 'sort';
+  $('#view3d').hidden       = v !== '3d';
+  $('#viewMap').hidden      = v !== 'map';
+  $('#viewQuick').hidden    = v !== 'quick';
+  $('#viewGuide').hidden    = v !== 'guide';
+  $('#tabHome').classList.toggle('on', v === 'home');
+  $('#tabClassify').classList.toggle('on', v === 'classify');
+  $('#tabBrowse').classList.toggle('on', v === 'sort');
+  $('#tab3d').classList.toggle('on', v === '3d');
+  $('#tabMap').classList.toggle('on', v === 'map');
+  $('#tabQuick').classList.toggle('on', v === 'quick');
+  $('#tabGuide').classList.toggle('on', v === 'guide');
+  if (v === 'sort') renderBrowse();
+  if (v === '3d') render3d();
+  if (v === 'map') openMap();
+  if (v === 'guide') renderGuide();
+  if (v === 'quick') renderQuick();
+  if (v === 'home') renderHome();
+  selBar();
+}
+$('#tabHome').onclick = () => tab('home');
+syncState = syncCfg() ? 'idle' : 'off';
+syncUI();
+if (syncCfg()) doSync(false);
+$('#tabClassify').onclick = () => tab('classify');
+$('#tabBrowse').onclick = () => tab('sort');
+$('#tab3d').onclick = () => tab('3d');
+$('#tabMap').onclick = () => tab('map');
+$('#tabQuick').onclick = () => tab('quick');
+$('#tabGuide').onclick = () => tab('guide');
+
+const addDlg = $('#addDlg');
+function openAdd(){
+  const sel = $('#acGroup'); sel.innerHTML = '';
+  TAXA.groups.forEach(g => sel.add(new Option(g.label, g.id)));
+  sel.add(new Option('— new group —', '__new'));
+  const curLabel = cur && labelOf(cur.id);
+  if (curLabel && SPEC.get(curLabel.class)) sel.value = SPEC.get(curLabel.class).group.id;
+  $('#acName').value = ''; $('#acNote').value = '';
+  $('#acGroupName').value = ''; $('#acKey').value = '';
+  $('#acNewGroup').hidden = sel.value !== '__new';
+  $('#acWarn').hidden = true;
+  addDlg.showModal();
+}
+$('#addClassBtn').onclick = openAdd;
+$('#acGroup').onchange = e => { $('#acNewGroup').hidden = e.target.value !== '__new'; };
+
+addDlg.addEventListener('close', () => {
+  if (addDlg.returnValue !== 'add') return;
+  const name = $('#acName').value.trim();
+  if (!name){ toast('Give the class a name.'); return; }
+  let groupId = $('#acGroup').value;
+  if (groupId === '__new'){
+    const gname = $('#acGroupName').value.trim();
+    if (!gname){ toast('Give the new group a name.'); return; }
+    let key = $('#acKey').value.trim().toLowerCase();
+    if (key && TAXA.groups.some(g => g.key === key)){
+      toast(`"${key}" is already taken - added without a shortcut.`); key = '';
+    }
+    groupId = uniqueId(slug(gname));
+    custom.groups.push({id:groupId, label:gname, key});
+  }
+  const id = uniqueId(slug(name));
+  custom.species.push({group:groupId, id, label:name, common:$('#acNote').value.trim()});
+  saveCustom(); applyCustom(); renderGroups(); paint();
+  toast('Added ' + name);
+  const el = document.querySelector(`.chip[data-cls="${id}"]`);
+  if (el) el.scrollIntoView({block:'nearest'});
+});
+
+document.addEventListener('keydown', e => {
+  if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName) || e.metaKey || e.ctrlKey) return;
+  if (document.querySelector('dialog[open]')) return;
+
+  // these work in both views
+  if (e.key === 'Escape' && picked.size){ picked.clear(); lastPick = null; renderBrowse(); selBar(); return; }
+  if (e.key === 'u' || e.key === 'Backspace'){ undo(); e.preventDefault(); return; }
+
+  if (currentView === '3d'){
+    if (e.key === 'ArrowRight'){ $('#t3next').click(); e.preventDefault(); }
+    if (e.key === 'ArrowLeft'){ $('#t3prev').click(); e.preventDefault(); }
+    return;
+  }
+  if (currentView !== 'classify') return;   // the rest are for the classify view
+
+  if (e.key==='ArrowRight'){ step(1); e.preventDefault(); return; }
+  if (e.key==='ArrowLeft'){ step(-1); e.preventDefault(); return; }
+  if (e.key==='Enter'){ nextUn(); e.preventDefault(); return; }
+  if (e.key===' '){ confirmLabel(); e.preventDefault(); return; }
+  if (/^[1-9]$/.test(e.key)){
+    const sel = document.querySelector('.group.sel');
+    const c = (sel || document).querySelectorAll('.chip')[Number(e.key)-1];
+    if (c){ assign(c.dataset.cls); e.preventDefault(); } return;
+  }
+  const g = TAXA.groups.find(g => g.key === e.key.toLowerCase());
+  if (g){ pickGroup(g); e.preventDefault(); }
+});
+
+/* start immediately; if a labels.json sits next to this page (served over http),
+   fold it in when it arrives — never block the UI on it */
+$('#build').textContent = 'build ' + BUILD.at + ' · ' + BUILD.human + ' confirmed';
+renderGroups(); buildView();
+try { const at = Number(localStorage.getItem('kiri-coral-pos') || 0);
+      if (at > 0 && at < view.length) idx = at; } catch(e) {}
+render(); chrome();
+tab('home');
+setInterval(() => { try { localStorage.setItem('kiri-coral-pos', String(idx)); } catch(e) {} }, 2000);
+if (location.protocol.startsWith('http')) {
+  fetch('labels.json', {cache:'no-store'})
+    .then(r => r.ok ? r.json() : null)
+    .then(j => { if (!j) return;
+      if (j.customClasses){
+        const c = j.customClasses;
+        (c.groups||[]).forEach(g => { if(!custom.groups.some(x=>x.id===g.id)) custom.groups.push(g); });
+        (c.species||[]).forEach(s => { if(!custom.species.some(x=>x.id===s.id)) custom.species.push(s); });
+        applyCustom(); renderGroups();
+      }
+      BASE = j.labels || j; buildView(); render(); chrome();
+      if (!$('#viewBrowse').hidden) renderBrowse(); })
+    .catch(() => {});
+}
+</script>
+</body>
+</html>

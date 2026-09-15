@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "note": "Class list for Caribbean/Tropical Western Atlantic reef photogrammetry. Edit freely - ids are what get stored in labels.json, so renaming a label is safe but changing an id breaks existing labels.",
+  "groups": [
+    {
+      "id": "acropora",
+      "label": "Acropora",
+      "key": "a",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "acropora_palmata",
+          "label": "Acropora palmata",
+          "common": "elkhorn"
+        },
+        {
+          "id": "acropora_cervicornis",
+          "label": "Acropora cervicornis",
+          "common": "staghorn"
+        },
+        {
+          "id": "acropora_prolifera",
+          "label": "Acropora prolifera",
+          "common": "fused staghorn"
+        }
+      ]
+    },
+    {
+      "id": "orbicella",
+      "label": "Orbicella",
+      "key": "o",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "orbicella_annularis",
+          "label": "Orbicella annularis",
+          "common": "boulder star"
+        },
+        {
+          "id": "orbicella_faveolata",
+          "label": "Orbicella faveolata",
+          "common": "mountainous star"
+        },
+        {
+          "id": "orbicella_franksi",
+          "label": "Orbicella franksi",
+          "common": "boulder star (Franks)"
+        }
+      ]
+    },
+    {
+      "id": "montastraea",
+      "label": "Montastraea",
+      "key": "m",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "montastraea_cavernosa",
+          "label": "Montastraea cavernosa",
+          "common": "great star"
+        }
+      ]
+    },
+    {
+      "id": "pseudodiploria",
+      "label": "Pseudodiploria",
+      "key": "p",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "pseudodiploria_strigosa",
+          "label": "Pseudodiploria strigosa",
+          "common": "symmetrical brain"
+        },
+        {
+          "id": "pseudodiploria_clivosa",
+          "label": "Pseudodiploria clivosa",
+          "common": "knobby brain"
+        }
+      ]
+    },
+    {
+      "id": "diploria",
+      "label": "Diploria",
+      "key": "d",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "diploria_labyrinthiformis",
+          "label": "Diploria labyrinthiformis",
+          "common": "grooved brain"
+        }
+      ]
+    },
+    {
+      "id": "colpophyllia",
+      "label": "Colpophyllia",
+      "key": "c",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "colpophyllia_natans",
+          "label": "Colpophyllia natans",
+          "common": "boulder brain"
+        }
+      ]
+    },
+    {
+      "id": "siderastrea",
+      "label": "Siderastrea",
+      "key": "s",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "siderastrea_siderea",
+          "label": "Siderastrea siderea",
+          "common": "massive starlet"
+        },
+        {
+          "id": "siderastrea_radians",
+          "label": "Siderastrea radians",
+          "common": "lesser starlet"
+        }
+      ]
+    },
+    {
+      "id": "porites",
+      "label": "Porites",
+      "key": "r",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "porites_astreoides",
+          "label": "Porites astreoides",
+          "common": "mustard hill"
+        },
+        {
+          "id": "porites_porites",
+          "label": "Porites porites / furcata / divaricata",
+          "common": "finger corals"
+        }
+      ]
+    },
+    {
+      "id": "agaricia",
+      "label": "Agaricia / agariciids",
+      "key": "g",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "agaricia_agaricites",
+          "label": "Agaricia agaricites",
+          "common": "lettuce"
+        },
+        {
+          "id": "agaricia_lamarcki",
+          "label": "Agaricia lamarcki / grahamae",
+          "common": "plate lettuce"
+        },
+        {
+          "id": "helioseris_cucullata",
+          "label": "Helioseris cucullata (= Leptoseris)",
+          "common": "sunray lettuce"
+        },
+        {
+          "id": "leptoseris_spp",
+          "label": "Leptoseris spp.",
+          "common": "deep plate agariciid"
+        }
+      ]
+    },
+    {
+      "id": "madracis",
+      "label": "Madracis",
+      "key": "b",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "madracis_auretenra",
+          "label": "Madracis auretenra (= mirabilis)",
+          "common": "yellow pencil"
+        },
+        {
+          "id": "madracis_decactis",
+          "label": "Madracis decactis",
+          "common": "ten-ray star"
+        }
+      ]
+    },
+    {
+      "id": "mycetophyllia",
+      "label": "Mycetophyllia",
+      "key": "y",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "mycetophyllia_spp",
+          "label": "Mycetophyllia spp.",
+          "common": "cactus corals"
+        }
+      ]
+    },
+    {
+      "id": "meandrina",
+      "label": "Meandrina",
+      "key": "n",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "meandrina_meandrites",
+          "label": "Meandrina meandrites",
+          "common": "maze coral"
+        }
+      ]
+    },
+    {
+      "id": "dendrogyra",
+      "label": "Dendrogyra",
+      "key": "e",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "dendrogyra_cylindrus",
+          "label": "Dendrogyra cylindrus",
+          "common": "pillar coral"
+        }
+      ]
+    },
+    {
+      "id": "eusmilia",
+      "label": "Eusmilia",
+      "key": "u",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "eusmilia_fastigiata",
+          "label": "Eusmilia fastigiata",
+          "common": "smooth flower"
+        }
+      ]
+    },
+    {
+      "id": "other_stony",
+      "label": "Other stony coral",
+      "key": "t",
+      "kind": "stony",
+      "species": [
+        {
+          "id": "dichocoenia_stokesi",
+          "label": "Dichocoenia stokesi",
+          "common": "elliptical star"
+        },
+        {
+          "id": "stephanocoenia_intersepta",
+          "label": "Stephanocoenia intersepta",
+          "common": "blushing star"
+        },
+        {
+          "id": "solenastrea",
+          "label": "Solenastrea spp.",
+          "common": "knobby star"
+        },
+        {
+          "id": "favia_fragum",
+          "label": "Favia fragum",
+          "common": "golfball"
+        },
+        {
+          "id": "manicina_areolata",
+          "label": "Manicina areolata",
+          "common": "rose coral"
+        },
+        {
+          "id": "mussa_angulosa",
+          "label": "Mussa angulosa",
+          "common": "spiny flower"
+        },
+        {
+          "id": "scolymia_isophyllia",
+          "label": "Scolymia / Isophyllia (unsplit)",
+          "common": "sort these into one of the two below"
+        },
+        {
+          "id": "scolymia_spp",
+          "label": "Scolymia spp.",
+          "common": "solitary disc, single polyp"
+        },
+        {
+          "id": "isophyllia_spp",
+          "label": "Isophyllia spp.",
+          "common": "sinuous cactus, few valleys"
+        },
+        {
+          "id": "oculina",
+          "label": "Oculina spp.",
+          "common": "ivory bush"
+        },
+        {
+          "id": "tubastraea",
+          "label": "Tubastraea coccinea",
+          "common": "orange cup (invasive)"
+        },
+        {
+          "id": "stony_unknown",
+          "label": "Stony coral, genus unclear",
+          "common": ""
+        }
+      ]
+    },
+    {
+      "id": "millepora",
+      "label": "Millepora",
+      "key": "f",
+      "kind": "other",
+      "species": [
+        {
+          "id": "millepora_spp",
+          "label": "Millepora spp.",
+          "common": "fire coral (hydrozoan)"
+        }
+      ]
+    },
+    {
+      "id": "octocoral",
+      "label": "Octocoral",
+      "key": "k",
+      "kind": "other",
+      "species": [
+        {
+          "id": "gorgonian_sea_fan",
+          "label": "Sea fan (Gorgonia)",
+          "common": ""
+        },
+        {
+          "id": "gorgonian_sea_rod",
+          "label": "Sea rod / sea plume",
+          "common": ""
+        },
+        {
+          "id": "octocoral_other",
+          "label": "Other octocoral",
+          "common": ""
+        }
+      ]
+    },
+    {
+      "id": "antipatharia",
+      "label": "Black coral",
+      "key": "l",
+      "kind": "other",
+      "species": [
+        {
+          "id": "antipatharia_spp",
+          "label": "Antipatharia spp.",
+          "common": "black coral"
+        }
+      ]
+    },
+    {
+      "id": "not_coral",
+      "label": "Not a coral",
+      "key": "x",
+      "kind": "other",
+      "species": [
+        {
+          "id": "sponge",
+          "label": "Sponge",
+          "common": ""
+        },
+        {
+          "id": "algae",
+          "label": "Algae / CCA",
+          "common": ""
+        },
+        {
+          "id": "substrate",
+          "label": "Substrate / rubble / pavement",
+          "common": ""
+        },
+        {
+          "id": "fish_other_fauna",
+          "label": "Fish / other fauna",
+          "common": ""
+        },
+        {
+          "id": "artificial",
+          "label": "Artificial structure / equipment",
+          "common": ""
+        },
+        {
+          "id": "terrestrial",
+          "label": "Terrestrial / land scene",
+          "common": "trees, roots, plants"
+        },
+        {
+          "id": "dry_specimen",
+          "label": "Dry specimen / indoor scan",
+          "common": "shells, skeletons, fossils"
+        }
+      ]
+    },
+    {
+      "id": "scene",
+      "label": "Reef scene",
+      "key": "w",
+      "kind": "other",
+      "species": [
+        {
+          "id": "scene_multi",
+          "label": "Multiple colonies / plot",
+          "common": ""
+        },
+        {
+          "id": "scene_transect",
+          "label": "Transect / quadrat",
+          "common": ""
+        }
+      ]
+    },
+    {
+      "id": "unusable",
+      "label": "Unclear / bad scan",
+      "key": "z",
+      "kind": "other",
+      "species": [
+        {
+          "id": "unclear",
+          "label": "Too unclear to ID",
+          "common": ""
+        },
+        {
+          "id": "failed_scan",
+          "label": "Failed / incomplete scan",
+          "common": ""
+        },
+        {
+          "id": "duplicate",
+          "label": "Duplicate of another model",
+          "common": ""
+        }
+      ]
+    }
+  ]
+}

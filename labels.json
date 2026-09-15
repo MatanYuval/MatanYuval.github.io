@@ -1,5 +1,22 @@
 {
- "version": 1,
+ "version": 2,
+ "updatedAt": "2026-09-15T09:17:49Z",
+ "about": "Species labels for the Adopt-a-Coral 3D model archive. Keyed by Kiri model id.",
+ "counts": {
+  "models": 616,
+  "labelled": 616,
+  "confirmedByAuthor": 23,
+  "awaitingReview": 594
+ },
+ "fields": {
+  "class": "id from data/taxa.json (a species id, or a genus id when only the genus is known)",
+  "confidence": "1 = determined, below 1 = provisional; an AI suggestion carries its own estimate",
+  "source": "human = determined by the author, ai = suggested from a thumbnail and not yet checked",
+  "needsReview": "true until a person has confirmed it against the 3D model",
+  "note": "free text",
+  "at": "when the label was last set"
+ },
+ "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
  "labels": {
   "2249481": {
    "class": "mussa_angulosa",
@@ -4929,6 +4946,5 @@
    "needsReview": true,
    "at": "2026-09-14T17:21:43Z"
   }
- },
- "updatedAt": "2026-09-14T18:13:39Z"
+ }
 }
