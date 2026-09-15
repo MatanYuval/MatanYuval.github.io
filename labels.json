@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T11:38:15.564Z",
+ "updatedAt": "2026-09-15T11:38:25.389Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 113,
-  "awaitingReview": 504
+  "confirmedByAuthor": 114,
+  "awaitingReview": 503
  },
  "labels": {
   "2249481": {
@@ -995,12 +995,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302016": {
-   "class": "pseudodiploria_clivosa",
-   "confidence": 0.3,
-   "source": "ai",
-   "note": "knobby surface",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "mussa_angulosa",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-15T11:38:16.903Z"
   },
   "2302021": {
    "class": "stony_unknown",
