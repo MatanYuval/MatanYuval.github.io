@@ -1,13 +1,6 @@
 {
  "version": 2,
- "updatedAt": "2026-09-15T09:17:49Z",
  "about": "Species labels for the Adopt-a-Coral 3D model archive. Keyed by Kiri model id.",
- "counts": {
-  "models": 616,
-  "labelled": 616,
-  "confirmedByAuthor": 23,
-  "awaitingReview": 594
- },
  "fields": {
   "class": "id from data/taxa.json (a species id, or a genus id when only the genus is known)",
   "confidence": "1 = determined, below 1 = provisional; an AI suggestion carries its own estimate",
@@ -17,6 +10,13 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
+ "updatedAt": "2026-09-15T11:33:20.336Z",
+ "counts": {
+  "models": 616,
+  "labelled": 616,
+  "confirmedByAuthor": 46,
+  "awaitingReview": 571
+ },
  "labels": {
   "2249481": {
    "class": "mussa_angulosa",
@@ -139,12 +139,12 @@
    "at": "2026-09-14T17:21:33Z"
   },
   "2268959": {
-   "class": "montastraea_cavernosa",
-   "confidence": 0.45,
-   "source": "ai",
-   "note": "large well-spaced corallites",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "class": "other_stony",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:04:39.339Z"
   },
   "2271863": {
    "class": "pseudodiploria_strigosa",
@@ -172,35 +172,35 @@
   },
   "2275376": {
    "class": "acropora_cervicornis",
-   "confidence": 0.5,
-   "source": "ai",
+   "confidence": 1,
+   "source": "human",
    "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "needsReview": false,
+   "at": "2026-09-14T20:04:35.218Z"
   },
   "2275379": {
-   "class": "stony_unknown",
-   "confidence": 0.3,
-   "source": "ai",
+   "class": "montastraea_cavernosa",
+   "confidence": 1,
+   "source": "human",
    "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "needsReview": false,
+   "at": "2026-09-14T20:14:50.219Z"
   },
   "2275437": {
-   "class": "pseudodiploria_clivosa",
-   "confidence": 0.3,
-   "source": "ai",
+   "class": "orbicella",
+   "confidence": 1,
+   "source": "human",
    "note": "knobby surface",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "needsReview": false,
+   "at": "2026-09-14T20:14:57.569Z"
   },
   "2275447": {
    "class": "pseudodiploria_strigosa",
-   "confidence": 0.55,
-   "source": "ai",
+   "confidence": 1,
+   "source": "human",
    "note": "rounded head with even meanders",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:33Z"
+   "needsReview": false,
+   "at": "2026-09-14T20:15:14.468Z"
   },
   "2275448": {
    "class": "madracis",
@@ -208,7 +208,7 @@
    "source": "human",
    "note": "identified by Matan as Madracis; species not specified",
    "needsReview": false,
-   "at": "2026-09-14T18:11:30Z"
+   "at": "2026-09-14T20:15:18.136Z"
   },
   "2275452": {
    "class": "pseudodiploria_strigosa",
@@ -595,12 +595,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2289647": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2289651": {
    "class": "stony_unknown",
@@ -915,12 +915,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2298943": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2298948": {
    "class": "acropora_cervicornis",
@@ -1035,12 +1035,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302044": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2302049": {
    "class": "pseudodiploria_strigosa",
@@ -1067,20 +1067,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2302059": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2302063": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2302066": {
    "class": "colpophyllia_natans",
@@ -1139,12 +1139,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2305480": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2305517": {
    "class": "colpophyllia_natans",
@@ -1195,12 +1195,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2305893": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2305904": {
    "class": "colpophyllia_natans",
@@ -1827,20 +1827,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2318524": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:41.858Z"
   },
   "2318529": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:41.858Z"
   },
   "2318534": {
    "class": "stony_unknown",
@@ -1931,20 +1931,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2318574": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.42,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:25.108Z"
   },
   "2318591": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:25.108Z"
   },
   "2318758": {
    "class": "colpophyllia_natans",
@@ -1979,12 +1979,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2331069": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:25.108Z"
   },
   "2331075": {
    "class": "mycetophyllia_spp",
@@ -2003,12 +2003,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2331080": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "diploria_labyrinthiformis",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:25.108Z"
   },
   "2331087": {
    "class": "pseudodiploria_strigosa",
@@ -2107,20 +2107,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337078": {
-   "class": "montastraea_cavernosa",
+   "class": "other_stony",
    "confidence": 1,
    "source": "human",
-   "note": "identified by Matan from the collection view",
+   "note": "bulk move from the collection view",
    "needsReview": false,
-   "at": "2026-09-14T18:08:11Z"
+   "at": "2026-09-14T19:04:39.339Z"
   },
   "2337079": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2337084": {
    "class": "stony_unknown",
@@ -2131,12 +2131,12 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337085": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T19:05:34.640Z"
   },
   "2337086": {
    "class": "colpophyllia_natans",
@@ -2187,20 +2187,20 @@
    "at": "2026-09-14T17:21:43Z"
   },
   "2337108": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:41.858Z"
   },
   "2337112": {
-   "class": "pseudodiploria_strigosa",
-   "confidence": 0.4,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "colpophyllia_natans",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:36:41.858Z"
   },
   "2340373": {
    "class": "pseudodiploria_strigosa",
@@ -3635,12 +3635,12 @@
    "at": "2026-09-14T18:13:39Z"
   },
   "2385262": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.35,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "eusmilia_fastigiata",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-14T18:37:30.290Z"
   },
   "2385265": {
    "class": "colpophyllia_natans",
@@ -4194,6 +4194,174 @@
    "needsReview": true,
    "at": "2026-09-14T17:21:43Z"
   },
+  "2411515": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420407": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420576": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420597": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420606": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420609": {
+   "class": "terrestrial",
+   "confidence": 0.55,
+   "source": "ai",
+   "note": "",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420614": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420619": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420622": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420625": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420630": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420634": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420638": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420643": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420662": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420673": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420691": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420720": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420789": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2420814": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2425704": {
+   "class": "terrestrial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "land scan - trees, roots, plants",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
   "2440854": {
    "class": "stony_unknown",
    "confidence": 0.28,
@@ -4658,190 +4826,6 @@
    "needsReview": true,
    "at": "2026-09-14T17:21:43Z"
   },
-  "2536825": {
-   "class": "artificial",
-   "confidence": 0.5,
-   "source": "ai",
-   "note": "indoor, notebook and paperwork",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "3284864": {
-   "class": "artificial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "public statue",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2411515": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420407": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420576": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420597": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420606": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420609": {
-   "class": "terrestrial",
-   "confidence": 0.55,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420614": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420619": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420622": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420625": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420630": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420634": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420638": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420643": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420662": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420673": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420691": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420720": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420789": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2420814": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
-  "2425704": {
-   "class": "terrestrial",
-   "confidence": 0.6,
-   "source": "ai",
-   "note": "land scan - trees, roots, plants",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
-  },
   "2449766": {
    "class": "dry_specimen",
    "confidence": 0.55,
@@ -4863,6 +4847,14 @@
    "confidence": 0.55,
    "source": "ai",
    "note": "indoor scan of a specimen",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "2536825": {
+   "class": "artificial",
+   "confidence": 0.5,
+   "source": "ai",
+   "note": "indoor, notebook and paperwork",
    "needsReview": true,
    "at": "2026-09-14T17:21:43Z"
   },
@@ -4943,6 +4935,14 @@
    "confidence": 0.5,
    "source": "ai",
    "note": "potted plant",
+   "needsReview": true,
+   "at": "2026-09-14T17:21:43Z"
+  },
+  "3284864": {
+   "class": "artificial",
+   "confidence": 0.6,
+   "source": "ai",
+   "note": "public statue",
    "needsReview": true,
    "at": "2026-09-14T17:21:43Z"
   }
