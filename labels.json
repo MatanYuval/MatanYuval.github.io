@@ -10,12 +10,12 @@
   "at": "when the label was last set"
  },
  "caution": "Labels with source 'ai' were inferred from a single thumbnail render and are unreliable at species level, particularly among the brain corals. Treat them as a sorting aid, not a determination. Only the entries with source 'human' have been checked against the 3D model.",
- "updatedAt": "2026-09-15T18:55:04.153Z",
+ "updatedAt": "2026-09-16T08:10:57.087Z",
  "counts": {
   "models": 616,
   "labelled": 616,
-  "confirmedByAuthor": 445,
-  "awaitingReview": 172
+  "confirmedByAuthor": 446,
+  "awaitingReview": 171
  },
  "labels": {
   "2249481": {
@@ -3267,12 +3267,12 @@
    "at": "2026-09-15T12:33:26.155Z"
   },
   "2373964": {
-   "class": "mycetophyllia_spp",
-   "confidence": 0.33,
-   "source": "ai",
-   "note": "",
-   "needsReview": true,
-   "at": "2026-09-14T17:21:43Z"
+   "class": "not_coral",
+   "confidence": 1,
+   "source": "human",
+   "note": "bulk move from the collection view",
+   "needsReview": false,
+   "at": "2026-09-16T08:10:48.549Z"
   },
   "2373967": {
    "class": "pseudodiploria_strigosa",
