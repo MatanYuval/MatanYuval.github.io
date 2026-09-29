@@ -5,62 +5,70 @@
 @media(prefers-color-scheme:dark){:root{--bg:#101413;--panel:#171d1c;--ink:#e8efed;--muted:#9aa8a5;--line:#28312f;--accent:#4fd6c3;--soft:#12312d}}
 a{text-decoration:none;color:inherit}.brand{font-weight:650}header,.panel{background:var(--panel);border-color:var(--line)}
 .hint,.status,.moves{color:var(--muted)}.moves strong{color:var(--ink)}.btn,.filelabel{background:var(--panel);color:var(--ink);border-color:var(--line)}.btn:hover,.filelabel:hover{border-color:var(--accent);color:var(--accent)}.btn.active{background:var(--soft);border-color:var(--accent)}.board-shell{background:var(--soft);border-color:var(--line);min-height:0}.board{border-color:var(--line);max-width:680px}.board.solved{border-color:var(--accent)}.progress{background:var(--line)}.progress div{background:var(--accent)}.toast{color:var(--accent)}.filelabel{position:relative;overflow:hidden;cursor:pointer}.filelabel input{display:block;position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.filelabel:focus-within{outline:2px solid var(--accent);outline-offset:3px}
-</style></head><body><header><a class="brand" href="index.html">Adopt-a-Coral</a><a class="btn" href="index.html">Back to the site</a></header><main><section class="work"><div class="topline"><div><h1>Coral puzzle</h1><div class="hint">Select two pieces to swap them, or drag one onto another.</div></div><div class="controls"><label class="filelabel">Upload image<input id="upload" type="file" accept="image/*"></label><button class="btn" id="shuffle">Shuffle pieces</button></div></div><div class="board-shell"><div id="board" class="board" aria-label="Puzzle board"></div></div></section><aside class="side"><div class="panel"><h2>Play controls</h2><p class="hint small">Rearrange all 12 pieces to restore the center of the image. Every swap counts as one move.</p><div class="progress"><div id="bar"></div></div><div class="small" id="progressText"></div><div class="moves"><strong id="moves">0</strong> moves</div><div class="toggle-row"><button class="btn" id="reference">Show guide</button></div><div class="toast" id="toast" role="status"></div></div></aside></main><script>
-const cols=4,rows=3,total=cols*rows,cropFraction=2/3,cropMargin=(1-cropFraction)/2;const board=document.querySelector('#board');const demo='guide/hero.jpg';
-let img=demo,slots=[],selected=null,guide=false,drag=null,moves=0,solved=false,loadVersion=0;
-const $=s=>document.querySelector(s);
-function message(s){$('#toast').textContent=s}
-function pattern(el,id){
- el.style.backgroundImage=`url("${img}")`;
- // Display each tile's region within the central two-thirds of the source.
- const tileWidth=cropFraction/cols,tileHeight=cropFraction/rows;
- el.style.backgroundSize=`${100/tileWidth}% ${100/tileHeight}%`;
- el.style.backgroundPosition=`${100*(cropMargin+(id%cols)*tileWidth)/(1-tileWidth)}% ${100*(cropMargin+Math.floor(id/cols)*tileHeight)/(1-tileHeight)}%`;
+
+.view-switch{display:flex;gap:8px;margin:0 0 14px}.board-shell{padding:12px}.board{display:block;width:100%;max-width:900px;height:auto;max-height:70vh;aspect-ratio:auto;border:0;border-radius:0;background:transparent;overflow:visible;touch-action:none;user-select:none}.piece{cursor:grab;outline:none}.piece-outline{stroke:rgba(12,36,33,.75);stroke-width:1.4;stroke-linejoin:round}.piece.selected .piece-outline,.piece:focus-visible .piece-outline{stroke:#e69b19;stroke-width:4}.piece.dragging{cursor:grabbing;opacity:.92}.piece.dragging .piece-outline{stroke:#e69b19;stroke-width:3}.fixed .piece{cursor:default}.fixed .piece-outline{stroke-width:1}.privacy-note{margin-top:20px!important}.btn.active{color:var(--accent);font-weight:700}@media(max-width:620px){.board-shell{padding:3px}.board{max-height:60vh}}
+</style></head><body><header><a class="brand" href="index.html">Adopt-a-Coral</a><a class="btn" href="index.html">Back to the site</a></header><main><section class="work"><div class="topline"><div><h1>Coral puzzle</h1><div class="hint" id="viewHint"></div></div><div class="controls"><label class="filelabel">Upload image<input id="upload" type="file" accept="image/*"></label><button class="btn" id="shuffle">Shuffle pieces</button></div></div><div class="view-switch" role="group" aria-label="Puzzle view"><button id="scrambled" class="btn active" aria-pressed="true">Scrambled</button><button id="assembled" class="btn" aria-pressed="false">Assembled</button></div><div class="board-shell"><svg xmlns="http://www.w3.org/2000/svg" id="board" class="board" aria-label="Jigsaw puzzle"></svg></div></section><aside class="side"><div class="panel"><h2>Play controls</h2><p class="hint small">Rearrange 12 interlocking pieces to restore the center of the image. Every swap counts as one move.</p><div class="progress"><div id="bar"></div></div><div class="small" id="progressText"></div><div class="moves"><strong id="moves">0</strong> moves</div><p class="hint small privacy-note">Your uploaded image stays in this browser.</p><div class="toast" id="toast" role="status"></div></div></aside></main><script>
+const cols=4,rows=3,total=cols*rows,cropFraction=2/3;
+const board=document.querySelector('#board'),$=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg';
+let img='guide/hero.jpg',ratio=1800/1016,slots=[],selected=null,moves=0,solved=false,assembled=false,loadVersion=0,pointer=null;
+function svg(tag,attrs={}){const el=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))el.setAttribute(key,String(value));return el}
+function message(text){$('#toast').textContent=text}
+function geometry(){const w=200,h=800/ratio/rows,tab=Math.min(w,h)*.2,gap=tab*2.8,pad=tab+5;return {w,h,tab,gap,pad,width:cols*w+(cols-1)*gap+2*pad,height:rows*h+(rows-1)*gap+2*pad}}
+function edgeSign(row,col){return (row*7+col*3)%2===0?1:-1}
+function piecePath(id,g){
+ const row=Math.floor(id/cols),col=id%cols,{w,h,tab}=g;
+ let path='M 0 0';
+ function edge(ax,ay,bx,by,sign){
+  const dx=bx-ax,dy=by-ay,len=Math.hypot(dx,dy),nx=dy/len,ny=-dx/len;
+  const p=(t,n=0)=>`${ax+dx*t+nx*n*tab*sign} ${ay+dy*t+ny*n*tab*sign}`;
+  if(!sign){path+=` L ${bx} ${by}`;return}
+  path+=` L ${p(.35)} C ${p(.46)} ${p(.34,1)} ${p(.5,1)} C ${p(.66,1)} ${p(.54)} ${p(.65)} L ${bx} ${by}`;
+ }
+ edge(0,0,w,0,row===0?0:-edgeSign(row-1,col));
+ edge(w,0,w,h,col===cols-1?0:edgeSign(row,col));
+ edge(w,h,0,h,row===rows-1?0:edgeSign(row,col));
+ edge(0,h,0,0,col===0?0:-edgeSign(row,col-1));
+ return path+' Z';
 }
+function position(index,g,fixed=assembled||solved){return {x:g.pad+(fixed?(cols-1)*g.gap/2:0)+(index%cols)*(g.w+(fixed?0:g.gap)),y:g.pad+(fixed?(rows-1)*g.gap/2:0)+Math.floor(index/cols)*(g.h+(fixed?0:g.gap))}}
+function setView(fixed){assembled=fixed;selected=null;pointer=null;render()}
 function newGame(){
  slots=Array.from({length:total},(_,i)=>i);
- // Fisher–Yates, with an already-solved result rejected.
- do {for(let i=total-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[slots[i],slots[j]]=[slots[j],slots[i]]}}while(slots.every((id,i)=>id===i));
- selected=null;drag=null;moves=0;guide=false;solved=false;message('');render();
+ do{for(let i=total-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[slots[i],slots[j]]=[slots[j],slots[i]]}}while(slots.every((id,i)=>id===i));
+ selected=null;moves=0;solved=false;assembled=false;pointer=null;message('');render();
 }
 function render(){
- const focusIndex=document.activeElement?.dataset.index;
- board.style.gridTemplateColumns=`repeat(${cols},1fr)`;board.style.gridTemplateRows=`repeat(${rows},1fr)`;board.replaceChildren();
- slots.forEach((id,index)=>{
-  const cell=document.createElement('button');cell.type='button';cell.className='slot tile'+(selected===index?' selected':'');cell.dataset.index=index;cell.draggable=!solved&&!guide;
-  cell.disabled=solved||guide;cell.setAttribute('aria-label',`Position ${index+1}`);cell.setAttribute('aria-pressed',String(selected===index));pattern(cell,id);board.append(cell);
+ const focusIndex=document.activeElement?.dataset.index,g=geometry(),fixed=assembled||solved;
+ board.replaceChildren();board.setAttribute('viewBox',`0 0 ${g.width} ${g.height}`);board.setAttribute('aria-label',fixed?'Assembled jigsaw preview':'Scrambled jigsaw puzzle');
+ const defs=svg('defs');board.append(defs);
+ (fixed?Array.from({length:total},(_,i)=>i):slots).forEach((id,index)=>{
+  const path=piecePath(id,g),clip=svg('clipPath',{id:`piece-clip-${id}`,clipPathUnits:'userSpaceOnUse'});clip.append(svg('path',{d:path}));defs.append(clip);
+  const p=position(index,g),group=svg('g',{transform:`translate(${p.x} ${p.y})`,class:`piece${selected===index?' selected':''}`,'data-index':index,role:'button',tabindex:fixed?-1:0,'aria-disabled':fixed,'aria-pressed':selected===index,'aria-label':`Piece at position ${index+1}`});
+  const image=svg('image',{href:img,x:-g.w*(id%cols)-cols*g.w/4,y:-g.h*Math.floor(id/cols)-rows*g.h/4,width:cols*g.w/cropFraction,height:rows*g.h/cropFraction,preserveAspectRatio:'none','clip-path':`url(#piece-clip-${id})`,'pointer-events':'none'});
+  group.append(image,svg('path',{d:path,class:'piece-outline','vector-effect':'non-scaling-stroke',fill:'transparent'}));board.append(group);
  });
- if(guide){const ref=document.createElement('div');ref.className='reference';ref.style.backgroundImage=`url("${img}")`;board.append(ref)}
  const correct=slots.filter((id,i)=>id===i).length;
  $('#bar').style.width=`${correct/total*100}%`;$('#progressText').textContent=`${correct} of ${total} in the right place`;$('#moves').textContent=moves;
- $('#reference').classList.toggle('active',guide);$('#reference').setAttribute('aria-pressed',String(guide));$('#reference').textContent=guide?'Back to puzzle':'Show guide';
- board.classList.toggle('solved',solved);
- if(focusIndex!==undefined)board.querySelector(`[data-index="${focusIndex}"]`)?.focus({preventScroll:true});
+ $('#scrambled').classList.toggle('active',!assembled);$('#assembled').classList.toggle('active',assembled);
+ $('#scrambled').setAttribute('aria-pressed',String(!assembled));$('#assembled').setAttribute('aria-pressed',String(assembled));
+ $('#viewHint').textContent=assembled?'Assembled preview. Your puzzle progress is kept.':solved?'Puzzle complete. Shuffle the pieces to play again.':'Tap two pieces to swap them, or drag one onto another.';
+ board.classList.toggle('fixed',fixed);
+ if(focusIndex!==undefined&&!fixed)board.querySelector(`[data-index="${focusIndex}"]`)?.focus({preventScroll:true});
 }
 function swap(from,to){
- if(solved||guide||from===to||!Number.isInteger(from)||!Number.isInteger(to)||from<0||to<0||from>=total||to>=total)return;
+ if(solved||assembled||from===to||!Number.isInteger(from)||!Number.isInteger(to)||from<0||to<0||from>=total||to>=total)return;
  [slots[from],slots[to]]=[slots[to],slots[from]];moves++;selected=null;solved=slots.every((id,i)=>id===i);render();
- if(solved)message(`Puzzle complete in ${moves} ${moves===1?'move':'moves'}! Shuffle to play again.`);
+ if(solved)message(`Puzzle complete in ${moves} ${moves===1?'move':'moves'}!`);
 }
-board.addEventListener('click',e=>{
- const cell=e.target.closest('[data-index]');if(!cell||guide||solved)return;const index=Number(cell.dataset.index);
- if(selected===null){selected=index;render()}else if(selected===index){selected=null;render()}else swap(selected,index);
-});
-board.addEventListener('keydown',e=>{
- const cell=e.target.closest('[data-index]');if(!cell)return;const index=Number(cell.dataset.index);
- const offsets={ArrowLeft:-1,ArrowRight:1,ArrowUp:-cols,ArrowDown:cols};
- if(e.key==='Escape'){selected=null;render()}else if(e.key in offsets){e.preventDefault();board.querySelector(`[data-index="${Math.max(0,Math.min(total-1,index+offsets[e.key]))}"]`)?.focus()}
-});
-board.addEventListener('dragstart',e=>{const c=e.target.closest('[data-index]');if(!c||guide||solved){e.preventDefault();return}drag=Number(c.dataset.index);e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',String(drag))});
-board.addEventListener('dragover',e=>{if(drag!==null&&!guide&&!solved){e.preventDefault();e.dataTransfer.dropEffect='move'}});
-board.addEventListener('drop',e=>{e.preventDefault();const c=e.target.closest('[data-index]');if(c&&drag!==null)swap(drag,Number(c.dataset.index));drag=null});
-board.addEventListener('dragend',()=>{drag=null});
-$('#shuffle').onclick=newGame;
-$('#reference').onclick=()=>{guide=!guide;selected=null;render()};
-$('#upload').onchange=e=>{
- const file=e.target.files?.[0];if(!file)return;const version=++loadVersion;
- const reader=new FileReader();reader.onerror=()=>message('Could not read this image. Please try another file.');
- reader.onload=()=>{const picture=new Image();picture.onerror=()=>message('This image could not be opened. Try a JPG, PNG or WebP.');picture.onload=()=>{if(version!==loadVersion)return;img=reader.result;board.style.aspectRatio=`${picture.naturalWidth}/${picture.naturalHeight}`;newGame()};picture.src=reader.result};reader.readAsDataURL(file);e.target.value='';
-};
+function choose(index){if(solved||assembled)return;if(selected===null){selected=index;render()}else if(selected===index){selected=null;render()}else swap(selected,index)}
+function point(e){const p=board.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(board.getScreenCTM().inverse())}
+board.addEventListener('pointerdown',e=>{if(solved||assembled||!e.isPrimary||e.button!==0)return;const el=e.target.closest('.piece');if(!el)return;const p=point(e);pointer={id:e.pointerId,index:Number(el.dataset.index),x:p.x,y:p.y,clientX:e.clientX,clientY:e.clientY,dragged:false,el};board.setPointerCapture(e.pointerId)});
+board.addEventListener('pointermove',e=>{if(!pointer||pointer.id!==e.pointerId)return;if(Math.hypot(e.clientX-pointer.clientX,e.clientY-pointer.clientY)>6)pointer.dragged=true;if(!pointer.dragged)return;const p=point(e),origin=position(pointer.index,geometry(),false);pointer.el.setAttribute('transform',`translate(${origin.x+p.x-pointer.x} ${origin.y+p.y-pointer.y})`);pointer.el.classList.add('dragging');board.append(pointer.el)});
+board.addEventListener('pointerup',e=>{if(!pointer||pointer.id!==e.pointerId)return;const current=pointer;pointer=null;if(board.hasPointerCapture(e.pointerId))board.releasePointerCapture(e.pointerId);if(!current.dragged){choose(current.index);return}const p=point(e),g=geometry(),col=Math.round((p.x-g.pad-g.w/2)/(g.w+g.gap)),row=Math.round((p.y-g.pad-g.h/2)/(g.h+g.gap));if(col>=0&&col<cols&&row>=0&&row<rows)swap(current.index,row*cols+col);render()});
+board.addEventListener('pointercancel',()=>{pointer=null;render()});
+board.addEventListener('click',e=>{if(e.detail===0){const el=e.target.closest('.piece');if(el)choose(Number(el.dataset.index))}});
+board.addEventListener('keydown',e=>{const el=e.target.closest('.piece');if(!el||assembled||solved)return;const index=Number(el.dataset.index),offsets={ArrowLeft:-1,ArrowRight:1,ArrowUp:-cols,ArrowDown:cols};if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(index)}else if(e.key==='Escape'){selected=null;render()}else if(e.key in offsets){e.preventDefault();board.querySelector(`[data-index="${Math.max(0,Math.min(total-1,index+offsets[e.key]))}"]`)?.focus()}});
+$('#shuffle').onclick=newGame;$('#assembled').onclick=()=>setView(true);$('#scrambled').onclick=()=>setView(false);
+$('#upload').onchange=e=>{const file=e.target.files?.[0];if(!file)return;const version=++loadVersion,reader=new FileReader();reader.onerror=()=>message('Could not read this image. Please try another file.');reader.onload=()=>{const picture=new Image();picture.onerror=()=>message('This image could not be opened. Try a JPG, PNG or WebP.');picture.onload=()=>{if(version!==loadVersion)return;img=reader.result;ratio=picture.naturalWidth/picture.naturalHeight;newGame()};picture.src=reader.result};reader.readAsDataURL(file);e.target.value=''};
 newGame();
 </script></body></html>
