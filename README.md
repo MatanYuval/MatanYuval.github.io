@@ -10,6 +10,7 @@ The whole site is a static page. There is no build step and no server.
 
 ```
 index.html     the entire site - every pane, the guide, and the data, in one file (generated)
+puzzle.html    standalone coral puzzle game, linked from the site navigation
 build/         the template and script that generate index.html, plus build notes
 labels.json    the species labels; the page reads this and it overrides the copy inside index.html
 guide/         the field guide figures, plus the landing-page photograph (hero.jpg)
@@ -79,3 +80,9 @@ Thank you to my friends, family, and colleagues.
 
 Models and field guide by Matan Yuval. Map tiles © OpenStreetMap contributors and Esri.
 Site built with Claude (claude-opus-5).
+
+## Coral puzzle
+
+`puzzle.html` is a standalone page; edit it directly. It starts with `guide/hero.jpg` and also
+accepts a player's image locally in their browser. It shuffles 12 pieces covering the central
+two-thirds of the image width and height. No uploaded images or game progress are sent to a server.

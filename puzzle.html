@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Coral puzzle · Adopt-a-Coral</title><meta name="description" content="Upload an image and solve a browser puzzle."><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2633'/%3E%3Cpath d='M10 32h18V14h12v18h14v12H40v10H28V44H10z' fill='%2367dbcc'/%3E%3C/svg%3E"><style>
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#eaf5f4;background:#071c26}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #294653;gap:16px}.brand{font-weight:800;letter-spacing:.02em;font-size:1.15rem}.brand span{color:#66d8c9}.status{color:#a8c5cb;font-size:.9rem}main{max-width:1500px;margin:auto;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:24px}.work{min-width:0}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap}h1{font-size:1.55rem;margin:0}h2{font-size:1rem;margin:0 0 14px}.hint{color:#a8c5cb;line-height:1.45}.controls{display:flex;gap:8px;flex-wrap:wrap}.btn,.filelabel{border:1px solid #3d6470;background:#133846;color:#eaf5f4;border-radius:9px;padding:10px 14px;min-height:42px}.btn:hover,.filelabel:hover{border-color:#65d8ca}.btn.primary{background:#67dccc;color:#08232c;border-color:#67dccc;font-weight:700}.btn.active{background:#2b706e;border-color:#70d9ce}.filelabel input{display:none}.panel{border:1px solid #294653;background:#0c2a36;border-radius:16px;padding:18px}.board-shell{background:#12333f;border:1px solid #315463;border-radius:16px;padding:16px;min-height:350px;display:grid;place-items:center}.board{width:min(100%,780px);aspect-ratio:1800/1016;display:grid;position:relative;overflow:hidden;border:2px solid #69919a;border-radius:9px;background:#102d38;touch-action:none}.slot{padding:0;border:1px solid #071c26;position:relative;min-width:0;min-height:0;background-color:transparent;border-radius:0}.slot:focus-visible{outline:3px solid #fff;outline-offset:-4px;z-index:2}.slot:disabled{opacity:1}.board.solved{border-color:#67dccc}.board.solved .slot{border:0}.moves{margin-top:20px;color:#a8c5cb}.moves strong{color:#eaf5f4;font-size:2rem;margin-right:6px}.slot.selected{outline:4px solid #f4c46f;outline-offset:-4px;z-index:2}.tile{width:100%;height:100%;background-repeat:no-repeat;cursor:pointer;touch-action:none}.slot .tile{border:1px solid rgba(255,255,255,.14)}.tile[draggable=true]{cursor:grab}.reference{position:absolute;inset:0;background-size:150% 150%;background-position:center;background-repeat:no-repeat;z-index:4;opacity:1;pointer-events:none}.side{display:flex;flex-direction:column;gap:16px}.side p{margin:0 0 12px}.toggle-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.small{font-size:.85rem}.progress{height:7px;background:#284a55;border-radius:20px;overflow:hidden;margin:10px 0 5px}.progress div{height:100%;background:#67dccc;transition:width .25s}.toast{min-height:24px;color:#ffd27b;font-size:.88rem}.hidden{display:none!important}@media(max-width:900px){main{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){header{padding:15px 18px}main{padding:16px}.side{display:flex}.board-shell{padding:8px;min-height:0}.panel{padding:14px}.status{display:none}}
+
+:root{--bg:#f6f7f5;--panel:#fff;--ink:#15211f;--muted:#5d6b68;--line:#dde3e0;--accent:#0f6d63;--soft:#e3f1ee;color-scheme:light dark;background:var(--bg);color:var(--ink)}
+@media(prefers-color-scheme:dark){:root{--bg:#101413;--panel:#171d1c;--ink:#e8efed;--muted:#9aa8a5;--line:#28312f;--accent:#4fd6c3;--soft:#12312d}}
+a{text-decoration:none;color:inherit}.brand{font-weight:650}header,.panel{background:var(--panel);border-color:var(--line)}
+.hint,.status,.moves{color:var(--muted)}.moves strong{color:var(--ink)}.btn,.filelabel{background:var(--panel);color:var(--ink);border-color:var(--line)}.btn:hover,.filelabel:hover{border-color:var(--accent);color:var(--accent)}.btn.active{background:var(--soft);border-color:var(--accent)}.board-shell{background:var(--soft);border-color:var(--line);min-height:0}.board{border-color:var(--line);max-width:680px}.board.solved{border-color:var(--accent)}.progress{background:var(--line)}.progress div{background:var(--accent)}.toast{color:var(--accent)}.filelabel{position:relative;overflow:hidden;cursor:pointer}.filelabel input{display:block;position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.filelabel:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+</style></head><body><header><a class="brand" href="index.html">Adopt-a-Coral</a><a class="btn" href="index.html">Back to the site</a></header><main><section class="work"><div class="topline"><div><h1>Coral puzzle</h1><div class="hint">Select two pieces to swap them, or drag one onto another.</div></div><div class="controls"><label class="filelabel">Upload image<input id="upload" type="file" accept="image/*"></label><button class="btn" id="shuffle">Shuffle pieces</button></div></div><div class="board-shell"><div id="board" class="board" aria-label="Puzzle board"></div></div></section><aside class="side"><div class="panel"><h2>Play controls</h2><p class="hint small">Rearrange all 12 pieces to restore the center of the image. Every swap counts as one move.</p><div class="progress"><div id="bar"></div></div><div class="small" id="progressText"></div><div class="moves"><strong id="moves">0</strong> moves</div><div class="toggle-row"><button class="btn" id="reference">Show guide</button></div><div class="toast" id="toast" role="status"></div></div></aside></main><script>
+const cols=4,rows=3,total=cols*rows,cropFraction=2/3,cropMargin=(1-cropFraction)/2;const board=document.querySelector('#board');const demo='guide/hero.jpg';
+let img=demo,slots=[],selected=null,guide=false,drag=null,moves=0,solved=false,loadVersion=0;
+const $=s=>document.querySelector(s);
+function message(s){$('#toast').textContent=s}
+function pattern(el,id){
+ el.style.backgroundImage=`url("${img}")`;
+ // Display each tile's region within the central two-thirds of the source.
+ const tileWidth=cropFraction/cols,tileHeight=cropFraction/rows;
+ el.style.backgroundSize=`${100/tileWidth}% ${100/tileHeight}%`;
+ el.style.backgroundPosition=`${100*(cropMargin+(id%cols)*tileWidth)/(1-tileWidth)}% ${100*(cropMargin+Math.floor(id/cols)*tileHeight)/(1-tileHeight)}%`;
+}
+function newGame(){
+ slots=Array.from({length:total},(_,i)=>i);
+ // Fisher–Yates, with an already-solved result rejected.
+ do {for(let i=total-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[slots[i],slots[j]]=[slots[j],slots[i]]}}while(slots.every((id,i)=>id===i));
+ selected=null;drag=null;moves=0;guide=false;solved=false;message('');render();
+}
+function render(){
+ const focusIndex=document.activeElement?.dataset.index;
+ board.style.gridTemplateColumns=`repeat(${cols},1fr)`;board.style.gridTemplateRows=`repeat(${rows},1fr)`;board.replaceChildren();
+ slots.forEach((id,index)=>{
+  const cell=document.createElement('button');cell.type='button';cell.className='slot tile'+(selected===index?' selected':'');cell.dataset.index=index;cell.draggable=!solved&&!guide;
+  cell.disabled=solved||guide;cell.setAttribute('aria-label',`Position ${index+1}`);cell.setAttribute('aria-pressed',String(selected===index));pattern(cell,id);board.append(cell);
+ });
+ if(guide){const ref=document.createElement('div');ref.className='reference';ref.style.backgroundImage=`url("${img}")`;board.append(ref)}
+ const correct=slots.filter((id,i)=>id===i).length;
+ $('#bar').style.width=`${correct/total*100}%`;$('#progressText').textContent=`${correct} of ${total} in the right place`;$('#moves').textContent=moves;
+ $('#reference').classList.toggle('active',guide);$('#reference').setAttribute('aria-pressed',String(guide));$('#reference').textContent=guide?'Back to puzzle':'Show guide';
+ board.classList.toggle('solved',solved);
+ if(focusIndex!==undefined)board.querySelector(`[data-index="${focusIndex}"]`)?.focus({preventScroll:true});
+}
+function swap(from,to){
+ if(solved||guide||from===to||!Number.isInteger(from)||!Number.isInteger(to)||from<0||to<0||from>=total||to>=total)return;
+ [slots[from],slots[to]]=[slots[to],slots[from]];moves++;selected=null;solved=slots.every((id,i)=>id===i);render();
+ if(solved)message(`Puzzle complete in ${moves} ${moves===1?'move':'moves'}! Shuffle to play again.`);
+}
+board.addEventListener('click',e=>{
+ const cell=e.target.closest('[data-index]');if(!cell||guide||solved)return;const index=Number(cell.dataset.index);
+ if(selected===null){selected=index;render()}else if(selected===index){selected=null;render()}else swap(selected,index);
+});
+board.addEventListener('keydown',e=>{
+ const cell=e.target.closest('[data-index]');if(!cell)return;const index=Number(cell.dataset.index);
+ const offsets={ArrowLeft:-1,ArrowRight:1,ArrowUp:-cols,ArrowDown:cols};
+ if(e.key==='Escape'){selected=null;render()}else if(e.key in offsets){e.preventDefault();board.querySelector(`[data-index="${Math.max(0,Math.min(total-1,index+offsets[e.key]))}"]`)?.focus()}
+});
+board.addEventListener('dragstart',e=>{const c=e.target.closest('[data-index]');if(!c||guide||solved){e.preventDefault();return}drag=Number(c.dataset.index);e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',String(drag))});
+board.addEventListener('dragover',e=>{if(drag!==null&&!guide&&!solved){e.preventDefault();e.dataTransfer.dropEffect='move'}});
+board.addEventListener('drop',e=>{e.preventDefault();const c=e.target.closest('[data-index]');if(c&&drag!==null)swap(drag,Number(c.dataset.index));drag=null});
+board.addEventListener('dragend',()=>{drag=null});
+$('#shuffle').onclick=newGame;
+$('#reference').onclick=()=>{guide=!guide;selected=null;render()};
+$('#upload').onchange=e=>{
+ const file=e.target.files?.[0];if(!file)return;const version=++loadVersion;
+ const reader=new FileReader();reader.onerror=()=>message('Could not read this image. Please try another file.');
+ reader.onload=()=>{const picture=new Image();picture.onerror=()=>message('This image could not be opened. Try a JPG, PNG or WebP.');picture.onload=()=>{if(version!==loadVersion)return;img=reader.result;board.style.aspectRatio=`${picture.naturalWidth}/${picture.naturalHeight}`;newGame()};picture.src=reader.result};reader.readAsDataURL(file);e.target.value='';
+};
+newGame();
+</script></body></html>
